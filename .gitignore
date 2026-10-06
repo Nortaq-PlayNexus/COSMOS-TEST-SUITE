@@ -1,0 +1,92 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project outputs
+data/raw/*
+data/processed/*
+data/cache/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/cache/.gitkeep
+
+papers/downloaded/*
+papers/extracted/*
+!papers/downloaded/.gitkeep
+!papers/extracted/.gitkeep
+
+reports/*
+simulations/*
+!reports/.gitkeep
+!simulations/.gitkeep
+
+experiments/EXP001/data/*
+experiments/EXP001/results/*
+experiments/EXP001/reports/*
+experiments/EXP001/reproducibility/
+!experiments/EXP001/.gitkeep
+
+# Database files (regenerated on first run)
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment lockfiles (large; regenerate with `pip freeze`)
+environment.lock
+requirements-lock.txt
+
+# Logs
+logs/*.log
+logs/*.json
+
+# Jupyter notebooks outputs
+.ipynb_checkpoints/
+
+# Test artifacts
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+mypy_cache/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.orig

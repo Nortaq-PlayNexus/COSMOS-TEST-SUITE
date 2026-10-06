@@ -1,0 +1,63 @@
+{
+  "datasets": [
+    {
+      "name": "sample_cmb_map",
+      "origin": "COSMOS-curated",
+      "version": "v1",
+      "description": "Small sample CMB temperature map (2\u00b0 resolution) for pipeline testing.",
+      "data_type": "cmb",
+      "availability": "offline",
+      "size_bytes": null,
+      "checksum": null,
+      "download_url": null,
+      "local_path": null,
+      "manifest_path": null,
+      "metadata": {
+        "nside": 32,
+        "units": "uK",
+        "nside_note": "toy map for testing only"
+      },
+      "associated_papers": null,
+      "last_updated": null
+    },
+    {
+      "name": "sample_galaxy_catalog",
+      "origin": "COSMOS-curated",
+      "version": "v1",
+      "description": "Small mock galaxy catalog (1000 galaxies) for pipeline testing.",
+      "data_type": "galaxy_catalog",
+      "availability": "offline",
+      "size_bytes": null,
+      "checksum": null,
+      "download_url": null,
+      "local_path": null,
+      "manifest_path": null,
+      "metadata": {
+        "n_galaxies": 1000,
+        "z_max": 1.0,
+        "note": "toy catalog for testing only"
+      },
+      "associated_papers": null,
+      "last_updated": null
+    },
+    {
+      "name": "sample_rotation_curves",
+      "origin": "COSMOS-curated",
+      "version": "v1",
+      "description": "Toy rotation curve data (radius, v_obs, v_err) for dark matter tests.",
+      "data_type": "rotation_curve",
+      "availability": "offline",
+      "size_bytes": null,
+      "checksum": null,
+      "download_url": null,
+      "local_path": null,
+      "manifest_path": null,
+      "metadata": {
+        "n_galaxies": 10,
+        "note": "toy data for testing only"
+      },
+      "associated_papers": null,
+      "last_updated": null
+    }
+  ]
+}

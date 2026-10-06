@@ -1,0 +1,10 @@
+{
+  "experiment_id": "EXP-001",
+  "commit": "022fb28",
+  "analysis_version": "v1",
+  "random_seed": 777,
+  "cosmos_version": "0.1.0.dev0",
+  "classification": "consistent_with_standard_model",
+  "timestamp": "2026-10-06T15:43:49.298945",
+  "command": "cosmos experiment run EXP-001"
+}

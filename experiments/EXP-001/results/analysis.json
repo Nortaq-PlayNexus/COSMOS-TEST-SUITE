@@ -1,0 +1,43 @@
+{
+  "chi2_test": {
+    "chi2": 666.4663030955496,
+    "dof": 18,
+    "reduced_chi2": 37.025905727530535,
+    "p_value": 0.0,
+    "status": "poor_fit",
+    "method": "chi_square_test"
+  },
+  "monte_carlo": {
+    "n_mc": 200,
+    "observed_chi2": 666.4663030955496,
+    "null_chi2_median": 310.020335942393,
+    "null_chi2_p95": 829.0252859837318,
+    "p_value": 0.095,
+    "significance_sigma": 1.3105791121681285,
+    "interpretation": "A large Monte Carlo p-value means the measured spectrum is indistinguishable from a Lambda CDM realisation. A small p-value would indicate a genuine deviation."
+  },
+  "injection_recovery": {
+    "feature": "Gaussian bump at k = 0.05 h/Mpc, width 0.01 h/Mpc",
+    "injected_amplitude": 0.4583104771032433,
+    "injected_snr": 5.0,
+    "detection_threshold_snr": 3.0,
+    "detected": true,
+    "delta_chi2": 25.0,
+    "false_positive_threshold_chi2": 33.68742507128535,
+    "false_positive_target": 0.02,
+    "false_positive_rate": 0.028,
+    "n_false_positive_trials": 500,
+    "median_frac_error": 0.04851536490504954,
+    "conclusion": "The pipeline detects an injected 45.8% feature at 5.0 sigma. Features at least this large would have been found, so the absence of such a feature is informative."
+  },
+  "sigma8_test": {
+    "sigma8_observed": 0.7670302772095272,
+    "sigma8_lcdm": 0.81,
+    "difference": -0.04296972279047284,
+    "n_sigma": -0.8593944558094568,
+    "consistent": true
+  },
+  "n_k_bins": 19,
+  "null_sim_hash": "697619e342c88767",
+  "data_origin": "COSMOS clustered Lambda CDM mock (no real survey data available)"
+}

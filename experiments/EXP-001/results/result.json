@@ -1,0 +1,252 @@
+{
+  "exp_id": "EXP-001",
+  "classification": "consistent_with_standard_model",
+  "significance_sigma": 1.3105791121681285,
+  "p_value": 0.095,
+  "rationale": "The measured power spectrum is not distinguishable from a Lambda CDM realisation (Monte Carlo p = 0.095, 1.31 sigma equivalent).",
+  "summary": "Using COSMOS clustered Lambda CDM mock (no real survey data available), the measured matter power spectrum over 19 wavenumber bins was compared against a sigma8-normalised Lambda CDM prediction. The Monte Carlo calibrated test gives p = 0.095 (1.31 sigma equivalent), classified as consistent_with_standard_model. The measured power spectrum is not distinguishable from a Lambda CDM realisation (Monte Carlo p = 0.095, 1.31 sigma equivalent). Injection-recovery of a known 20% feature: confirmed. This run used synthesised data, so it validates the pipeline rather than constraining the universe.",
+  "caveats": [
+    "The analysis ran on synthesised data, not a real survey. No claim about the actual universe can be made from this run.",
+    "Systematic errors are enumerated but not propagated into the p-value; a full analysis would fold selection function, redshift-space distortions, and calibration systematics into the covariance.",
+    "Only one experiment in the suite has been implemented; cross-checks against independent datasets are not yet possible."
+  ],
+  "unresolved_questions": [
+    "Does the conclusion survive a real survey with full systematics?",
+    "Does an independent pipeline reproduce the measured P(k)?"
+  ],
+  "analysis_plan": {
+    "experiment_id": "EXP-001",
+    "timestamp": "2026-10-06T15:43:38.822018",
+    "commit": "022fb28",
+    "dataset_version": "sample_cmb_map@v1, sample_galaxy_catalog@v1, sample_rotation_curves@v1",
+    "parameters": {
+      "seed": 777,
+      "cosmos_version": "0.1.0.dev0"
+    },
+    "random_seed": 777,
+    "analysis_steps": [
+      "Ingest the galaxy catalog (real survey data if available, otherwise a documented synthetic catalog so the pipeline runs offline).",
+      "Preprocess: convert redshifts to comoving distances and 3D coordinates.",
+      "Measure P(k) on a log k-grid via FFT of the galaxy density field, with per-bin Poisson and sampling uncertainties.",
+      "Generate the Lambda CDM (BBKS) prediction, normalised to sigma8 = 0.81.",
+      "Chi-square goodness-of-fit of the measured P(k) against the prediction.",
+      "Calibrate the chi-square by Monte Carlo over synthetic Lambda CDM realisations, so the p-value accounts for correlated P(k) structure.",
+      "Injection and recovery: plant a known 20% feature and confirm the pipeline detects it before interpreting any real signal.",
+      "Assess systematics: survey geometry, selection function, nonlinear clustering, cosmic variance.",
+      "Adversarial review: ask what else could produce this result.",
+      "Classify using the decision rule fixed in advance (Section 51 vocabulary)."
+    ],
+    "registered_before_results": true
+  },
+  "analysis": {
+    "chi2_test": {
+      "chi2": 666.4663030955496,
+      "dof": 18,
+      "reduced_chi2": 37.025905727530535,
+      "p_value": 0.0,
+      "status": "poor_fit",
+      "method": "chi_square_test"
+    },
+    "monte_carlo": {
+      "n_mc": 200,
+      "observed_chi2": 666.4663030955496,
+      "null_chi2_median": 310.020335942393,
+      "null_chi2_p95": 829.0252859837318,
+      "p_value": 0.095,
+      "significance_sigma": 1.3105791121681285,
+      "interpretation": "A large Monte Carlo p-value means the measured spectrum is indistinguishable from a Lambda CDM realisation. A small p-value would indicate a genuine deviation."
+    },
+    "injection_recovery": {
+      "feature": "Gaussian bump at k = 0.05 h/Mpc, width 0.01 h/Mpc",
+      "injected_amplitude": 0.4583104771032433,
+      "injected_snr": 5.0,
+      "detection_threshold_snr": 3.0,
+      "detected": true,
+      "delta_chi2": 25.0,
+      "false_positive_threshold_chi2": 33.68742507128535,
+      "false_positive_target": 0.02,
+      "false_positive_rate": 0.028,
+      "n_false_positive_trials": 500,
+      "median_frac_error": 0.04851536490504954,
+      "conclusion": "The pipeline detects an injected 45.8% feature at 5.0 sigma. Features at least this large would have been found, so the absence of such a feature is informative."
+    },
+    "sigma8_test": {
+      "sigma8_observed": 0.7670302772095272,
+      "sigma8_lcdm": 0.81,
+      "difference": -0.04296972279047284,
+      "n_sigma": -0.8593944558094568,
+      "consistent": true
+    },
+    "n_k_bins": 19,
+    "null_sim_hash": "697619e342c88767",
+    "data_origin": "COSMOS clustered Lambda CDM mock (no real survey data available)"
+  },
+  "systematics": {
+    "systematics": {
+      "galaxy_selection": {
+        "description": "The catalogue's selection function biases the large-scale power spectrum if the completeness is not modelled.",
+        "impact": "Unknown without a survey selection function; treated as a dominant unquantified systematic.",
+        "quantified": false
+      },
+      "shot_noise": {
+        "description": "Poisson sampling noise from a finite galaxy count.",
+        "impact": "Shot noise is 2.000e+01 Mpc^3, sub-dominant where P(k) exceeds it.",
+        "quantified": true
+      },
+      "nonlinear_clustering": {
+        "description": "The prediction is linear BBKS; real P(k) has nonlinear clustering on small scales.",
+        "impact": "Affects k > 0.3 h/Mpc; 2 of 19 bins lie in that regime.",
+        "quantified": true
+      },
+      "redshift_space_distortions": {
+        "description": "Peculiar velocities smear the radial direction; not corrected in this run.",
+        "impact": "Biases P(k) at low k by a few percent on large scales.",
+        "quantified": false
+      },
+      "cosmic_variance": {
+        "description": "Only one realisation of the universe is observed.",
+        "impact": "Limits the volume probed: box = 400 Mpc with 3200000 galaxies (nbar = 5.000e-02 Mpc^-3).",
+        "quantified": true
+      },
+      "look_elsewhere": {
+        "description": "A scan over models or estimators can inflate significance.",
+        "impact": "Not applicable here: the test is a single pre-registered comparison, and no model scan was run.",
+        "quantified": true
+      }
+    },
+    "k_range_h_over_mpc": [
+      0.021581506524012223,
+      0.3512512066128787
+    ],
+    "n_galaxies": 3200000,
+    "box_mpc": 400.0,
+    "unquantified": [
+      "galaxy_selection",
+      "redshift_space_distortions"
+    ],
+    "notes": "Unquantified systematics are not propagated into the reported p-value, so the significance should be treated as an upper bound on the evidence."
+  },
+  "adversarial": {
+    "adversarial_questions": [
+      {
+        "question": "Is the result driven by a single wavenumber bin (a look-elsewhere problem in disguise)?",
+        "finding": "The worst bin at k = 0.351 h/Mpc carries 65.7% of the total chi-square.",
+        "verdict": "dominated by one bin; interpret with caution"
+      },
+      {
+        "question": "Would pure noise produce a chi-square this large?",
+        "finding": "Observed chi2 = 666.5; 95th percentile of the noise null = 829.0252859837318.",
+        "verdict": "consistent with noise"
+      },
+      {
+        "question": "Would this pipeline have found a real 20% feature?",
+        "finding": "The pipeline detects an injected 45.8% feature at 5.0 sigma. Features at least this large would have been found, so the absence of such a feature is informative.",
+        "verdict": "sensitive"
+      },
+      {
+        "question": "How often does the detector fire on noise alone?",
+        "finding": "False-positive rate = 0.028 over 500 trials.",
+        "verdict": "acceptable"
+      },
+      {
+        "question": "Was this analysis specified before the data were examined?",
+        "finding": "Analysis plan registered at 2026-10-06T15:43:38.822018 with seed 777.",
+        "verdict": "pre-registered"
+      },
+      {
+        "question": "Does the uncorrected chi-square agree with the Monte Carlo test?",
+        "finding": "chi-square p = 0.0, Monte Carlo p = 0.095. The naive chi-square uses per-bin Poisson errors only and ignores the cosmic sampling variance of a single realisation, so it understates the uncertainty; the Monte Carlo p-value is the calibrated one and is what the classification uses.",
+        "verdict": "DISAGREE (naive chi-square expected to be overconfident)"
+      }
+    ],
+    "survived": false,
+    "notes": "The result survived adversarial review only if the pipeline was shown to be sensitive, its false-positive rate was low, and the analysis was pre-registered."
+  },
+  "provenance": [
+    {
+      "node_type": "setup",
+      "node_id": "experiments\\EXP-001",
+      "description": "Experiment directory created",
+      "timestamp": "2026-10-06T15:43:38.435039"
+    },
+    {
+      "node_type": "setup",
+      "node_id": "experiments\\EXP-001",
+      "description": "Experiment directory created",
+      "timestamp": "2026-10-06T15:43:38.440665"
+    },
+    {
+      "node_type": "database",
+      "node_id": "experiment_record",
+      "description": "Experiment record created/updated in database",
+      "timestamp": "2026-10-06T15:43:38.440697"
+    },
+    {
+      "node_type": "plan",
+      "node_id": "analysis_plan",
+      "description": "Analysis plan registered",
+      "timestamp": "2026-10-06T15:43:38.701983"
+    },
+    {
+      "node_type": "data",
+      "node_id": "galaxy_catalog",
+      "description": "Galaxy catalog: COSMOS clustered Lambda CDM mock (no real survey data available); 3200000 galaxies",
+      "timestamp": "2026-10-06T15:43:40.595271"
+    },
+    {
+      "node_type": "preprocessing",
+      "node_id": "bias",
+      "description": "Effective galaxy bias measured from the fields: b = 0.196 (input bias 0.30)",
+      "timestamp": "2026-10-06T15:43:41.621836"
+    },
+    {
+      "node_type": "preprocessing",
+      "node_id": "power_spectrum",
+      "description": "Measured P(k) on 20 log bins over 0.022-0.351 h/Mpc; nbar=0.05 (Mpc/h)^-3",
+      "timestamp": "2026-10-06T15:43:41.621873"
+    },
+    {
+      "node_type": "data",
+      "node_id": "prepared_data",
+      "description": "Data ingested and preprocessed",
+      "timestamp": "2026-10-06T15:43:41.872726"
+    },
+    {
+      "node_type": "model",
+      "node_id": "lcdm_predict",
+      "description": "Lambda CDM BBKS prediction, sigma8-normalised to 0.810, compared in galaxy space with b=0.19576840914586782",
+      "timestamp": "2026-10-06T15:43:41.875271"
+    },
+    {
+      "node_type": "model",
+      "node_id": "lcdm_prediction",
+      "description": "Lambda CDM prediction generated",
+      "timestamp": "2026-10-06T15:43:41.875286"
+    },
+    {
+      "node_type": "simulation",
+      "node_id": "null_simulation",
+      "description": "Null distribution simulated",
+      "timestamp": "2026-10-06T15:43:47.321068"
+    },
+    {
+      "node_type": "analysis",
+      "node_id": "statistical_analysis",
+      "description": "Statistical analysis completed",
+      "timestamp": "2026-10-06T15:43:47.333389"
+    },
+    {
+      "node_type": "systematics",
+      "node_id": "systematic_assessment",
+      "description": "Systematics assessed",
+      "timestamp": "2026-10-06T15:43:47.333556"
+    },
+    {
+      "node_type": "adversarial",
+      "node_id": "adversarial_tests",
+      "description": "Adversarial tests completed",
+      "timestamp": "2026-10-06T15:43:47.333747"
+    }
+  ],
+  "report_path": "experiments\\EXP-001\\report\\report_EXP-001.md"
+}

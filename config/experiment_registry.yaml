@@ -1,0 +1,628 @@
+version: 0.1.0
+updated_at: '2026-10-06T13:06:50.233650'
+experiments:
+- exp_id: EXP-001
+  name: Cosmic web and large-scale structure vs Lambda CDM
+  description: Reconstruct the cosmic web from a galaxy survey, compute the power
+    spectrum and two-point correlation function, and compare against Lambda CDM simulations.
+    Measures the homogeneity scale.
+  question_key: large_scale_homogeneity
+  order: 1
+  status: data_awaiting
+  scores:
+    data_availability: 0.8
+    theoretical_importance: 0.9
+    observational_leverage: 0.8
+    reproducibility: 0.9
+    computational_feasibility: 0.9
+    falsifiability: 0.8
+    potential_impact: 0.8
+  definition:
+    id: EXP-001
+    name: Cosmic web and large-scale structure vs Lambda CDM
+    hypothesis: The distribution of galaxies on large scales is consistent with the
+      Lambda CDM prediction for the matter power spectrum and two-point correlation
+      function.
+    null_model: 'No structure / white noise: galaxies distributed uniformly with Poisson
+      shot noise.'
+    alternative_models:
+    - 'Lambda CDM (standard model): P(k) from linear theory with transfer function;
+      nonlinear corrections.'
+    - Power-law power spectrum with different tilt (n_s != 0.965).
+    - Cutoff at large scales (inflation alternative).
+    assumptions:
+    - Galaxy bias is scale-independent on the scales measured.
+    - Redshift-space distortions are modeled or mitigated.
+    - Selection function is known from the survey.
+    datasets:
+    - DESI DR1
+    - SDSS DR16
+    - Euclid EDR (simulated)
+    preprocessing:
+    - Redshift-distance conversion to 3D coordinates.
+    - Angular mask application.
+    - Weighting for completeness and selection effects.
+    - Baryon acoustic oscillation smoothing.
+    prediction: P(k) peaks at k ~ 0.02 h/Mpc (BAO scale); the two-point correlation
+      function shows a BAO peak at r ~ 100 h^-1 Mpc; the universe becomes homogeneous
+      for R > ~100 h^-1 Mpc.
+    statistical_test: Chi-square goodness-of-fit of measured P(k) to Lambda CDM prediction;
+      Kolmogorov-Smirnov test of void size distribution against simulations; bootstrap
+      confidence intervals on the homogeneity scale.
+    expected_result: Measured power spectrum consistent with Lambda CDM within measurement
+      errors; homogeneity scale R_h ~ 70-100 h^-1 Mpc.
+    falsification_condition: Measured P(k) or correlation function deviates from Lambda
+      CDM by > 5 sigma after accounting for systematics and look-elsewhere effects;
+      homogeneity not achieved by R = 250 h^-1 Mpc.
+    uncertainty:
+    - Measurement (shot noise, survey geometry).
+    - Modeling (nonlinear clustering, redshift-space distortions).
+    - Cosmic variance on the largest scales.
+    systematic_errors:
+    - Galaxy selection / completeness biases.
+    - Redshift errors and peculiar velocities.
+    - Evolution of the sample with redshift.
+    - Baryonic effects on small-scale clustering.
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+      analysis_version: v1
+    status: data_awaiting
+- exp_id: EXP-002
+  name: Large-scale isotropy and preferred direction
+  description: Test whether the universe has a preferred direction using CMB temperature,
+    galaxy counts, quasar distributions, and supernovae. Implements directional statistics,
+    dipole/quadrupole measurements, and hemispherical comparisons with look-elsewhere
+    correction.
+  question_key: large_scale_isotropy
+  order: 2
+  status: not_started
+  scores:
+    data_availability: 0.8
+    theoretical_importance: 0.9
+    observational_leverage: 0.9
+    reproducibility: 0.8
+    computational_feasibility: 0.9
+    falsifiability: 0.9
+    potential_impact: 0.8
+  definition:
+    id: EXP-002
+    name: Experiment EXP-002
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-003
+  name: Homogeneity scale measurement
+  description: Measure whether statistical properties converge toward homogeneity
+    with increasing scale using counts-in-spheres, fractal-dimension diagnostics,
+    and the two-point correlation function.
+  question_key: large_scale_homogeneity
+  order: 3
+  status: not_started
+  scores:
+    data_availability: 0.7
+    theoretical_importance: 0.9
+    observational_leverage: 0.8
+    reproducibility: 0.9
+    computational_feasibility: 0.9
+    falsifiability: 0.8
+    potential_impact: 0.8
+  definition:
+    id: EXP-003
+    name: Experiment EXP-003
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-004
+  name: Cosmic web reconstruction
+  description: Reconstruct the cosmic web (filaments, walls, clusters, voids) from
+    a galaxy catalog using DisPerSE / watershed / friends-of-friends, and measure
+    filament length distributions, void size distribution, and topology.
+  question_key: large_scale_homogeneity
+  order: 4
+  status: not_started
+  scores:
+    data_availability: 0.7
+    theoretical_importance: 0.8
+    observational_leverage: 0.8
+    reproducibility: 0.8
+    computational_feasibility: 0.8
+    falsifiability: 0.8
+    potential_impact: 0.7
+  definition:
+    id: EXP-004
+    name: Experiment EXP-004
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-005
+  name: 'Dark matter: particle vs modified gravity'
+  description: Compare Lambda CDM particle dark matter against MOND-like modified
+    gravity using galaxy rotation curves, cluster dynamics, and weak lensing. Fit
+    both models and compare predictive performance.
+  question_key: dark_matter_particle
+  order: 5
+  status: not_started
+  scores:
+    data_availability: 0.9
+    theoretical_importance: 1.0
+    observational_leverage: 0.9
+    reproducibility: 0.8
+    computational_feasibility: 0.8
+    falsifiability: 0.9
+    potential_impact: 1.0
+  definition:
+    id: EXP-005
+    name: Experiment EXP-005
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-006
+  name: Modified gravity model comparison
+  description: Implement a model-comparison framework for GR + Lambda CDM, MOND, phenomenological
+    modified gravity, and scalar-tensor models. Compare against rotation curves, lensing,
+    clusters, growth, CMB, and GW.
+  question_key: modified_gravity
+  order: 6
+  status: not_started
+  scores:
+    data_availability: 0.8
+    theoretical_importance: 1.0
+    observational_leverage: 0.8
+    reproducibility: 0.7
+    computational_feasibility: 0.7
+    falsifiability: 0.9
+    potential_impact: 0.9
+  definition:
+    id: EXP-006
+    name: Experiment EXP-006
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-007
+  name: 'Dark energy: w, w0-wa, evolving models'
+  description: Test Lambda CDM versus constant-w versus w0-wa versus evolving dark
+    energy using DESI BAO, CMB, supernovae, expansion history, growth, and weak lensing.
+    Calculate likelihood, posterior, AIC, BIC.
+  question_key: dark_energy_evolving
+  order: 7
+  status: not_started
+  scores:
+    data_availability: 0.9
+    theoretical_importance: 1.0
+    observational_leverage: 0.9
+    reproducibility: 0.8
+    computational_feasibility: 0.8
+    falsifiability: 0.9
+    potential_impact: 1.0
+  definition:
+    id: EXP-007
+    name: Experiment EXP-007
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-008
+  name: Hubble tension analysis
+  description: Dedicated Hubble-constant analysis comparing CMB-inferred H0, Cepheid
+    distance ladder, Type Ia supernovae, TRGB, and standard sirens. Account for covariance
+    and systematic uncertainty.
+  question_key: hubble_tension
+  order: 8
+  status: not_started
+  scores:
+    data_availability: 1.0
+    theoretical_importance: 1.0
+    observational_leverage: 1.0
+    reproducibility: 0.9
+    computational_feasibility: 0.9
+    falsifiability: 1.0
+    potential_impact: 1.0
+  definition:
+    id: EXP-008
+    name: Experiment EXP-008
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-009
+  name: Inflation signatures
+  description: 'Investigate observational predictions of inflation: scalar spectral
+    index, tensor-to-scalar ratio, non-Gaussianity, CMB B-modes. Compare inflationary
+    model classes.'
+  question_key: cosmic_inflation
+  order: 9
+  status: not_started
+  scores:
+    data_availability: 0.6
+    theoretical_importance: 0.9
+    observational_leverage: 0.7
+    reproducibility: 0.8
+    computational_feasibility: 0.8
+    falsifiability: 0.8
+    potential_impact: 0.9
+  definition:
+    id: EXP-009
+    name: Experiment EXP-009
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-010
+  name: CMB anomalies with look-elsewhere correction
+  description: 'Search for CMB anomalies: large-scale alignments, hemispherical asymmetry,
+    cold/hot spots, multipole relationships, non-Gaussian structures. CRITICAL: correct
+    for the look-elsewhere effect via Monte Carlo null distributions.'
+  question_key: cmb_anomalies
+  order: 10
+  status: not_started
+  scores:
+    data_availability: 0.8
+    theoretical_importance: 0.9
+    observational_leverage: 0.9
+    reproducibility: 0.9
+    computational_feasibility: 0.7
+    falsifiability: 0.9
+    potential_impact: 0.9
+  definition:
+    id: EXP-010
+    name: Experiment EXP-010
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-011
+  name: Multiverse / bubble collision signatures
+  description: Treat multiverse hypotheses as speculative. Research published models
+    with observable predictions (circular CMB patterns). First prove the detection
+    algorithm recovers injected signals in simulations; then test real observations.
+  question_key: bubble_collision
+  order: 11
+  status: not_started
+  scores:
+    data_availability: 0.5
+    theoretical_importance: 0.7
+    observational_leverage: 0.6
+    reproducibility: 0.8
+    computational_feasibility: 0.7
+    falsifiability: 0.6
+    potential_impact: 0.7
+  definition:
+    id: EXP-011
+    name: Experiment EXP-011
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-012
+  name: Cosmic topology (matched circles)
+  description: Investigate non-trivial cosmic topology via matched-circle searches
+    and CMB correlation analysis on Planck/WMAP data, with simulated compact and simply-connected
+    universes for false-positive testing.
+  question_key: universe_topology
+  order: 12
+  status: not_started
+  scores:
+    data_availability: 0.7
+    theoretical_importance: 0.9
+    observational_leverage: 0.8
+    reproducibility: 0.9
+    computational_feasibility: 0.6
+    falsifiability: 0.9
+    potential_impact: 0.8
+  definition:
+    id: EXP-012
+    name: Experiment EXP-012
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-013
+  name: Spatial repetition under various assumptions
+  description: Investigate what different cosmological assumptions (curvature, topology,
+    spatial extent, number of possible states, entropy) imply about repeated configurations.
+    Do not claim another Earth exists; determine exactly which assumptions are required.
+  question_key: spatial_repetition
+  order: 13
+  status: not_started
+  scores:
+    data_availability: 0.4
+    theoretical_importance: 0.6
+    observational_leverage: 0.5
+    reproducibility: 0.9
+    computational_feasibility: 0.9
+    falsifiability: 0.5
+    potential_impact: 0.5
+  definition:
+    id: EXP-013
+    name: Experiment EXP-013
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-014
+  name: Large cosmic structures (superclusters, walls)
+  description: Search large galaxy catalogs for superclusters, walls, filaments, giant
+    arcs, and large voids. For every extreme structure compute expected maximum size
+    from simulations and the look-elsewhere-corrected probability.
+  question_key: large_structures
+  order: 14
+  status: not_started
+  scores:
+    data_availability: 0.9
+    theoretical_importance: 0.8
+    observational_leverage: 0.9
+    reproducibility: 0.9
+    computational_feasibility: 0.7
+    falsifiability: 0.9
+    potential_impact: 0.8
+  definition:
+    id: EXP-014
+    name: Experiment EXP-014
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-015
+  name: General Relativity tests at cosmological scales
+  description: 'Test GR against observations: gravitational lensing, black-hole observations,
+    gravitational-wave propagation, binary systems, gravitational redshift, cosmological
+    growth, strong-field effects.'
+  question_key: gr_at_cosmological_scales
+  order: 15
+  status: not_started
+  scores:
+    data_availability: 0.9
+    theoretical_importance: 1.0
+    observational_leverage: 0.9
+    reproducibility: 0.9
+    computational_feasibility: 0.8
+    falsifiability: 0.9
+    potential_impact: 1.0
+  definition:
+    id: EXP-015
+    name: Experiment EXP-015
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
+- exp_id: EXP-016
+  name: Gravitational-wave observations
+  description: 'Integrate public LIGO/Virgo/KAGRA data: read strain data, preprocessing,
+    whitening, noise characterization, matched filtering, parameter estimation, waveform
+    comparison, and GR tests.'
+  question_key: gravitational_waves
+  order: 16
+  status: not_started
+  scores:
+    data_availability: 0.8
+    theoretical_importance: 0.9
+    observational_leverage: 0.9
+    reproducibility: 0.9
+    computational_feasibility: 0.7
+    falsifiability: 0.9
+    potential_impact: 0.9
+  definition:
+    id: EXP-016
+    name: Experiment EXP-016
+    hypothesis: null
+    null_model: null
+    alternative_models: []
+    assumptions: []
+    datasets: []
+    preprocessing: []
+    prediction: null
+    statistical_test: null
+    expected_result: null
+    falsification_condition: null
+    uncertainty: []
+    systematic_errors: []
+    result: null
+    confidence: null
+    reproducibility:
+      random_seed: 42
+      software_version: 0.1.0.dev0
+    status: not_started
