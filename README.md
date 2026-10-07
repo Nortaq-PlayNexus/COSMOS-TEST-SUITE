@@ -14,9 +14,10 @@ This is an **honest statement of what exists**, not marketing.
 |---|---|
 | Experiments defined | 16 |
 | Experiments implemented | **1** (EXP-001) |
-| Real astronomical data ingested | **none** |
+| Real astronomical data ingested | **none** (SDSS and LIGO unreachable) |
+| Research literature ingested | **86 papers** from the live arXiv API, 58 with DOIs |
 | Research questions answered | **0 of 35** |
-| Tests | 188, passing from a clean clone |
+| Tests | 221, passing from a clean clone |
 
 **No conclusion has been drawn about the physical universe.** EXP-001 has only
 ever consumed synthetic data. It answers a question about itself — *does this
@@ -24,11 +25,13 @@ pipeline correctly recover a ΛCDM signal it was given?* — and the answer is
 yes, which is what makes it useful as validation before the instrument is
 pointed at real data.
 
-Every one of the 35 research questions in the specification remains open.
+What *is* real is the literature corpus: 86 records pulled from the arXiv API
+with their DOIs, authors, dates, and verbatim abstracts. The dataset directory
+holds no observations, because the survey archives that would supply them were
+unreachable from the development environment. Those datasets are marked
+unavailable rather than filled with invented numbers.
 
-What *is* finished: the statistical framework, the simulation engine, the
-experiment discipline, the provenance and reproducibility machinery, and one
-experiment that exercises all of it end to end.
+Every one of the 35 research questions in the specification remains open.
 
 ---
 
@@ -78,7 +81,7 @@ python -m venv .venv
 
 pip install -e ".[dev]"
 
-python -m pytest tests/ -q      # 188 passed
+python -m pytest tests/ -q      # 221 passed
 python -m cosmos experiment run EXP-001
 ```
 
@@ -120,6 +123,8 @@ cosmos experiment list                    # all 16, with priority scores
 cosmos experiment run EXP-001 --seed 42   # execute
 cosmos data list                          # datasets
 cosmos simulate lcdm --nside 32           # simulations
+cosmos papers search "cosmic topology"    # 86-paper corpus from arXiv
+cosmos papers stats
 cosmos report generate EXP-001
 cosmos reproduce run EXP-001              # verify reproducibility
 ```
@@ -159,12 +164,14 @@ cosmos/
   simulations/      cosmology calculator, GRFs, mock catalogues, P(k)
   registry/         16 experiments, priority scoring, definitions
   experiments/      ExperimentRunner framework + EXP-001
+  ingestion/        arXiv client, local literature corpus, seeding
   data/             dataset registry, downloads, offline mode
   reports.py        report rendering from a result payload
   cli/              command-line interface
+papers/metadata/     corpus.json — 86 arXiv records with provenance
 experiments/EXP-001/  results, report, reproducibility package
 docs/                 documentation
-tests/                188 tests
+tests/                221 tests
 ```
 
 Experiment runs are a fixed pipeline. Two stages a normal analysis skips are

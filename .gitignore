@@ -48,8 +48,11 @@ data/cache/*
 
 papers/downloaded/*
 papers/extracted/*
+papers/cache/
 !papers/downloaded/.gitkeep
 !papers/extracted/.gitkeep
+# papers/metadata/corpus.json is intentionally tracked: it is the literature
+# corpus, with full provenance, and makes search work without network access.
 
 reports/*
 simulations/*

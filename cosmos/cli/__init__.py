@@ -72,6 +72,40 @@ def get_runner_steps(exp_id):
     return [steps] if steps else None
 
 
+def _corpus_search(query, limit=10, full=False, doi_only=False):
+    """Shared implementation for `papers search` and `research search`."""
+    from ..ingestion import LiteratureStore
+
+    store = LiteratureStore().load()
+    hits = store.search(query, limit=limit)
+    if doi_only:
+        hits = [h for h in hits if h.doi]
+
+    click.echo(f"corpus: {len(store)} records from the arXiv API")
+    click.echo(f"query : {query!r}  ->  {len(hits)} match(es)"
+               + (" with DOI" if doi_only else ""))
+    click.echo("")
+    if not hits:
+        click.echo(
+            "No match in the local corpus. That is a statement about the "
+            "local index, not about the literature. No such paper has not "
+            "been shown to exist.",
+            err=True,
+        )
+        click.echo(
+            "Try fewer terms, or grow the corpus with: cosmos papers ingest",
+            err=True,
+        )
+        return
+    for rec in hits:
+        click.echo(f"  [{rec.short_id}] {rec.title[:78]}")
+        click.echo(f"      {rec.citation_string()[:100]}")
+        if full and rec.abstract:
+            click.echo(f"      {rec.abstract[:400]}")
+        click.echo("")
+    click.echo(f"showing {len(hits)} of {len(store)} records")
+
+
 # ---------------------------------------------------------------------------
 # Core group
 # ---------------------------------------------------------------------------
@@ -119,16 +153,15 @@ def research_group():
 
 @research_group.command()
 @click.argument("query")
-@click.option("--limit", "-n", default=20, help="Maximum results")
-def search(query, limit):
-    """Search the local scientific corpus."""
-    click.echo(f"Searching corpus for: {query!r} (limit={limit})")
-    click.echo("")
-    click.echo("Indexed searches: cosmic topology, dark energy, Hubble tension,")
-    click.echo("modified gravity, cosmic web, primordial gravitational waves,")
-    click.echo("bubble collision, large scale isotropy, etc.")
-    click.echo("")
-    click.echo("The corpus is built automatically as papers are downloaded/ingested.")
+@click.option("--limit", "-n", default=10, help="Maximum results")
+@click.option("--full", is_flag=True, help="Show abstracts")
+def search(query, limit, full):
+    """
+    Search the local literature corpus.
+
+    Queries the corpus seeded from the arXiv API. All terms must match.
+    """
+    _corpus_search(query, limit=limit, full=full)
 
 
 # ---------------------------------------------------------------------------
@@ -143,15 +176,44 @@ def papers_group():
 
 @papers_group.command("search")
 @click.argument("query")
-@click.option("--limit", "-n", default=20, help="Maximum results")
-def papers_search(query, limit):
-    """Search indexed papers."""
-    click.echo(f"Papers search: {query!r} (limit={limit})")
+@click.option("--limit", "-n", default=10, help="Maximum results")
+@click.option("--full", is_flag=True, help="Show abstracts")
+@click.option("--doi", is_flag=True, help="Show only records with a DOI")
+def papers_search(query, limit, full, doi):
+    """Search indexed papers: cosmos papers search 'dark energy DESI'."""
+    _corpus_search(query, limit=limit, full=full, doi_only=doi)
+
+
+@papers_group.command("ingest")
+@click.option("--offline", is_flag=True, help="Use cached responses only")
+@click.option("--max-results", default=6, show_default=True, help="Per query")
+def papers_ingest(offline, max_results):
+    """Grow the corpus from the arXiv API."""
+    from ..ingestion.seed import seed as seed_corpus
+
+    try:
+        added = seed_corpus(offline=offline, max_results=max_results)
+    except Exception as exc:
+        click.echo(f"ingestion failed: {exc}", err=True)
+        sys.exit(1)
+    click.echo(f"added {added} record(s)")
+
+
+@papers_group.command("stats")
+def papers_stats():
+    """Corpus statistics."""
+    from ..ingestion import LiteratureStore
+
+    store = LiteratureStore().load()
+    stats = store.stats()
+    click.echo(f"papers        : {stats['n_papers']}")
+    click.echo(f"with DOI      : {stats['with_doi']}")
+    click.echo(f"with abstract : {stats['with_abstract']}")
+    click.echo(f"corpus file   : {stats['corpus_path']}")
     click.echo("")
-    click.echo("Indexed searches: dark energy evolving DESI, Hubble tension")
-    click.echo("distance ladder, modified gravity weak lensing, cosmic web")
-    click.echo("Lambda CDM simulations, primordial gravitational waves,")
-    click.echo("bubble collision CMB, large scale isotropy, etc.")
+    click.echo("by year:")
+    for year, n in stats["by_year"].items():
+        click.echo(f"  {year}  {n:>3}")
 
 
 # ---------------------------------------------------------------------------

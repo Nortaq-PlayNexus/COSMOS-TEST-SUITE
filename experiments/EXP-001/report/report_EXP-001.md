@@ -4,7 +4,7 @@
 
 **Status:** completed
 **Priority score:** 0.84
-**Report generated:** 2026-10-07T03:10:18.081669
+**Report generated:** 2026-10-07T03:28:05.061332
 **Report level:** 2 (technical)
 
 ## 1. Executive Summary
@@ -103,7 +103,7 @@ Unquantified systematics are not propagated into the reported p-value, so the si
 | Would pure noise produce a chi-square this large? | Observed chi2 = 459.9; 95th percentile of the noise null = 887.6409866021846. | consistent with noise |
 | Would this pipeline have found a real 20% feature? | The pipeline detects an injected 46.4% feature at 5.0 sigma. Features at least this large would have been found, so the absence of such a feature is informative. | sensitive |
 | How often does the detector fire on noise alone? | False-positive rate = 0.016 over 500 trials. | acceptable |
-| Was this analysis specified before the data were examined? | Analysis plan registered at 2026-10-07T03:10:13.182994 with seed 42. | pre-registered |
+| Was this analysis specified before the data were examined? | Analysis plan registered at 2026-10-07T03:28:00.150129 with seed 42. | pre-registered |
 | Does the uncorrected chi-square agree with the Monte Carlo test? | chi-square p = 0.0, Monte Carlo p = 0.295. The naive chi-square uses per-bin Poisson errors only and ignores the cosmic sampling variance of a single realisation, so it understates the uncertainty; the Monte Carlo p-value is the calibrated one and is what the classification uses. | DISAGREE (naive chi-square expected to be overconfident) |
 
 **Survived adversarial review:** False
@@ -167,9 +167,9 @@ Search the local corpus: `cosmos papers search <topic>`.
 ## 16. Reproducibility
 
 - Random seed: 42
-- Software version: commit 30d3c42
+- Software version: commit a9c597b
 - Analysis version: v1
-- Analysis plan registered: 2026-10-07T03:10:13.182994
+- Analysis plan registered: 2026-10-07T03:28:00.150129
 - Datasets: see `cosmos data list`
 - Reproducibility package: `experiments/EXP-001/reproducibility/`
 

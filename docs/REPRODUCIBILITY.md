@@ -125,5 +125,5 @@ values rather than against our own prior output.
 
 The test suite runs on every push via GitHub Actions
 (`.github/workflows/tests.yml`), across Python 3.12, 3.13, and 3.14 on Linux,
-macOS, and Windows. The "188 tests pass" claim is verifiable rather than
+macOS, and Windows. The "221 tests pass" claim is verifiable rather than
 asserted — check the badge, or the Actions tab.

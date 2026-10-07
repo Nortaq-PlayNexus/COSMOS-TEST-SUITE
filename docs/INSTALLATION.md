@@ -47,7 +47,7 @@ python -m cosmos version
 python -m pytest tests/ -q
 ```
 
-You should see `188 passed`. If anything fails, the failure is almost always a
+You should see `221 passed`. If anything fails, the failure is almost always a
 missing scientific package — reinstall with `pip install -e .` and confirm the
 error is not a version conflict.
 

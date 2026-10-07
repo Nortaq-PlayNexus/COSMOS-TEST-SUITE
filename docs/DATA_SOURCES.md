@@ -2,7 +2,7 @@
 
 ## Current status
 
-**No real survey data has been ingested.** Every dataset currently registered is
+**No real survey data has been ingested.** Every dataset registered for analysis is
 synthetic and generated locally. EXP-001 has never consumed an observation.
 
 | Dataset | Origin | Type | Availability | URL |
@@ -13,6 +13,43 @@ synthetic and generated locally. EXP-001 has never consumed an observation.
 
 These exist so the pipeline can be exercised and validated without network
 access. They are labelled as synthetic in every report they touch.
+
+### What *is* real: the literature corpus
+
+`papers/metadata/corpus.json` holds **86 records retrieved from the live arXiv
+API**, covering 1991–2026, 58 of them with a DOI. Every record carries its
+arXiv ID, authors, publication date, verbatim abstract, and the query and
+timestamp that retrieved it.
+
+```bash
+cosmos papers stats
+cosmos papers search "cosmic topology"
+python -m cosmos.ingestion.seed          # grow it
+```
+
+These are genuine primary-source records, not fixtures. Section 6 of the
+specification asks for exactly this.
+
+### What is *not* real: survey data
+
+Reachability was probed from the development environment:
+
+| Source | Reachable |
+|---|---|
+| arXiv API | yes |
+| NASA LAMBDA (root) | yes, but Planck data paths return 404 |
+| ESA Cosmos (Planck) | yes |
+| DESI portal | yes |
+| ESA Euclid | yes |
+| SDSS SkyServer | **blocked** |
+| SDSS DR12 BOSS data release | **blocked (HTTP 504)** |
+| LIGO open data | **blocked** |
+
+So the galaxy power spectra, gravitational-wave strain, and CMB spectra that
+would let EXP-001 run on real observations are **unavailable**. Per §60 of the
+specification these are marked unavailable rather than substituted with
+invented numbers. `docs/SCIENCE_VALIDATION.md` records that no external
+validation has been performed for the same reason.
 
 ## Intended primary sources
 

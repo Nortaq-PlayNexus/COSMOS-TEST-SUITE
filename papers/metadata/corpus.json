@@ -1,0 +1,2374 @@
+{
+  "generated_at": "2026-10-07T03:18:06.032261+00:00",
+  "n_papers": 86,
+  "source": "arXiv API (see each record's retrieved_at and query)",
+  "papers": [
+    {
+      "arxiv_id": "2211.02603v4",
+      "title": "Cosmic topology. Part I. Limits on orientable Euclidean manifolds from circle searches",
+      "authors": [
+        "Pip Petersen",
+        "Yashar Akrami",
+        "Craig J. Copi",
+        "Andrew H. Jaffe",
+        "Arthur Kosowsky",
+        "Deyan P. Mihaylov",
+        "Glenn D. Starkman",
+        "Andrius Tamosiunas",
+        "Johannes R. Eskilt",
+        "\u00d6zen\u00e7 G\u00fcng\u00f6r",
+        "Samanta Saha",
+        "Quinn Taylor"
+      ],
+      "abstract": "The Einstein field equations of general relativity constrain the local curvature at every point in spacetime, but say nothing about the global topology of the Universe. Cosmic microwave background anisotropies have proven to be the most powerful probe of non-trivial topology since, within $\u039b$CDM, these anisotropies have well-characterized statistical properties, the signal is principally from a thin spherical shell centered on the observer (the last scattering surface), and space-based observations nearly cover the full sky. The most generic signature of cosmic topology in the microwave background is pairs of circles with matching temperature and polarization patterns. No such circle pairs have been seen above noise in the WMAP or Planck temperature data, implying that the shortest non-contractible loop around the Universe through our location is longer than 98.5% of the comoving diameter of the last scattering surface. We translate this generic constraint into limits on the parameters that characterize manifolds with each of the nine possible non-trivial orientable Euclidean topologies, and provide a code which computes these constraints. In all but the simplest cases, the shortest non-contractible loop in the space can avoid us, and be shorter than the diameter of the last scattering surface by a factor ranging from 2 to at least 6. This result implies that a broader range of manifolds is observationally allowed than widely appreciated. Probing these manifolds will require more subtle statistical signatures than matched circles, such as off-diagonal correlations of harmonic coefficients.",
+      "published": "2022-11-04",
+      "updated": "2024-11-27T16:07:47Z",
+      "doi": "10.1088/1475-7516/2023/01/030",
+      "journal_ref": "JCAP 01 (2023) 030",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-ph",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2211.02603v4",
+      "abs_url": "http://arxiv.org/abs/2211.02603v4",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:06.249149+00:00",
+      "query": "all:\"cosmic topology\" AND all:\"matched circles\"",
+      "short_id": "2211.02603",
+      "citation_string": "Pip Petersen et al. (12 authors) (2022). Cosmic topology. Part I. Limits on orientable Euclidean manifolds from circle searches. doi:10.1088/1475-7516/2023/01/030"
+    },
+    {
+      "arxiv_id": "1002.0834v3",
+      "title": "Circles-in-the-sky searches and observable cosmic topology in a flat Universe",
+      "authors": [
+        "B. Mota",
+        "M. J. Reboucas",
+        "R. Tavakol"
+      ],
+      "abstract": "[Abridged] In a Universe with a detectable nontrivial spatial topology the last scattering surface contains pairs of matching circles with the same distribution of temperature fluctuations - the so-called circles-in-the-sky. Searches for nearly antipodal circles in maps of cosmic microwave background have so far been unsuccessful. This negative outcome along with recent theoretical results concerning the detectability of nearly flat compact topologies is sufficient to exclude a detectable nontrivial topology for most observers in very nearly flat positively and negatively curved Universes ($0<|\u03a9_{tot}-1| \\lesssim 10^{-5}$). Here we investigate the consequences of these searches for observable nontrivial topologies if the Universe turns out to be exactly flat ($\u03a9_{tot}=1$). We demonstrate that in this case the conclusions deduced from such searches can be radically different. We show that for all multiply-connected orientable flat manifolds it is possible to directly study the action of the holonomies in order to obtain a general upper bound on the angle that characterizes the deviation from antipodicity of pairs of matching circles associated with the shortest closed geodesic. This bound is valid for all observers and all possible values of the compactification length parameters. We also show that in a flat Universe there are observers for whom the circles-in-the-sky searches already undertaken are insufficient to exclude the possibility of a detectable nontrivial spatial topology. It is remarkable how such small variations in the spatial curvature of the Universe, which are effectively indistinguishable geometrically, can have such a drastic effect on the detectability of cosmic topology.",
+      "published": "2010-02-03",
+      "updated": "2010-05-19T03:33:20Z",
+      "doi": "10.1103/PhysRevD.81.103516",
+      "journal_ref": "Phys.Rev.D81:103516,2010",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1002.0834v3",
+      "abs_url": "http://arxiv.org/abs/1002.0834v3",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:06.249206+00:00",
+      "query": "all:\"cosmic topology\" AND all:\"matched circles\"",
+      "short_id": "1002.0834",
+      "citation_string": "B. Mota et al. (3 authors) (2010). Circles-in-the-sky searches and observable cosmic topology in a flat Universe. doi:10.1103/PhysRevD.81.103516"
+    },
+    {
+      "arxiv_id": "0808.1572v2",
+      "title": "Circles-in-the-sky searches and observable cosmic topology in the inflationary limit",
+      "authors": [
+        "B. Mota",
+        "M. J. Reboucas",
+        "R. Tavakol"
+      ],
+      "abstract": "While the topology of the Universe is at present not specified by any known fundamental theory, it may in principle be determined through observations. In particular, a non-trivial topology will generate pairs of matching circles of temperature fluctuations in maps of the cosmic microwave background, the so-called circles-in-the-sky. A general search for such pairs of circles would be extremely costly and would therefore need to be confined to restricted parameter ranges. To draw quantitative conclusions from the negative results of such partial searches for the existence of circles we need a concrete theoretical framework. Here we provide such a framework by obtaining constraints on the angular parameters of these circles as a function of cosmological density parameters and the observer's position. As an example of the application of our results, we consider the recent search restricted to pairs of nearly back-to-back circles with negative results. We show that assuming the Universe to be very nearly flat, with its total matter-energy density satisfying the bounds $ 0 <|\u03a9_0 - 1| \\lesssim 10^{-5}$, compatible with the predictions of typical inflationary models, this search, if confirmed, could in principle be sufficient to exclude a detectable non-trivial cosmic topology for most observers. We further relate explicitly the fraction of observers for which this result holds to the cosmological density parameters.",
+      "published": "2008-08-11",
+      "updated": "2008-09-29T20:04:21Z",
+      "doi": "10.1103/PhysRevD.78.083521",
+      "journal_ref": "Phys.Rev.D78:083521,2008",
+      "categories": [
+        "astro-ph",
+        "gr-qc",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/0808.1572v2",
+      "abs_url": "http://arxiv.org/abs/0808.1572v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:06.249244+00:00",
+      "query": "all:\"cosmic topology\" AND all:\"matched circles\"",
+      "short_id": "0808.1572",
+      "citation_string": "B. Mota et al. (3 authors) (2008). Circles-in-the-sky searches and observable cosmic topology in the inflationary limit. doi:10.1103/PhysRevD.78.083521"
+    },
+    {
+      "arxiv_id": "1604.02179v2",
+      "title": "Limits of the circles-in-the-sky searches in the determination of cosmic topology of nearly flat universes",
+      "authors": [
+        "G. I. Gomero",
+        "B. Mota",
+        "M. J. Reboucas"
+      ],
+      "abstract": "[Abridged] An observable signature of a detectable nontrivial spatial topology of the Universe is the circles-in-the-sky in the CMB sky. In the most general search, pairs of circles with deviation from antipodality $0^\\circ \\leq \u03b8\\leq 169^\\circ$ and radii $10^\\circ \\leq \u03bb\\leq 90^\\circ$ were investigated, but no matching circles were found. Assuming this negative result, we examine the question as to whether there are nearly flat universes with compact topology that would give rise to circles whose observable parameters $\u03bb$ and $\u03b8$ fall o outside the ranges covered by this search. We derive the expressions for the deviation from antipodality and for the radius of the circles associated to a pair elements ($\u03b3\\,$,$\u03b3^{-1}$) of the holonomy group $\u0393$ which define the spatial section of any positively curved universe with a nontrivial topology. We show that there is a critical position that maximizes the deviation from antipodality, and prove that no matter how nearly flat the Universe is, it can always have a nontrivial spatial topology that gives rise to circles whose deviation from antipodality $\u03b8$ is larger than $169^\\circ$, and whose radii of the circles $\u03bb$ are smaller than $10^\\circ$ for some observers. This makes apparent that slightly positively curved universes with cosmological parameters within Planck bounds can be endowed with a nontrivial spatial topology with values of the parameters $\u03bb$ and $\u03b8$ outside the ranges covered by the searches for circles carried out so far. Thus, these circles searches so far undertaken are not sufficient to exclude the possibility of a universe with a detectable nontrivial cosmic topology. We present concrete examples of such nearly flat universes, and discuss the implications of our results in view of unavoidable practical limits of the circles-in-the-sky method.",
+      "published": "2016-04-07",
+      "updated": "2016-08-04T00:41:47Z",
+      "doi": "10.1103/PhysRevD.94.043501",
+      "journal_ref": "Phys. Rev. D 94, 043501 (2016)",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1604.02179v2",
+      "abs_url": "http://arxiv.org/abs/1604.02179v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:06.249286+00:00",
+      "query": "all:\"cosmic topology\" AND all:\"matched circles\"",
+      "short_id": "1604.02179",
+      "citation_string": "G. I. Gomero et al. (3 authors) (2016). Limits of the circles-in-the-sky searches in the determination of cosmic topology of nearly flat universes. doi:10.1103/PhysRevD.94.043501"
+    },
+    {
+      "arxiv_id": "1303.4226v2",
+      "title": "A search for cosmic topology in the final WMAP data",
+      "authors": [
+        "Ralf Aurich",
+        "Sven Lustig"
+      ],
+      "abstract": "A search for matched circle pairs of similar temperature fluctuations in the final WMAP 9yr data is carried out. Such a signature is expected if the space of the Universe is multiply connected. We investigate the relation between the pixel resolution of cosmic microwave background (CMB) maps and a Gaussian smoothing in order to lower the probability for missing matched circle pairs. CMB maps having the 3-torus topology are generated with the characteristics of the WMAP satellite in order to determine how large the smoothing should be chosen in CMB maps disturbed by detector noise. The V- and W-band data are analysed with respect to matched circle pairs and a tentatively signal is found for a circle pair, which lies, however, close to the plane of the Galaxy. It is, however, inconclusive whether this signal is generated by chance, is due to residual foregrounds contained in the V- and W-band maps, or is due to a genuine topology.",
+      "published": "2013-03-18",
+      "updated": "2013-07-05T08:33:21Z",
+      "doi": "10.1093/mnras/stt924",
+      "journal_ref": "Mon.Not.Roy.Astron.Soc. 433:2517-2528, 2013",
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1303.4226v2",
+      "abs_url": "http://arxiv.org/abs/1303.4226v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:06.249310+00:00",
+      "query": "all:\"cosmic topology\" AND all:\"matched circles\"",
+      "short_id": "1303.4226",
+      "citation_string": "Ralf Aurich et al. (2 authors) (2013). A search for cosmic topology in the final WMAP data. doi:10.1093/mnras/stt924"
+    },
+    {
+      "arxiv_id": "1403.2190v2",
+      "title": "The Hantzsche-Wendt Manifold in Cosmic Topology",
+      "authors": [
+        "Ralf Aurich",
+        "Sven Lustig"
+      ],
+      "abstract": "The Hantzsche-Wendt space is one of the 17 multiply connected spaces of the three-dimensional Euclidean space E^3. It is a compact and orientable manifold which can serve as a model for a spatial finite universe. Since it possesses much fewer matched back-to-back circle pairs on the cosmic microwave background (CMB) sky than the other compact flat spaces, it can escape the detection by a search for matched circle pairs. The suppression of temperature correlations C(theta) on large angular scales on the CMB sky is studied. It is shown that the large-scale correlations are of the same order as for the 3-torus topology but express a much larger variability. The Hantzsche-Wendt manifold provides a topological possibility with reduced large-angle correlations that can hide from searches for matched back-to-back circle pairs.",
+      "published": "2014-03-10",
+      "updated": "2014-07-23T12:22:55Z",
+      "doi": "10.1088/0264-9381/31/16/165009",
+      "journal_ref": "Class. Quantum Grav. 31 (2014) 165009",
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1403.2190v2",
+      "abs_url": "http://arxiv.org/abs/1403.2190v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:06.249330+00:00",
+      "query": "all:\"cosmic topology\" AND all:\"matched circles\"",
+      "short_id": "1403.2190",
+      "citation_string": "Ralf Aurich et al. (2 authors) (2014). The Hantzsche-Wendt Manifold in Cosmic Topology. doi:10.1088/0264-9381/31/16/165009"
+    },
+    {
+      "arxiv_id": "9509078v1",
+      "title": "BATSE Observations of the Large-Scale Isotropy of Gamma-Ray Bursts",
+      "authors": [
+        "Michael S. Briggs",
+        "William S. Paciesas",
+        "Geoffrey N. Pendleton",
+        "Charles A. Meegan",
+        "Gerald J. Fishman",
+        "John M. Horack",
+        "Martin Brock",
+        "Chryssa Kouveliotou",
+        "Dieter H. Hartmann",
+        "Jon Hakkila"
+      ],
+      "abstract": "We use dipole and quadrupole statistics to test the large-scale isotropy of the first 1005 gamma-ray bursts observed by the Burst and Transient Source Experiment (BATSE). In addition to the entire sample of 1005 gamma-ray bursts, many subsets are examined. We use a variety of dipole and quadrupole statistics to search for Galactic and other predicted anisotropies and for anisotropies in a coordinate-system independent manner. We find the gamma-ray burst locations to be consistent with isotropy, e.g., for the total sample the observed Galactic dipole moment <cos theta> differs from the value predicted for isotropy by 0.9 sigma and the observed Galactic quadrupole moment <sin^2 b - 1/3> by 0.3 sigma. We estimate for various models the anisotropies that could have been detected. If one-half of the locations were within 86 degrees of the Galactic center, or within 28 degrees of the Galactic plane, the ensuing dipole or quadrupole moment would have typically been detected at the 99% confidence level. We compare the observations with the dipole and quadrupole moments of various Galactic models. Several Galactic gamma-ray bursts models have moments within 2 sigma of the observations; most of the Galactic models proposed to date are no longer in acceptable agreement with the data. Although a spherical Dark Matter Halo distribution could be consistent with the data, the required core radius is larger than the core radius of the Dark Matter Halo used to explain the Galaxy's rotation curve. Gamma-ray bursts are much more isotropic than any observed Galactic population, strongly favoring but not requiring an origin at cosmological distances.",
+      "published": "1995-09-15",
+      "updated": "1995-09-15T04:33:22Z",
+      "doi": "10.1086/176867",
+      "journal_ref": null,
+      "categories": [
+        "astro-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/9509078v1",
+      "abs_url": "http://arxiv.org/abs/astro-ph/9509078v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:09.703277+00:00",
+      "query": "all:\"large scale isotropy\" AND all:anisotropy",
+      "short_id": "9509078",
+      "citation_string": "Michael S. Briggs et al. (10 authors) (1995). BATSE Observations of the Large-Scale Isotropy of Gamma-Ray Bursts. doi:10.1086/176867"
+    },
+    {
+      "arxiv_id": "2307.08918v2",
+      "title": "Measuring Scale-dependent Shape Anisotropy by Coarse-Graining: Application to Inhomogeneous Rayleigh-Taylor Turbulence",
+      "authors": [
+        "Dongxiao Zhao",
+        "Hussein Aluie"
+      ],
+      "abstract": "We generalize the `filtering spectrum' [1] to probe scales along different directions by spatial coarse-graining. This multi-dimensional filtering spectrum quantifies the spectral content of flows that are not necessarily homogeneous. From multi-dimensional spectral information, we propose a simple metric for shape anisotropy at various scales. The method is applied to simulations of 2D and 3D Rayleigh-Taylor (RT) turbulence, which is inhomogeneous and anisotropic. We show that 3D RT has clear shape anisotropy at large scales with approximately $4:3$ vertical to horizontal aspect ratio, but tends toward isotropy at small scales as expected [2,3,4]. In sharp contrast, we find that RT in 2D simulations, which are still the main modeling framework for many applications, is isotropic at large scales and its shape anisotropy increases at smaller scales where structures tend to be horizontally elongated. While this may be surprising, it is consistent with recent results in [5]; large-scale isotropy in 2D RT is due to the generation of a large-scale overturning circulation via an upscale cascade, while small scale anisotropy is due to the stable stratification resultant from such overturning and the inefficient mixing in 2D.",
+      "published": "2023-07-18",
+      "updated": "2023-10-19T01:01:45Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "physics.flu-dyn"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2307.08918v2",
+      "abs_url": "http://arxiv.org/abs/2307.08918v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:09.703310+00:00",
+      "query": "all:\"large scale isotropy\" AND all:anisotropy",
+      "short_id": "2307.08918",
+      "citation_string": "Dongxiao Zhao et al. (2 authors) (2023). Measuring Scale-dependent Shape Anisotropy by Coarse-Graining: Application to Inhomogeneous Rayleigh-Taylor Turbulence. arXiv:2307.08918"
+    },
+    {
+      "arxiv_id": "2507.02835v1",
+      "title": "Revealing a transitional epoch of large-scale cosmic anisotropy in the quasar distribution",
+      "authors": [
+        "Amit Mondal",
+        "Biswajit Pandey",
+        "Krishna Ghosh"
+      ],
+      "abstract": "The Cosmological Principle posits that the Universe is isotropic on the largest scales. While widely supported, this foundational assumption remains testable. We analyse the angular distribution of over one million quasars from the Gaia-unWISE catalogue using Renyi entropy, a multiscale statistical measure sensitive to higher-order clustering. Dividing the sample into three redshift bins, we find that both the low- and high-redshift distributions are statistically consistent with isotropy. However, at intermediate redshift ($1 \\leq z < 2.2$), we detect a statistically significant and scale-dependent anisotropy that persists under stringent masking, suggesting a physical origin. We interpret this as evidence for a transitional epoch in cosmic history, during which large-scale structures such as superclusters became prominent before their growth was gradually damped by the onset of accelerated expansion. These findings position Renyi entropy as a powerful probe of cosmic evolution and highlight the potential thermodynamic links between structure formation, entropy dissipation, and the emergence of large-scale isotropy.",
+      "published": "2025-07-03",
+      "updated": "2025-07-03T17:45:18Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2507.02835v1",
+      "abs_url": "http://arxiv.org/abs/2507.02835v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:09.703334+00:00",
+      "query": "all:\"large scale isotropy\" AND all:anisotropy",
+      "short_id": "2507.02835",
+      "citation_string": "Amit Mondal et al. (3 authors) (2025). Revealing a transitional epoch of large-scale cosmic anisotropy in the quasar distribution. arXiv:2507.02835"
+    },
+    {
+      "arxiv_id": "2606.21182v1",
+      "title": "Probing dipole and quadrupole anisotropy in Gamma-ray bursts from Swift dataset",
+      "authors": [
+        "Vedant Mokal",
+        "Shantanu Desai"
+      ],
+      "abstract": "Testing the validity of the cosmological principle's assumption of large-scale isotropy remains crucial for modern cosmology. We investigate the angular distributions of gamma-ray bursts using the GRB catalog from Neil Gehrels Swift Observatory (Swift) for an independent probe of isotropy. Using the HEALPix spherical harmonic decomposition, we estimate the dipole and quadrupole amplitudes and compare them against the null hypothesis obtained from 500 isotropic Monte Carlo realizations. Our results show 2.9$\u03c3$ dipole and 7.2$\u03c3$ quadrupole amplitude when applied to the raw data. To account for observational biases, we then create an exposure map using the pointing history, roll angle, and the partial coding fraction of the Swift Telescope. Reevaluating the null hypothesis using this map reduces the significance of these anisotropies to less than $1\u03c3$. Therefore, our findings confirm statistical isotropy of the GRB sky using the Swift data, consistent with previous studies. We have also made the Swift exposure map publicly available.",
+      "published": "2026-06-19",
+      "updated": "2026-06-19T07:49:04Z",
+      "doi": "10.3390/universe12060185",
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.HE",
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2606.21182v1",
+      "abs_url": "http://arxiv.org/abs/2606.21182v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:09.703362+00:00",
+      "query": "all:\"large scale isotropy\" AND all:anisotropy",
+      "short_id": "2606.21182",
+      "citation_string": "Vedant Mokal et al. (2 authors) (2026). Probing dipole and quadrupole anisotropy in Gamma-ray bursts from Swift dataset. doi:10.3390/universe12060185"
+    },
+    {
+      "arxiv_id": "1011.3711v2",
+      "title": "A weakly random Universe?",
+      "authors": [
+        "V. G. Gurzadyan",
+        "A. E. Allahverdyan",
+        "T. Ghahramanyan",
+        "A. L. Kashin",
+        "H. G. Khachatryan",
+        "A. A. Kocharyan",
+        "S. Mirzoyan",
+        "E. Poghosian",
+        "D. Vetrugno",
+        "G. Yegorian"
+      ],
+      "abstract": "The cosmic microwave background (CMB) radiation is characterized by well-established scales, the 2.7 K temperature of the Planckian spectrum and the $10^{-5}$ amplitude of the temperature anisotropy. These features were instrumental in indicating the hot and equilibrium phases of the early history of the Universe and its large scale isotropy, respectively. We now reveal one more intrinsic scale in CMB properties. We introduce a method developed originally by Kolmogorov, that quantifies a degree of randomness (chaos) in a set of numbers, such as measurements of the CMB temperature in some region. Considering CMB as a composition of random and regular signals, we solve the inverse problem of recovering of their mutual fractions from the temperature sky maps. Deriving the empirical Kolmogorov's function in the Wilkinson Microwave Anisotropy Probe's maps, we obtain the fraction of the random signal to be about 20 per cent, i.e. the cosmological sky is a weakly random one. The paper is dedicated to the memory of Vladimir Arnold (1937-2010).",
+      "published": "2010-11-16",
+      "updated": "2010-11-23T05:56:25Z",
+      "doi": "10.1051/0004-6361/201016012",
+      "journal_ref": "A & A, 525 (2011) L7",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1011.3711v2",
+      "abs_url": "http://arxiv.org/abs/1011.3711v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:09.703388+00:00",
+      "query": "all:\"large scale isotropy\" AND all:anisotropy",
+      "short_id": "1011.3711",
+      "citation_string": "V. G. Gurzadyan et al. (10 authors) (2010). A weakly random Universe?. doi:10.1051/0004-6361/201016012"
+    },
+    {
+      "arxiv_id": "1003.5548v2",
+      "title": "Cosmic microwave background constraints on cosmological models with large-scale isotropy breaking",
+      "authors": [
+        "Haoxuan Zheng",
+        "Emory F. Bunn"
+      ],
+      "abstract": "Several anomalies appear to be present in the large-angle cosmic microwave background (CMB) anisotropy maps of WMAP, including the alignment of large-scale multipoles. Models in which isotropy is spontaneously broken (e.g., by a scalar field) have been proposed as explanations for these anomalies, as have models in which a preferred direction is imposed during inflation. We examine models inspired by these, in which isotropy is broken by a multiplicative factor with dipole and/or quadrupole terms. We evaluate the evidence provided by the multipole alignment using a Bayesian framework, finding that the evidence in favor of the model is generally weak. We also compute approximate changes in estimated cosmological parameters in the broken-isotropy models. Only the overall normalization of the power spectrum is modified significantly.",
+      "published": "2010-03-29",
+      "updated": "2010-09-02T21:36:45Z",
+      "doi": "10.1103/PhysRevD.82.063533",
+      "journal_ref": "Phys.Rev.D82:063533,2010",
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1003.5548v2",
+      "abs_url": "http://arxiv.org/abs/1003.5548v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:09.703410+00:00",
+      "query": "all:\"large scale isotropy\" AND all:anisotropy",
+      "short_id": "1003.5548",
+      "citation_string": "Haoxuan Zheng et al. (2 authors) (2010). Cosmic microwave background constraints on cosmological models with large-scale isotropy breaking. doi:10.1103/PhysRevD.82.063533"
+    },
+    {
+      "arxiv_id": "1505.02972v2",
+      "title": "Dark energy and non-linear power spectrum",
+      "authors": [
+        "Sang Gyu Biern",
+        "Jinn-Ouk Gong"
+      ],
+      "abstract": "We investigate the effects of homogeneous general dark energy on the non-linear matter perturbation in fully general relativistic context. The equation for the density contrast contains even at linear order new contributions which are non-zero for general dark energy. Taking into account the next-leading-order corrections, we derive the total power spectrum in real and redshift spaces. We find that the observable galaxy power spectrum deviates from the LambdaCDM spectrum, which is nearly identical to that in the Einstein-de Sitter universe, and the relative difference is about 10% on a scale of the baryon acoustic oscillations.",
+      "published": "2015-05-12",
+      "updated": "2015-06-29T03:03:09Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-ph",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1505.02972v2",
+      "abs_url": "http://arxiv.org/abs/1505.02972v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:12.146660+00:00",
+      "query": "all:homogeneity AND all:\"power spectrum\" AND all:cosmology",
+      "short_id": "1505.02972",
+      "citation_string": "Sang Gyu Biern et al. (2 authors) (2015). Dark energy and non-linear power spectrum. arXiv:1505.02972"
+    },
+    {
+      "arxiv_id": "1704.06184v3",
+      "title": "Anisotropy of the astrophysical gravitational wave background: analytic expression of the angular power spectrum and correlation with cosmological observations",
+      "authors": [
+        "Giulia Cusin",
+        "Cyril Pitrou",
+        "Jean-Philippe Uzan"
+      ],
+      "abstract": "Unresolved and resolved sources of gravitational waves are at the origin of a stochastic gravitational wave background. While the computation of its mean density as a function of frequency in a homogeneous and isotropic universe is standard lore, the computation of its anisotropies requires to understand the coarse graining from local systems, to galactic scales and then to cosmology. An expression of the gravitational wave energy density valid in any general spacetime is derived. It is then specialized to a perturbed Friedmann-Lema\u00eetre spacetime in order to determine the angular power spectrum of this stochastic background as well as its correlation with other cosmological probes, such as the galaxy number counts and weak lensing. Our result for the angular power spectrum also provides an expression for the variance of the gravitational wave background.",
+      "published": "2017-04-20",
+      "updated": "2018-07-18T09:54:07Z",
+      "doi": "10.1103/PhysRevD.96.103019",
+      "journal_ref": "Phys. Rev. D 96, 103019 (2017)",
+      "categories": [
+        "astro-ph.CO",
+        "astro-ph.GA",
+        "gr-qc",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1704.06184v3",
+      "abs_url": "http://arxiv.org/abs/1704.06184v3",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:12.146697+00:00",
+      "query": "all:homogeneity AND all:\"power spectrum\" AND all:cosmology",
+      "short_id": "1704.06184",
+      "citation_string": "Giulia Cusin et al. (3 authors) (2017). Anisotropy of the astrophysical gravitational wave background: analytic expression of the angular power spectrum and correlation with cosmological observations. doi:10.1103/PhysRevD.96.103019"
+    },
+    {
+      "arxiv_id": "1409.3831v1",
+      "title": "Nowhere to hide: closing in on cosmological homogeneity",
+      "authors": [
+        "James. P. Zibin",
+        "Adam Moss"
+      ],
+      "abstract": "Homogeneity is a crucial, but poorly tested, assumption in cosmology. We introduce a new approach which allows us to place limits on the presence of localized structures within essentially our entire observable volume, using cosmic microwave background secondary anisotropies. We find that structures cannot exceed roughly 20 times their expected amplitude over most of our observable volume. Similarly, we place tight constraints on statistical inhomogeneity within our volume, performing the first power spectrum reconstruction using secondary anisotropies alone. We find that the standard model passes this important new consistency test. Our approach probes homogeneity over vastly larger volumes and scales than previous studies based on surveys.",
+      "published": "2014-09-12",
+      "updated": "2014-09-12T19:45:03Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1409.3831v1",
+      "abs_url": "http://arxiv.org/abs/1409.3831v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:12.146728+00:00",
+      "query": "all:homogeneity AND all:\"power spectrum\" AND all:cosmology",
+      "short_id": "1409.3831",
+      "citation_string": "James. P. Zibin et al. (2 authors) (2014). Nowhere to hide: closing in on cosmological homogeneity. arXiv:1409.3831"
+    },
+    {
+      "arxiv_id": "1603.01206v2",
+      "title": "Violation of statistical isotropy and homogeneity in the 21-cm power spectrum",
+      "authors": [
+        "Maresuke Shiraishi",
+        "Julian B. Mu\u00f1oz",
+        "Marc Kamionkowski",
+        "Alvise Raccanelli"
+      ],
+      "abstract": "Most inflationary models predict primordial perturbations to be statistically isotropic and homogeneous. Cosmic microwave background (CMB) observations, however, indicate a possible departure from statistical isotropy in the form of a dipolar power modulation at large angular scales. Alternative models of inflation, beyond the simplest single-field slow-roll models, can generate a small power asymmetry, consistent with these observations. Observations of clustering of quasars show, however, agreement with statistical isotropy at much smaller angular scales. Here, we propose to use off-diagonal components of the angular power spectrum of the 21-cm fluctuations during the dark ages to test this power asymmetry. We forecast results for the planned SKA radio array, a future radio array, and the cosmic-variance-limited case as a theoretical proof of principle. Our results show that the 21-cm line power spectrum will enable access to information at very small scales and at different redshift slices, thus improving upon the current CMB constraints by $\\sim 2$ orders of magnitude for a dipolar asymmetry and by $\\sim 1-3$ orders of magnitude for a quadrupolar asymmetry case.",
+      "published": "2016-03-03",
+      "updated": "2016-05-10T16:35:04Z",
+      "doi": "10.1103/PhysRevD.93.103506",
+      "journal_ref": "Phys. Rev. D 93, 103506 (2016)",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1603.01206v2",
+      "abs_url": "http://arxiv.org/abs/1603.01206v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:12.146756+00:00",
+      "query": "all:homogeneity AND all:\"power spectrum\" AND all:cosmology",
+      "short_id": "1603.01206",
+      "citation_string": "Maresuke Shiraishi et al. (4 authors) (2016). Violation of statistical isotropy and homogeneity in the 21-cm power spectrum. doi:10.1103/PhysRevD.93.103506"
+    },
+    {
+      "arxiv_id": "2112.04134v1",
+      "title": "CMASS galaxy sample and the ontological status of the cosmological principle",
+      "authors": [
+        "Yigon Kim",
+        "Chan-Gyung Park",
+        "Hyerim Noh",
+        "Jai-chan Hwang"
+      ],
+      "abstract": "The cosmological principle (CP), assuming spatially homogeneous and isotropic background geometry in the cosmological scale, is a fundamental assumption in modern cosmology. Recent observations of the galaxy redshift survey provide relevant data to confront the principle with observation. We present a homogeneity test for the matter distribution using the BOSS DR12 CMASS galaxy sample and clarify the ontological status of the CP. As a homogeneity criterion, we compare the observed data with similarly constructed random distributions using the number count in the truncated cones method. Comparisons are also made with three theoretical results using the same method: (i) the dark matter halo mock catalogs from the N-body simulation, (ii) the log-normal distributions derived from the theoretical matter power spectrum, and (iii) direct estimation from the theoretical power spectrum. We show that the observed distribution is statistically impossible as a random distribution up to 300 Mpc/h in radius, which is around the largest statistically available scale. However, comparisons with the three theoretical results show that the observed distribution is consistent with these theoretically derived results based on the CP. We show that the observed galaxy distribution (light) and the simulated dark matter distribution (matter) are quite inhomogeneous even on a large scale. Here, we clarify that there is no inconsistency surrounding the ontological status of the CP in cosmology. In practice, the CP is applied to the metric and the metric fluctuation is extremely small in all cosmological scales. This allows the CP to be valid as the averaged background in metric. The matter fluctuation, however, is decoupled from the small nature of metric fluctuation in the subhorizon scale. What is directly related to the matter in Einstein's gravity is the curvature, a quadratic derivative of the metric.",
+      "published": "2021-12-08",
+      "updated": "2021-12-08T06:07:40Z",
+      "doi": "10.1051/0004-6361/202141909",
+      "journal_ref": "A&A 660, A139 (2022)",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2112.04134v1",
+      "abs_url": "http://arxiv.org/abs/2112.04134v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:12.146789+00:00",
+      "query": "all:homogeneity AND all:\"power spectrum\" AND all:cosmology",
+      "short_id": "2112.04134",
+      "citation_string": "Yigon Kim et al. (4 authors) (2021). CMASS galaxy sample and the ontological status of the cosmological principle. doi:10.1051/0004-6361/202141909"
+    },
+    {
+      "arxiv_id": "9504084v2",
+      "title": "The power spectrum in a strongly inhomogeneous Universe",
+      "authors": [
+        "Francesco Sylos Labini",
+        "Luca Amendola"
+      ],
+      "abstract": "A crucial issue in cosmology is the determination of the fluctuation power spectrum.The standard picture of the matter clustering, the Cold Dark Matter model (and its variant), assumes that,on scales smaller than a certain ``flattening scale'' $\u03bb_f$, the power spectrum increases with the scale, while on much larger scales it decreases so to match the tiny fluctuations observed in the microwave background. The standard picture also assumes that, once a statistically homogeneous sample is reached, the power spectrum amplitude is fixed, and any major variation should be attributed to luminosity segregation. However, the determination of $\u03bb_f$ and of the absolute amplitude, if any, is still matter of debate. In particular, there is no consensus on whether the turnaround has been detected or not, and on the actual importance of the luminosity segregation effect. We show that, due to the finiteness of the sample the standard analysis of self-similar (fractal) distributions yields a turnaround for scales close to the survey scale, and a systematic amplitude shift with the survey scale. We point out that both features, bending and scaling, are in agreement with recent determination of the power spectrum, in particular with the CfA2 spectrum. We remark that the standard power spectrum is not a well defined statistical tool to characterize the galaxy distribution when a homogeneity scale has not been reached. In order to perform an analysis that does not imply any a priori assumption one should study the PS of the density, rather than the PS of the density contrast.",
+      "published": "1995-04-24",
+      "updated": "1995-06-29T17:15:03Z",
+      "doi": "10.1086/310226",
+      "journal_ref": "Astrophys.J. 468 (1996) L1",
+      "categories": [
+        "astro-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/9504084v2",
+      "abs_url": "http://arxiv.org/abs/astro-ph/9504084v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:12.146826+00:00",
+      "query": "all:homogeneity AND all:\"power spectrum\" AND all:cosmology",
+      "short_id": "9504084",
+      "citation_string": "Francesco Sylos Labini et al. (2 authors) (1995). The power spectrum in a strongly inhomogeneous Universe. doi:10.1086/310226"
+    },
+    {
+      "arxiv_id": "2606.31503v1",
+      "title": "The Large-Scale Structure of the Universe through the SKA lenses",
+      "authors": [
+        "Virginia Cuciti",
+        "Surajit Paul",
+        "Viral Parekh",
+        "Franco Vazza",
+        "M. Br\u00fcggen",
+        "Prateek Gupta",
+        "Sameer Salunkhe",
+        "S. Sankhyayan",
+        "A. Bonafede",
+        "T. Akahori",
+        "G. Brunetti",
+        "R. Cassano",
+        "M. Hoeft",
+        "R. Kale"
+      ],
+      "abstract": "The large-scale distribution of galaxies in the Universe forms an intricate, interconnected network known as the cosmic web. Cosmological simulations within the standard Lambda-CDM framework successfully reproduce this filamentary structure and predict that the nodes and filaments are filled with tenuous plasma at temperatures ranging from 10^5-10^8 K. The hottest and luminous plasma in the nodes corresponds to the intra-cluster medium, while the cooler, more tenuous, gas extends along filaments and cluster outskirts. Galaxies and galaxy groups form and flow along these filaments before accreting onto galaxy clusters (the nodes), outlining the dynamical evolution of large-scale structures. During this process, an enormous amount of energy is dissipated through complex plasma processes that can be traced by radio emitting electrons. Despite strong theoretical support for this picture, observational validation remains limited. While massive clusters have been widely detected across various wavelengths, cluster outskirts and the diffuse intergalactic medium within filaments has remained elusive due to their extremely faint emission. The advent of highly sensitive radio facilities such as LOFAR, uGMRT, and MeerKAT has recently enabled a few successful detections of emission from comparatively denser regions of the cosmic-web. These include radio megahalos, permeating the entire cluster volume, as well as bridges of radio emission connecting cluster pairs. In this chapter, we summarize current theoretical insights into the cosmic web, discuss observational strategies and recent discoveries, and highlight how the forthcoming Square Kilometre Array (SKA) is expected to transform our understanding of the cosmic web and the distribution of baryons in the Universe.",
+      "published": "2026-06-30",
+      "updated": "2026-06-30T11:22:11Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2606.31503v1",
+      "abs_url": "http://arxiv.org/abs/2606.31503v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:15.230669+00:00",
+      "query": "all:\"cosmic web\" AND all:\"Lambda CDM\"",
+      "short_id": "2606.31503",
+      "citation_string": "Virginia Cuciti et al. (14 authors) (2026). The Large-Scale Structure of the Universe through the SKA lenses. arXiv:2606.31503"
+    },
+    {
+      "arxiv_id": "2601.00767v1",
+      "title": "Dynamical Dark Energy Imprints in the Lyman-Alpha Forest",
+      "authors": [
+        "Diego Garza",
+        "Brant Robertson",
+        "Piero Madau",
+        "Nick Gnedin",
+        "Matthew W. Abbruzo",
+        "Evan Schneider",
+        "Reuben D. Budiardja",
+        "James B. White",
+        "Robert Caddy",
+        "Bruno Villasenor"
+      ],
+      "abstract": "The nature of dark energy (DE) remains elusive, even though it constitutes the dominant energy-density component of the Universe and drives the late-time acceleration of cosmic expansion. By combining measurements of the expansion history from baryon acoustic oscillations, supernova surveys, and cosmic microwave background data, the Dark Energy Spectroscopic Instrument (DESI) Collaboration has inferred that the DE equation of state may evolve over time. The profound implications of a time-variable, ``dynamical\" DE (DDE) that departs from a cosmological constant motivate the need for independent observational tests. In this work, we use cosmological hydrodynamical simulations of structure formation to investigate how DDE affects the properties of the Lyman-Alpha ``forest'' of absorption features produced by neutral hydrogen in the cosmic web. We find that DDE models consistent with the DESI constraints induce a spectral tilt in the forest transmitted flux power spectrum, imprinting a scale- and redshift-dependent signature relative to standard Lambda-CDM cosmologies. These models also yield higher intergalactic medium temperatures and reduced Lyman-Alpha opacity compared to Lambda-CDM. We discuss the observational implications of these trends as potential avenues for independent confirmation of DDE.",
+      "published": "2026-01-02",
+      "updated": "2026-01-02T17:56:46Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO",
+        "astro-ph.IM"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2601.00767v1",
+      "abs_url": "http://arxiv.org/abs/2601.00767v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:15.230706+00:00",
+      "query": "all:\"cosmic web\" AND all:\"Lambda CDM\"",
+      "short_id": "2601.00767",
+      "citation_string": "Diego Garza et al. (10 authors) (2026). Dynamical Dark Energy Imprints in the Lyman-Alpha Forest. arXiv:2601.00767"
+    },
+    {
+      "arxiv_id": "0211455v1",
+      "title": "Radio galaxies and the star formation history of the universe",
+      "authors": [
+        "Gopal-Krishna",
+        "Paul J. Wiita",
+        "M. Angela Osterman"
+      ],
+      "abstract": "Multi-wavelength observations made in the last decade suggest that the universe underwent an intense phase of star formation in the past (z > 1). This intensive activity is commonly attributed to a higher galaxy merger rate when the universe was a fraction of its present age. We examine the role of the powerful radio sources whose comoving density is known to be a few orders of magnitude higher at z ~ 2, the `quasar era'. Taking into account recent models for the temporal evolution of the size and luminosity of a powerful double radio source, as well as Lambda-CDM simulations of the cosmic web of baryonic material at different redshifts, we argue that during the quasar era a high fraction of the volume of the web was occupied by the lobes of double radio sources. Widespread compression of protostellar clouds, triggered by the high pressure of the synchrotron plasma of the radio lobes, can thus be expected to have played a significant role in the global star formation history of the universe. These lobes can also yield a rather high level of magnetization of the intergalactic medium at these early cosmic epochs.",
+      "published": "2002-11-20",
+      "updated": "2002-11-20T16:28:56Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0211455v1",
+      "abs_url": "http://arxiv.org/abs/astro-ph/0211455v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:15.230733+00:00",
+      "query": "all:\"cosmic web\" AND all:\"Lambda CDM\"",
+      "short_id": "0211455",
+      "citation_string": "Gopal-Krishna et al. (3 authors) (2002). Radio galaxies and the star formation history of the universe. arXiv:0211455"
+    },
+    {
+      "arxiv_id": "0005181v2",
+      "title": "Cosmological Reionization Around the First Stars: Monte Carlo Radiative Transfer",
+      "authors": [
+        "B. Ciardi",
+        "A. Ferrara",
+        "S. Marri",
+        "G. Raimondo"
+      ],
+      "abstract": "We study the evolution of ionization fronts around the first proto-galaxies by using high resolution numerical cosmological (Lambda+CDM model) simulations and Monte Carlo radiative transfer methods. We present the numerical scheme in detail and show the results of test runs from which we conclude that the scheme is both fast and accurate. As an example of interesting cosmological application, we study the reionization produced by a stellar source of total mass M=2 10^8 M_\\odot turning on at z=12, located at a node of the cosmic web. The study includes a Spectral Energy Distribution of a zero-metallicity stellar population, and two Initial Mass Functions (Salpeter/Larson). The expansion of the I-front is followed as it breaks out from the galaxy and it is channeled by the filaments into the voids, assuming, in a 2D representation, a characteristic butterfly shape. The ionization evolution is very well tracked by our scheme, as realized by the correct treatment of the channeling and shadowing effects due to overdensities. We confirm previous claims that both the shape of the IMF and the ionizing power metallicity dependence are important to correctly determine the reionization of the universe.",
+      "published": "2000-05-08",
+      "updated": "2000-11-21T17:15:28Z",
+      "doi": "10.1046/j.1365-8711.2001.04316.x",
+      "journal_ref": "Mon.Not.Roy.Astron.Soc. 324 (2001) 381",
+      "categories": [
+        "astro-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0005181v2",
+      "abs_url": "http://arxiv.org/abs/astro-ph/0005181v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:15.230758+00:00",
+      "query": "all:\"cosmic web\" AND all:\"Lambda CDM\"",
+      "short_id": "0005181",
+      "citation_string": "B. Ciardi et al. (4 authors) (2000). Cosmological Reionization Around the First Stars: Monte Carlo Radiative Transfer. doi:10.1046/j.1365-8711.2001.04316.x"
+    },
+    {
+      "arxiv_id": "0710.4962v1",
+      "title": "Connecting Galaxy Disk and Extended Halo Gas Kinematics",
+      "authors": [
+        "G. G. Kacprzak",
+        "C. W. Churchill",
+        "C. C. Steidel",
+        "D. Ceverino",
+        "A. A. Klypin",
+        "M. T. Murphy"
+      ],
+      "abstract": "We have explored the galaxy disk/extended halo gas kinematic relationship using rotation curves (Keck/ESI) of ten intermediate redshift galaxies which were selected by MgII halo gas absorption observed in quasar spectra. Previous results of six edge-on galaxies, probed along their major axis, suggest that observed halo gas velocities are consistent with extended disk-like halo rotation at galactocentric distances of 25-72 kpc. Using our new sample, we demonstrate that the gas velocities are by and large not consistent with being directly coupled to the galaxy kinematics. Thus, mechanisms other than co-rotation dynamics (i.e., gas inflow, feedback, galaxy-galaxy interactions, etc.) must be invoked to account for the overall observed kinematics of the halo gas. In order to better understand the dynamic interaction of the galaxy/halo/cosmic web environment, we performed similar mock observations of galaxies and gaseous halos in Lambda-CDM cosmological simulations. We discuss an example case of a z=0.92 galaxy with various orientations probing halo gas at a range of positions. The gas dynamics inferred using simulated quasar absorption lines are consistent with observational data.",
+      "published": "2007-10-25",
+      "updated": "2007-10-25T21:54:21Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/0710.4962v1",
+      "abs_url": "http://arxiv.org/abs/0710.4962v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:15.230782+00:00",
+      "query": "all:\"cosmic web\" AND all:\"Lambda CDM\"",
+      "short_id": "0710.4962",
+      "citation_string": "G. G. Kacprzak et al. (6 authors) (2007). Connecting Galaxy Disk and Extended Halo Gas Kinematics. arXiv:0710.4962"
+    },
+    {
+      "arxiv_id": "1001.3876v1",
+      "title": "Alternatives to dark matter: Modified gravity as an alternative to dark matter",
+      "authors": [
+        "Jacob D. Bekenstein"
+      ],
+      "abstract": "The premier alternative to the dark matter paradigm is modified gravity. Following an introduction to the relevant phenomenology of galaxies, I review the MOND paradigm, an effective summary of the observations which any theory must reproduce. A simple nonlinear modified gravity theory does justice to MOND at the nonrelativistic level, but cannot be elevated to the relativistic level in a unique way. I go in detail into the covariant tensor-vector-theory (TeVeS) which not only recovers MOND but can also deal in detail with gravitational lensing and cosmology. Problems with MOND and TeVeS at the level of clusters of galaxies are given attention. I also summarize the status of TeVeS cosmology.",
+      "published": "2010-01-21",
+      "updated": "2010-01-21T21:01:03Z",
+      "doi": null,
+      "journal_ref": "From 'Particle Dark Matter: Observations, Models and Searches', edited by G. Bertone (Cambridge U. Press, Cambridge 2010) Chap.6, p.95-114",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1001.3876v1",
+      "abs_url": "http://arxiv.org/abs/1001.3876v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:19.116515+00:00",
+      "query": "all:\"dark matter\" AND all:\"modified gravity\" AND all:MOND",
+      "short_id": "1001.3876",
+      "citation_string": "Jacob D. Bekenstein (Jacob D. Bekenstein) (2010). Alternatives to dark matter: Modified gravity as an alternative to dark matter. arXiv:1001.3876"
+    },
+    {
+      "arxiv_id": "1910.04368v3",
+      "title": "MOND vs. dark matter in light of historical parallels",
+      "authors": [
+        "Mordehai Milgrom"
+      ],
+      "abstract": "MOND is a paradigm that contends to account for the mass discrepancies in the Universe without invoking `dark' components, such as `dark matter' and `dark energy'. It does so by supplanting Newtonian dynamics and General Relativity, departing from them at very low accelerations. Having in mind readers who are historians and philosophers of science, as well as physicists and astronomers, I describe in this review the main aspects of MOND -- its statement, its basic tenets, its main predictions, and the tests of these predictions -- contrasting it with the dark-matter paradigm. I then discuss possible wider ramifications of MOND, for example the potential significance of the MOND constant, $a_0$, with possible implications for the roots of MOND in cosmology. Along the way I point to parallels with several historical instances of nascent paradigms. In particular, with the emergence of the Copernican world picture, that of quantum physics, and that of relativity, as regards their initial advent, their development, their schematic structure, and their ramifications. For example, the interplay between theories and their corollary laws, and the centrality of a new constant with converging values as deduced from seemingly unrelated manifestations of these laws. I demonstrate how MOND has already unearthed a number of unsuspected laws of galactic dynamics (to which, indeed, $a_0$ is central) predicting them a priori, and leading to their subsequent verification. I parallel the struggle of the new with the old paradigms, and the appearance of hybrid paradigms at such times of struggle. I also try to identify in the history of those established paradigms a stage that can be likened to that of MOND today.",
+      "published": "2019-10-10",
+      "updated": "2020-03-06T09:05:23Z",
+      "doi": "10.1016/j.shpsb.2020.02.004",
+      "journal_ref": "Studies in History and Philosophy of Modern Physics (2020)",
+      "categories": [
+        "astro-ph.GA",
+        "gr-qc",
+        "hep-ph",
+        "physics.hist-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1910.04368v3",
+      "abs_url": "http://arxiv.org/abs/1910.04368v3",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:19.116556+00:00",
+      "query": "all:\"dark matter\" AND all:\"modified gravity\" AND all:MOND",
+      "short_id": "1910.04368",
+      "citation_string": "Mordehai Milgrom (Mordehai Milgrom) (2019). MOND vs. dark matter in light of historical parallels. doi:10.1016/j.shpsb.2020.02.004"
+    },
+    {
+      "arxiv_id": "0207231v2",
+      "title": "MOND--theoretical aspects",
+      "authors": [
+        "Mordehai Milgrom"
+      ],
+      "abstract": "I discuss open theoretical questions pertaining to the modified dynamics (MOND)--a proposed alternative to dark matter, which posits a breakdown of Newtonian dynamics in the limit of small accelerations. In particular, I point the reasons for thinking that MOND is an effective theory--perhaps, despite appearance, not even in conflict with GR. I then contrast the two interpretations of MOND as modified gravity and as modified inertia. I describe two mechanical models that are described by potential theories similar to (non-relativistic) MOND: a potential-flow model, and a membrane model. These might shed some light on a possible origin of MOND. The possible involvement of vacuum effects is also speculated on.",
+      "published": "2002-07-11",
+      "updated": "2002-08-15T13:17:24Z",
+      "doi": "10.1016/S1387-6473(02)00243-9",
+      "journal_ref": "New Astron.Rev. 46 (2002) 741-753",
+      "categories": [
+        "astro-ph",
+        "gr-qc",
+        "hep-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0207231v2",
+      "abs_url": "http://arxiv.org/abs/astro-ph/0207231v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:19.116576+00:00",
+      "query": "all:\"dark matter\" AND all:\"modified gravity\" AND all:MOND",
+      "short_id": "0207231",
+      "citation_string": "Mordehai Milgrom (Mordehai Milgrom) (2002). MOND--theoretical aspects. doi:10.1016/S1387-6473(02)00243-9"
+    },
+    {
+      "arxiv_id": "2412.13277v1",
+      "title": "Analogy of space-time as an elastic medium, estimation creep coefficient of space from MOND theory, gravitational lensing and via time data from the GPS effect, discussion of the results for dark matter and Einstein's field equation",
+      "authors": [
+        "David Izabel"
+      ],
+      "abstract": "After recalling the principles that allow space-time to be considered by analogy as an elastic medium, we show how the modified gravity according to the MOND theory concerning the anomaly of the velocities of stars at the periphery of galaxies can be seen as a creep of space acting on the radius of galaxies that gives a creep coefficient of Phi(space) = ((a0/a) x (Ro local/ Ro mean) -1). The values vary between 0.2 and 9 depending on the type of galaxy and density distribution. Considering the gravitational lensing effect of the ball cluster we obtain a creep coefficient Phi (space) = (1-pv)/pv. With pv the percentage of visible matter and pDM the percentage of Dark matter from the global mass (pv + pDM =1). The values vary between 0.66 and 4 for this cluster. This paper therefore raises the question, via these creep coefficients, of the possible granular nature of the vacuum and therefore of space fabric on the one hand and proposes another dark matter-free approach based on the creep of the texture of space to explain gravitational anomalies on the other hand.",
+      "published": "2024-12-17",
+      "updated": "2024-12-17T19:13:17Z",
+      "doi": "10.1142/S0218271824500706",
+      "journal_ref": "International journal of modern Physics D 22 october 2024",
+      "categories": [
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2412.13277v1",
+      "abs_url": "http://arxiv.org/abs/2412.13277v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:19.116602+00:00",
+      "query": "all:\"dark matter\" AND all:\"modified gravity\" AND all:MOND",
+      "short_id": "2412.13277",
+      "citation_string": "David Izabel (David Izabel) (2024). Analogy of space-time as an elastic medium, estimation creep coefficient of space from MOND theory, gravitational lensing and via time data from the GPS effect, discussion of the results for dark matter and Einstein's field equation. doi:10.1142/S0218271824500706"
+    },
+    {
+      "arxiv_id": "0908.0040v1",
+      "title": "Modified Gravity and the Phantom of Dark Matter",
+      "authors": [
+        "J. R. Brownstein"
+      ],
+      "abstract": "Astrophysical data analysis of the weak-field predictions support the claim that modified gravity (MOG) theories provide a self-consistent, scale-invariant, universal description of galaxy rotation curves, without the need of non-baryonic dark matter. Comparison to the predictions of Milgrom's modified dynamics (MOND) provide a best-fit and experimentally determined universal value of the MOND acceleration parameter. The predictions of the modified gravity theories are compared to the predictions of cold non-baryonic dark matter (CDM), including a constant density core-modified fitting formula, which produces excellent fits to galaxy rotation curves including the low surface brightness and dwarf galaxies. Upon analysing the mass profiles of clusters of galaxies inferred from X-ray luminosity measurements, from the smallest nearby clusters to the largest of the clusters of galaxies, it is shown that while MOG provides consistent fits, MOND does not fit the observed shape of cluster mass profiles for any value of the MOND acceleration parameter. Comparison to the predictions of CDM confirm that whereas the Navarro-Frenk-White (NFW) fitting formula does not fit the observed shape of galaxy cluster mass profiles, the core-modified dark matter fitting formula provides excellent best-fits, supporting the hypothesis that baryons are dynamically important in the distribution of dark matter halos.",
+      "published": "2009-08-02",
+      "updated": "2009-08-02T05:09:26Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.CO",
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/0908.0040v1",
+      "abs_url": "http://arxiv.org/abs/0908.0040v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:19.116629+00:00",
+      "query": "all:\"dark matter\" AND all:\"modified gravity\" AND all:MOND",
+      "short_id": "0908.0040",
+      "citation_string": "J. R. Brownstein (J. R. Brownstein) (2009). Modified Gravity and the Phantom of Dark Matter. arXiv:0908.0040"
+    },
+    {
+      "arxiv_id": "0601431v2",
+      "title": "Modified gravity without dark matter",
+      "authors": [
+        "R. H. Sanders"
+      ],
+      "abstract": "On an empirical level, the most successful alternative to dark matter in bound gravitational systems is the modified Newtonian dynamics, or MOND, proposed by Milgrom. Here I discuss the attempts to formulate MOND as a modification of General Relativity. I begin with a summary of the phenomenological successes of MOND and then discuss the various covariant theories that have been proposed as a basis for the idea. I show why these proposals have led inevitably to a multi-field theory. I describe in some detail TeVeS, the tensor-vector-scalar theory proposed by Bekenstein, and discuss its successes and shortcomings. This lecture is primarily pedagogical and directed to those with some, but not a deep, background in General Relativity",
+      "published": "2006-01-19",
+      "updated": "2006-02-08T15:04:21Z",
+      "doi": "10.1007/978-3-540-71013-4_13",
+      "journal_ref": "Lect.NotesPhys.720:375-402,2007",
+      "categories": [
+        "astro-ph",
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0601431v2",
+      "abs_url": "http://arxiv.org/abs/astro-ph/0601431v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:19.116647+00:00",
+      "query": "all:\"dark matter\" AND all:\"modified gravity\" AND all:MOND",
+      "short_id": "0601431",
+      "citation_string": "R. H. Sanders (R. H. Sanders) (2006). Modified gravity without dark matter. doi:10.1007/978-3-540-71013-4_13"
+    },
+    {
+      "arxiv_id": "1805.11067v3",
+      "title": "Galaxy rotation curves in modified gravity models",
+      "authors": [
+        "\u00c1lefe O. F. de Almeida",
+        "Luca Amendola",
+        "Viviana Niro"
+      ],
+      "abstract": "In this work, we investigate the possibility that the galaxy rotation curves can be explained in the framework of modified gravity models that introduce a Yukawa term in the gravitational potential. We include dark matter and assume that the fifth-force couples differently to dark matter and to baryons. We aim at constraining the modified gravity parameters $\u03b2$ and $\u03bb$, that is, the strength and the range of the Yukawa fifth force, respectively, using a set of 40 galaxy rotation curves data from the SPARC catalogue. We include baryonic gas, disk and bulge components, along with a NFW halo of dark matter. Each galaxy rotation curve is modeled with three free parameters, beside the two global Yukawa parameter. We find that the inclusion of the Yukawa term improves the $\u03c7^2$ from $680.75$ to $536.23$ for $655$ degrees of freedom. As global best-fit we obtain $\u03b2= 0.34\\pm0.04$ and $\u03bb= 5.61\\pm0.91$kpc and a dark matter content on average 20\\% smaller than without the Yukawa term. The Bayesian evidence in favor of a NFW profile plus Yukawa term is higher than 8$\u03c3$ with respect to the standard gravity parametrization.",
+      "published": "2018-05-28",
+      "updated": "2019-07-30T01:39:50Z",
+      "doi": "10.1088/1475-7516/2018/08/012",
+      "journal_ref": "JCAP08(2018)012",
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1805.11067v3",
+      "abs_url": "http://arxiv.org/abs/1805.11067v3",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:21.286447+00:00",
+      "query": "all:\"modified gravity\" AND all:\"rotation curve\"",
+      "short_id": "1805.11067",
+      "citation_string": "\u00c1lefe O. F. de Almeida et al. (3 authors) (2018). Galaxy rotation curves in modified gravity models. doi:10.1088/1475-7516/2018/08/012"
+    },
+    {
+      "arxiv_id": "0807.0679v1",
+      "title": "Flat rotation curves in Chern-Simons modified gravity",
+      "authors": [
+        "Kohkichi Konno",
+        "Toyoki Matsuyama",
+        "Yasuhiro Asano",
+        "Satoshi Tanda"
+      ],
+      "abstract": "We investigate the spacetime of a slowly rotating black hole in the Chern-Simons modified gravity. The long range feature of frame-dragging effect under the Chern-Simon gravity well explains the flat rotation curves of galaxies which is a central evidence of dark matter. Our solution provides a different scenario of rotating space from Goedel's solution.",
+      "published": "2008-07-04",
+      "updated": "2008-07-04T05:32:28Z",
+      "doi": "10.1103/PhysRevD.78.024037",
+      "journal_ref": "Phys.Rev.D78:024037,2008",
+      "categories": [
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/0807.0679v1",
+      "abs_url": "http://arxiv.org/abs/0807.0679v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:21.286473+00:00",
+      "query": "all:\"modified gravity\" AND all:\"rotation curve\"",
+      "short_id": "0807.0679",
+      "citation_string": "Kohkichi Konno et al. (4 authors) (2008). Flat rotation curves in Chern-Simons modified gravity. doi:10.1103/PhysRevD.78.024037"
+    },
+    {
+      "arxiv_id": "0712.1110v9",
+      "title": "Vacuum Modified Gravity as an explanation for flat galaxy rotation curves",
+      "authors": [
+        "Rudi Van Nieuwenhove"
+      ],
+      "abstract": "A theory is proposed which allows explaining the observed flat galaxy rotation curves, without needing to invoke dark matter. Whereas other theories have been proposed in the past which realize the same, the present theory rests on basic physical principles, in contrast to for instance the MOND theory. The key to arrive at this new theory is to consider from the start the energy density of the vacuum. The way to calculate the effect of the corresponding vacuum pressure on a mass has previously been laid down by Van Nieuwenhove (1992). We obtain a modification of Newton's law of gravitation with some peculiar properties such as the occurrence of regions of repulsive gravity. Based on a newly derived equation of state of the vacuum, the Tully-Fisher relation is derived. The theory can make detailed predictions about galaxy rotation curves and is also able to explain to the Pioneer anomaly, the foamy distribution of galaxies and the observed accelerated expansion of the universe. A relativistic extension of the theory is included as well.",
+      "published": "2007-12-07",
+      "updated": "2010-08-04T06:38:14Z",
+      "doi": "10.2478/v10005-009-0003-4",
+      "journal_ref": "Concepts Phys.6:43,2009",
+      "categories": [
+        "physics.gen-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/0712.1110v9",
+      "abs_url": "http://arxiv.org/abs/0712.1110v9",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:21.286496+00:00",
+      "query": "all:\"modified gravity\" AND all:\"rotation curve\"",
+      "short_id": "0712.1110",
+      "citation_string": "Rudi Van Nieuwenhove (Rudi Van Nieuwenhove) (2007). Vacuum Modified Gravity as an explanation for flat galaxy rotation curves. doi:10.2478/v10005-009-0003-4"
+    },
+    {
+      "arxiv_id": "2407.14122v1",
+      "title": "Revisiting Flat Rotation Curves in Chern-Simons Modified Gravity",
+      "authors": [
+        "Waleed El Hanafy",
+        "Mahmoud Hashim",
+        "G. G. L. Nashed"
+      ],
+      "abstract": "We revisit slow rotating black hole (BH) solutions in Chern-Simons modified gravity (CSMG) by considering perturbative solution about Schwarzschild BH. In particular, the case when nondynamical CSMG with noncanonical CS scalar is considered. We provide a new solution different from the previously obtained one \\cite{Konno:2007ze} which we refer to as KMT model. The present solution accounts for frame dragging effect which includes not only radial dependence as in the KMT. Nevertheless, it reduces to KMT as a particular case. We show that the tidal gravitational force (Kretschmann invariant) associated to the present solution contains a term of order $1/r^3$ additional to Schwarzschild but absent from directional divergence, unlike KMT model which diverges along the axis of symmetry. We derive the corresponding circular velocity of a massive test particle in which the KMT velocity is recovered in addition to an extra term $\\propto r$. We investigate possible constraints on KMT and the present solutions from the observed rotation curve of UGC11455 galaxy as an example. We show that perturbation solutions cannot physically explain the flattening of galactic rotation curves.",
+      "published": "2024-07-19",
+      "updated": "2024-07-19T08:41:58Z",
+      "doi": "10.1016/j.physletb.2024.138882",
+      "journal_ref": null,
+      "categories": [
+        "gr-qc",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2407.14122v1",
+      "abs_url": "http://arxiv.org/abs/2407.14122v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:21.286522+00:00",
+      "query": "all:\"modified gravity\" AND all:\"rotation curve\"",
+      "short_id": "2407.14122",
+      "citation_string": "Waleed El Hanafy et al. (3 authors) (2024). Revisiting Flat Rotation Curves in Chern-Simons Modified Gravity. doi:10.1016/j.physletb.2024.138882"
+    },
+    {
+      "arxiv_id": "1209.3532v2",
+      "title": "Galaxies Rotation Curves in the Grumiller's Modified Gravity",
+      "authors": [
+        "Hai-Nan Lin",
+        "Ming-Hua Li",
+        "Xin Li",
+        "Zhe Chang"
+      ],
+      "abstract": "The effective potential in the Grumiller's modified gravity [D. Grumiller, Phys. Rev. Lett {\\bf 105}, 211303 (2010)] includes the Newtonian potential and a Rindler term. The fitting to the rotation curve data of eight galaxies suggests a universal Rindler acceleration $a\\approx 0.30\\times 10^{-10}$ m s$^{-2}$. We do a two-parameter fit first, with the mass-to-light ratio ($\u03a5_*$) and the Rindler acceleration ($a$) as free parameters. It is found that the data of six out of the eight galaxies fit well with the prediction of theory in the range $0\\lesssim r \\lesssim 40$ kpc, although the theoretical curves show a tendency of arising beyond this range. The Rindler accelerations of the six well-fitted galaxies have the same magnitude, with an average value $\\bar{a}\\approx0.30\\times 10^{-10}$ m s$^{-2}$. Inspired by this fact, we then carry out a one-parameter ($\u03a5_*$) fit to the six galaxies, with $a$ fixed at $\\bar{a}$, and find that the theory can still reproduce the observation. The value of Rindler acceleration we get here is a quarter of that of Milgrom's MOND. For the rest two galaxies, NGC5055 and DDO154, the fitting results are significantly improved if the photometric scale length ($h$) is included as another free parameter.",
+      "published": "2012-09-17",
+      "updated": "2013-02-27T14:31:33Z",
+      "doi": "10.1093/mnras/sts642",
+      "journal_ref": "MNRAS 430, 450, 2013",
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1209.3532v2",
+      "abs_url": "http://arxiv.org/abs/1209.3532v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:21.286554+00:00",
+      "query": "all:\"modified gravity\" AND all:\"rotation curve\"",
+      "short_id": "1209.3532",
+      "citation_string": "Hai-Nan Lin et al. (4 authors) (2012). Galaxies Rotation Curves in the Grumiller's Modified Gravity. doi:10.1093/mnras/sts642"
+    },
+    {
+      "arxiv_id": "2207.11069v4",
+      "title": "Distinguishing Dark Matter, Modified Gravity, and Modified Inertia with the Inner and Outer Parts of Galactic Rotation Curves",
+      "authors": [
+        "Kyu-Hyun Chae"
+      ],
+      "abstract": "The missing gravity in galaxies requires dark matter, or alternatively a modification of gravity or inertia. These theoretical possibilities of fundamental importance may be distinguished by the statistical relation between the observed centripetal acceleration of particles in orbital motion and the expected Newtonian acceleration from the observed distribution of baryons in galaxies. Here predictions of cold dark matter halos, modified gravity, and modified inertia are compared and tested by a statistical sample of galaxy rotation curves from the Spitzer Photometry and Accurate Rotation Curves (SPARC) database. Modified gravity under an estimated mean external field correctly predicts the observed statistical relation of accelerations from both the inner and outer parts of rotation curves. Taken at face value there is a $6.9\u03c3$ difference between the inner and outer parts on an acceleration plane which would be inconsistent with current proposals of modified inertia. Removing galaxies with possible systematic concerns such as central bulges or special inclinations does not change this trend. Cold dark matter halos predict a systematically deviating relation from the observed one. All aspects of rotation curves are most naturally explained by modified gravity.",
+      "published": "2022-07-22",
+      "updated": "2022-10-18T11:51:37Z",
+      "doi": "10.3847/1538-4357/ac93fc",
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.CO",
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2207.11069v4",
+      "abs_url": "http://arxiv.org/abs/2207.11069v4",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:21.286583+00:00",
+      "query": "all:\"modified gravity\" AND all:\"rotation curve\"",
+      "short_id": "2207.11069",
+      "citation_string": "Kyu-Hyun Chae (Kyu-Hyun Chae) (2022). Distinguishing Dark Matter, Modified Gravity, and Modified Inertia with the Inner and Outer Parts of Galactic Rotation Curves. doi:10.3847/1538-4357/ac93fc"
+    },
+    {
+      "arxiv_id": "0312175v1",
+      "title": "Dark Energy Tomography",
+      "authors": [
+        "Yong-Seon Song",
+        "Lloyd Knox"
+      ],
+      "abstract": "We study how parameter error forecasts for tomographic cosmic shear observations are affected by sky coverage, density of source galaxies, inclusion of CMB experiments, simultaneou fitting of non--dark energy parameters, and the parametrization of the history of the dark energy equation-of-state parameter w(z). We find tomographic shear-shear power spectra on large angular scales (l<1000) inferred from all-sky observations, in combination with Planck, can achieve sigma(w0)=0.06 and sigma(wa)=0.09 assuming the equation-of-state parameter is given by w(z)=w0+wa(1-a(z)) and that nine other matter content and primordial power spectrum parameters are simultaneously fit. Taking parameters other than w0, wa and Omegam to be completely fixed by the CMB we find errors on w0 and wa that are only 10% and 30% better respectively, justifying this common simplifying assumption. We also study `dark energy tomography': reconstuction of w(z) assumed to be constant within each of five independent redshift bins. With smaller-scale information included by use of the Jain & Taylor ratio statistic we find sigma(wi)<0.1 for all five redshift bins and sigma(wi)<0.02 for both bins at z<0.8. Finally, addition of cosmic shear can also reduce errors on quantities already determined well by the CMB. We find the sum of neutrino masses can be determined to +-0.013eV and that the primordial power specrum power-law index, ns, as well as dns/dlnk, can be determined more than a factor of two better than by Planck alone. These improvements may be highly valuable since the lower bound on the sum of neutrino masses is 0.06eV as inferred from atmospheric neutrino oscillations, and slow-roll models of inflation predict non-zero dns/dlnk at the forecasted error levels when |n_S-1|>0.04.",
+      "published": "2003-12-08",
+      "updated": "2003-12-08T19:40:50Z",
+      "doi": "10.1103/PhysRevD.70.063510",
+      "journal_ref": "Phys.Rev.D70:063510,2004",
+      "categories": [
+        "astro-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0312175v1",
+      "abs_url": "http://arxiv.org/abs/astro-ph/0312175v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:25.352542+00:00",
+      "query": "all:\"dark energy\" AND all:\"w0-wa\"",
+      "short_id": "0312175",
+      "citation_string": "Yong-Seon Song et al. (2 authors) (2003). Dark Energy Tomography. doi:10.1103/PhysRevD.70.063510"
+    },
+    {
+      "arxiv_id": "2511.16703v1",
+      "title": "Pedagogic Null Tests of Dynamical Dark Energy Hints: Reconstructing LambdaCDM with Consistent BAO, CMB, and SNe Mocks",
+      "authors": [
+        "Seokcheon Lee"
+      ],
+      "abstract": "Hints of a dynamical dark-energy equation of state have appeared in several combined cosmological probes. However, such indications may instead arise from the intrinsic likelihood geometry of individual datasets, residual inter-probe tension, or restrictive priors. These factors can mimic evidence for dynamical dark energy. To clarify these issues, we perform a controlled null test. We use realistic mock BAO, CMB, and Type~Ia supernova datasets generated from a common fiducial LambdaCDM cosmology. These mocks include the DESI~DR2 BAO covariance, the Planck~2018 distance-prior covariance, and the full Pantheon+ SH0ES supernova covariance. This setup isolates physical information from geometric or statistical effects in the CPL parametrization. We find that individual probes and most two-probe combinations show apparent deviations in the (w0,wa) plane. These could be mistaken for phantom crossing or evolving dark energy. Two-probe combinations including supernovae (BAO+SNe, CMB+SNe) recover values near (w0,wa)=(-1,0) but fail to reconstruct (Omegam0,H0), because SNe do not determine the absolute distance scale. Combinations without SNe (BAO+CMB), as well as any single dataset, retain strong degeneracy directions. These produce significant shifts driven purely by likelihood geometry. These behaviors arise because BAO, CMB, and SNe each constrain only one principal direction in (w0,wa) space. Their degeneracy ridges are misaligned due to distinct redshift sensitivities. In contrast, the full BAO+CMB+SNe likelihood with proper covariance breaks all degeneracies simultaneously. It cleanly recovers the fiducial cosmology, including (w0,wa)=(-1,0) and (Omegam0,H0). Our results provide a transparent benchmark for assessing future claims of omega(z) neq -1. They emphasize the need for complete multi-probe analyses with flexible H0 and rd priors.",
+      "published": "2025-11-19",
+      "updated": "2025-11-19T05:54:52Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2511.16703v1",
+      "abs_url": "http://arxiv.org/abs/2511.16703v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:25.352580+00:00",
+      "query": "all:\"dark energy\" AND all:\"w0-wa\"",
+      "short_id": "2511.16703",
+      "citation_string": "Seokcheon Lee (Seokcheon Lee) (2025). Pedagogic Null Tests of Dynamical Dark Energy Hints: Reconstructing LambdaCDM with Consistent BAO, CMB, and SNe Mocks. arXiv:2511.16703"
+    },
+    {
+      "arxiv_id": "2501.07559v2",
+      "title": "Euclid: Optimising tomographic redshift binning for 3$\\times$2pt power spectrum constraints on dark energy",
+      "authors": [
+        "J. H. W. Wong",
+        "M. L. Brown",
+        "C. A. J. Duncan",
+        "A. Amara",
+        "S. Andreon",
+        "C. Baccigalupi",
+        "M. Baldi",
+        "S. Bardelli",
+        "D. Bonino",
+        "E. Branchini",
+        "M. Brescia",
+        "J. Brinchmann",
+        "A. Caillat",
+        "S. Camera",
+        "V. Capobianco",
+        "C. Carbone",
+        "J. Carretero",
+        "S. Casas",
+        "M. Castellano",
+        "G. Castignani",
+        "S. Cavuoti",
+        "A. Cimatti",
+        "C. Colodro-Conde",
+        "G. Congedo",
+        "C. J. Conselice",
+        "L. Conversi",
+        "Y. Copin",
+        "F. Courbin",
+        "H. M. Courtois",
+        "A. Da Silva",
+        "H. Degaudenzi",
+        "G. De Lucia",
+        "A. M. Di Giorgio",
+        "J. Dinis",
+        "F. Dubath",
+        "X. Dupac",
+        "S. Dusini",
+        "M. Farina",
+        "S. Farrens",
+        "F. Faustini",
+        "S. Ferriol",
+        "M. Frailis",
+        "E. Franceschi",
+        "S. Galeotta",
+        "K. George",
+        "W. Gillard",
+        "B. Gillis",
+        "C. Giocoli",
+        "A. Grazian",
+        "F. Grupp",
+        "L. Guzzo",
+        "S. V. H. Haugan",
+        "W. Holmes",
+        "I. Hook",
+        "F. Hormuth",
+        "A. Hornstrup",
+        "S. Ili\u0107",
+        "K. Jahnke",
+        "M. Jhabvala",
+        "E. Keih\u00e4nen",
+        "S. Kermiche",
+        "A. Kiessling",
+        "B. Kubik",
+        "M. Kunz",
+        "H. Kurki-Suonio",
+        "S. Ligori",
+        "P. B. Lilje",
+        "V. Lindholm",
+        "I. Lloro",
+        "G. Mainetti",
+        "E. Maiorano",
+        "O. Mansutti",
+        "O. Marggraf",
+        "K. Markovic",
+        "M. Martinelli",
+        "N. Martinet",
+        "F. Marulli",
+        "R. Massey",
+        "E. Medinaceli",
+        "S. Mei",
+        "M. Melchior",
+        "Y. Mellier",
+        "M. Meneghetti",
+        "E. Merlin",
+        "G. Meylan",
+        "M. Moresco",
+        "L. Moscardini",
+        "C. Neissner",
+        "S. -M. Niemi",
+        "C. Padilla",
+        "S. Paltani",
+        "F. Pasian",
+        "K. Pedersen",
+        "V. Pettorino",
+        "S. Pires",
+        "G. Polenta",
+        "M. Poncet",
+        "L. A. Popa",
+        "F. Raison",
+        "A. Renzi",
+        "J. Rhodes",
+        "G. Riccio",
+        "E. Romelli",
+        "M. Roncarelli",
+        "E. Rossetti",
+        "R. Saglia",
+        "Z. Sakr",
+        "A. G. S\u00e1nchez",
+        "D. Sapone",
+        "B. Sartoris",
+        "P. Schneider",
+        "T. Schrabback",
+        "A. Secroun",
+        "G. Seidel",
+        "S. Serrano",
+        "C. Sirignano",
+        "G. Sirri",
+        "L. Stanco",
+        "J. Steinwagner",
+        "P. Tallada-Cresp\u00ed",
+        "A. N. Taylor",
+        "I. Tereno",
+        "R. Toledo-Moreo",
+        "F. Torradeflot",
+        "I. Tutusaus",
+        "L. Valenziano",
+        "T. Vassallo",
+        "G. Verdoes Kleijn",
+        "A. Veropalumbo",
+        "Y. Wang",
+        "J. Weller",
+        "G. Zamorani",
+        "E. Zucca",
+        "C. Burigana",
+        "M. Calabrese",
+        "A. Pezzotta",
+        "V. Scottez",
+        "A. Spurio Mancini",
+        "M. Viel"
+      ],
+      "abstract": "We present a simulation-based method to explore the optimum tomographic redshift binning strategy for 3x2pt analyses with Euclid, focusing on the expected configuration of its first major data release (DR1). To do this, we 1) simulate a Euclid-like observation and generate mock shear catalogues from multiple realisations of the 3x2pt fields on the sky, and 2) measure the 3x2pt Pseudo-Cl power spectra for a given tomographic configuration and derive the constraints that they place on the standard dark energy equation of state parameters (w0, wa). For a simulation including Gaussian-distributed photometric redshift uncertainty and shape noise under a LambdaCDM cosmology, we find that bins equipopulated with galaxies yield the best constraints on (w0, wa) for an analysis of the full 3x2pt signal, or the angular clustering component only. For the cosmic shear component, the optimum (w0, wa) constraints are achieved by bins equally spaced in fiducial comoving distance. However, the advantage with respect to alternative binning choices is only a few percent in the size of the $1\\,\u03c3\\,$(w0, wa) contour, and we conclude that the cosmic shear is relatively insensitive to the binning methodology. We find that the information gain extracted on (w0, wa) for any 3x2pt component starts to saturate at $\\gtrsim$ 7-8 bins. Any marginal gains resulting from a greater number of bins is likely to be limited by additional uncertainties present in a real measurement, and the increasing demand for accuracy of the covariance matrix. Finally, we consider a 5% contamination from catastrophic photometric redshift outliers and find that, if these errors are not mitigated in the analysis, the bias induced in the 3x2pt signal for 10 equipopulated bins results in dark energy constraints that are inconsistent with the fiducial LambdaCDM cosmology at $>5\\,\u03c3$.",
+      "published": "2025-01-13",
+      "updated": "2026-07-27T20:56:17Z",
+      "doi": "10.1051/0004-6361/202553742",
+      "journal_ref": "A&A 708, A284 (2026)",
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2501.07559v2",
+      "abs_url": "http://arxiv.org/abs/2501.07559v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:25.352691+00:00",
+      "query": "all:\"dark energy\" AND all:\"w0-wa\"",
+      "short_id": "2501.07559",
+      "citation_string": "J. H. W. Wong et al. (139 authors) (2025). Euclid: Optimising tomographic redshift binning for 3$\\times$2pt power spectrum constraints on dark energy. doi:10.1051/0004-6361/202553742"
+    },
+    {
+      "arxiv_id": "2210.07560v2",
+      "title": "Using Host Galaxy Photometric Redshifts to Improve Cosmological Constraints with Type Ia Supernova in the LSST Era",
+      "authors": [
+        "Ayan Mitra",
+        "Richard Kessler",
+        "Surhud More",
+        "Renee Hlozek",
+        "The LSST Dark Energy Science Collaboration"
+      ],
+      "abstract": "We perform a rigorous cosmology analysis on simulated type Ia supernovae (SN~Ia) and evaluate the improvement from including photometric host-galaxy redshifts compared to using only the \"zspec\" subset with spectroscopic redshifts from the host or SN. We use the Deep Drilling Fields (~50 deg^2) from the Photometric LSST Astronomical Time-Series Classification Challenge (PLaSTiCC), in combination with a low-z sample based on Data Challenge2 (DC2). The analysis includes light curve fitting to standardize the SN brightness, a high-statistics simulation to obtain a bias-corrected Hubble diagram, a statistical+systematics covariance matrix including calibration and photo-z uncertainties, and cosmology fitting with a prior from the cosmic microwave background. Compared to using the zspec subset, including events with SN+host photo-z results in i) more precise distances for z>0.5, ii) a Hubble diagram that extends 0.3 further in redshift, and iii) a 50 % increase in the Dark Energy Task Force figure of merit (FoM) based on the w0-wa CDM model. Analyzing 25 simulated data samples, the average bias on w0 and wa is consistent with zero. The host photo-z systematic of 0.01 reduces FoM by only 2 % because i) most z<0.5 events are in the zspec subset, ii) the combined SN+host photo-z has X 2 smaller bias, and iii) the anti-correlation between fitted redshift and color self corrects distance errors. To prepare for analysing real data, the next SNIa-cosmology analysis with photo-z's should include non SN-Ia contamination and host galaxy mis-associations.",
+      "published": "2022-10-14",
+      "updated": "2022-10-17T02:51:14Z",
+      "doi": "10.3847/1538-4357/acb057",
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO",
+        "astro-ph.IM"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2210.07560v2",
+      "abs_url": "http://arxiv.org/abs/2210.07560v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:25.352722+00:00",
+      "query": "all:\"dark energy\" AND all:\"w0-wa\"",
+      "short_id": "2210.07560",
+      "citation_string": "Ayan Mitra et al. (5 authors) (2022). Using Host Galaxy Photometric Redshifts to Improve Cosmological Constraints with Type Ia Supernova in the LSST Era. doi:10.3847/1538-4357/acb057"
+    },
+    {
+      "arxiv_id": "0606568v2",
+      "title": "Measuring dark energy properties with 3D cosmic shear",
+      "authors": [
+        "A. F. Heavens",
+        "T. D. Kitching",
+        "A. N. Taylor"
+      ],
+      "abstract": "We present parameter estimation forecasts for present and future 3D cosmic shear surveys. We demonstrate that, in conjunction with results from cosmic microwave background (CMB) experiments, the properties of dark energy can be estimated with very high precision with large-scale, fully 3D weak lensing surveys. In particular, a 5-band, 10,000 square degree ground-based survey to a median redshift of zm=0.7 could achieve 1-$\u03c3$ marginal statistical errors, in combination with the constraints expected from the CMB Planck Surveyor, of $\u0394$w0=0.108 and $\u0394$wa=0.099 where we parameterize w by w(a)=w0+wa(1-a) where a is the scale factor. Such a survey is achievable with a wide-field camera on a 4 metre class telescope. The error on the value of w at an intermediate pivot redshift of z=0.368 is constrained to $\u0394$w(z=0.368)=0.0175. We compare and combine the 3D weak lensing constraints with the cosmological and dark energy parameters measured from planned Baryon Acoustic Oscillation (BAO) and supernova Type Ia experiments, and find that 3D weak lensing significantly improves the marginalized errors. A combination of 3D weak lensing, CMB and BAO experiments could achieve $\u0394$w0=0.037 and $\u0394$wa=0.099. Fully 3D weak shear analysis avoids the loss of information inherent in tomographic binning, and we show that the sensitivity to systematic errors is much less. In conjunction with the fact that the physics of lensing is very soundly based, this analysis demonstrates that deep, wide-angle 3D weak lensing surveys are extremely promising for measuring dark energy properties.",
+      "published": "2006-06-23",
+      "updated": "2006-11-15T17:18:53Z",
+      "doi": "10.1111/j.1365-2966.2006.11006.x",
+      "journal_ref": "Mon.Not.Roy.Astron.Soc.373:105-120,2006",
+      "categories": [
+        "astro-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0606568v2",
+      "abs_url": "http://arxiv.org/abs/astro-ph/0606568v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:25.352756+00:00",
+      "query": "all:\"dark energy\" AND all:\"w0-wa\"",
+      "short_id": "0606568",
+      "citation_string": "A. F. Heavens et al. (3 authors) (2006). Measuring dark energy properties with 3D cosmic shear. doi:10.1111/j.1365-2966.2006.11006.x"
+    },
+    {
+      "arxiv_id": "0606416v2",
+      "title": "Probing dark energy with the shear-ratio geometric test",
+      "authors": [
+        "A. N. Taylor",
+        "T. D. Kitching",
+        "D. J. Bacon",
+        "A. F. Heavens"
+      ],
+      "abstract": "We adapt the Jain--Taylor (2003) shear-ratio geometric lensing method to measure the dark energy equation of state, and its time derivative from dark matter haloes in cosmologies with arbitrary spatial curvature. The full shear-ratio covariance matrix is calculated for lensed sources, including the intervening large-scale structure and photometric redshift errors as additional sources of noise, and a maximum likelihood method for applying the test is presented. Combining with the expected results from the CMB we design an optimal survey for probing dark energy. A targeted survey imaging 60 of the largest clusters in a hemisphere with 5-band optical photometric redshifts to a median galaxy depth of zm=0.9 could measure w0 to a marginal 1-sigma error of $\u0394$w0=0.5. We marginalize over all other parameters including wa, where the equation of state is parameterized in terms of scale factor a as w(a)=w0+wa(1-a). For higher accuracy a large-scale photometric redshift survey is required. Such a near-future 5-band survey covering 10,000 square degrees to z_m=0.7 could measure w0 to $\u0394$w0=0.075 and $\u0394$wa=0.33. A stronger combined constraint is measured at a pivot redshift zp=0.27 of $\u0394$w(zp)=0.0298. We compare and combine the geometric test with the cosmological and dark energy parameters measured from planned Baryon Acoustic Oscillation (BAO) and supernova Type Ia experiments, and find that the geometric test results combine with a significant reduction in errors due to different degeneracies. A combination of geometric lensing, CMB and BAO experiments could achieve a pivot redshift constraint of $\u0394$w(zp)=0.020 at zp=0.62. Simple relations are presented that show how our lensing results can be scaled to other telescope classes and survey parameters.",
+      "published": "2006-06-17",
+      "updated": "2006-11-15T17:31:45Z",
+      "doi": "10.1111/j.1365-2966.2006.11257.x",
+      "journal_ref": "Mon.Not.Roy.Astron.Soc.374:1377-1403,2007",
+      "categories": [
+        "astro-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0606416v2",
+      "abs_url": "http://arxiv.org/abs/astro-ph/0606416v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:25.352793+00:00",
+      "query": "all:\"dark energy\" AND all:\"w0-wa\"",
+      "short_id": "0606416",
+      "citation_string": "A. N. Taylor et al. (4 authors) (2006). Probing dark energy with the shear-ratio geometric test. doi:10.1111/j.1365-2966.2006.11257.x"
+    },
+    {
+      "arxiv_id": "2606.12980v1",
+      "title": "A Review on Resolving the Hubble Tension via Late-Universe Physics",
+      "authors": [
+        "Xuan-Dong Jia",
+        "Xin-Yi Dai",
+        "Yu-Peng Yang",
+        "Fa-Yin Wang"
+      ],
+      "abstract": "The $\u039b$CDM cosmological model has been successful in explaining many astronomical observations. However, recent observations increasingly point to deviations from the standard $\u039b$CDM framework. Among these, one of the most significant discrepancies is the \\textit{Hubble tension}, which refers to the difference in values obtained for the Hubble constant $H_0$ from high-redshift measurement and local observation. To address this issue, numerous cosmological models and methodological approaches have been proposed. This review offers a concise overview of recent progress in resolving the Hubble tension. The combination of Dark Energy Spectroscopic Instrument (DESI) Baryon Acoustic Oscillations (BAO) and uncalibrated Type Ia supernovae data yields a value for $H_0$ that is significantly higher than the $\u039b$CDM predication based on early-universe probes, even without incorporating local distance ladder constraints. This result indicates that the origin of the Hubble tension lies in new physics at low redshifts. Our findings suggest that although many unresolved systematics persist in current observations, they are insufficient to account for the magnitude of the current Hubble tension. This implies the likely existence of new physical mechanisms that have yet to be discovered.",
+      "published": "2026-06-11",
+      "updated": "2026-06-11T07:13:34Z",
+      "doi": "10.3390/galaxies14030055",
+      "journal_ref": "Galaxies 2026, 14(3), 55 (This article belongs to the Special Issue Theoretical and Observational Approaches to the Hubble Tension in Cosmology)",
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2606.12980v1",
+      "abs_url": "http://arxiv.org/abs/2606.12980v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:27.522456+00:00",
+      "query": "all:\"Hubble tension\" AND all:\"distance ladder\"",
+      "short_id": "2606.12980",
+      "citation_string": "Xuan-Dong Jia et al. (4 authors) (2026). A Review on Resolving the Hubble Tension via Late-Universe Physics. doi:10.3390/galaxies14030055"
+    },
+    {
+      "arxiv_id": "2408.11031v4",
+      "title": "Hubble Tension or Distance Ladder Crisis?",
+      "authors": [
+        "Leandros Perivolaropoulos"
+      ],
+      "abstract": "We present an up-to-date compilation of published Hubble constant ($H_0$) measurements that are independent of the CMB sound horizon scale. This compilation is split in two distinct groups: A. Distance Ladder Measurements sample comprising of 20 recent measurements, primarily from the past four years, utilizing various rung 2 calibrators and rung 3 cosmic distance indicators. B.One-Step Measurements sample including 33 measurements of $H_0$ that are independent of both the CMB sound horizon scale and the distance ladder approach. These 33 measurements are derived from diverse probes such as Cosmic Chronometers, gamma-ray attenuation, strong lensing, megamasers etc. Statistical analysis reveals a significant distinction between the two samples. The distance ladder-based sample yields a best fit $H_0 = 72.8 \\pm 0.5$ km s$^{-1}$ Mpc$^{-1}$ with $\u03c7^2/dof=0.51$ indicating some correlations. The one-step measurements result in $H_0 = 69.0 \\pm 0.48$ km s$^{-1}$ Mpc$^{-1}$ with $\u03c7^2/dof=1.37$ indicating some internal tension. If two outlier measurements are removed (TDCOSMO.I-2019 known to have systematics and MCP-2020) the best fit of the one step sample reduces to $H_0 = 68.3 \\pm 0.5$ km s$^{-1}$ Mpc$^{-1}$ with $\u03c7^2/dof=0.95$, fully self-consistent and consistent with sound horizon based measurements. A Kolmogorov-Smirnov test yields a p-value of 0.0001 suggesting that the two samples are fundamentally distinct, with a probability of less than 0.01\\% that they are drawn from the same underlying distribution. These findings suggest that the core of the Hubble tension lies not between early and late-time measurements, but between distance ladder measurements and all other $H_0$ determinations. This discrepancy points to either a systematic effect influencing all distance ladder measurements or a fundamental physics anomaly affecting at least one rung of the distance ladder.",
+      "published": "2024-08-20",
+      "updated": "2024-09-02T16:29:22Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2408.11031v4",
+      "abs_url": "http://arxiv.org/abs/2408.11031v4",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:27.522505+00:00",
+      "query": "all:\"Hubble tension\" AND all:\"distance ladder\"",
+      "short_id": "2408.11031",
+      "citation_string": "Leandros Perivolaropoulos (Leandros Perivolaropoulos) (2024). Hubble Tension or Distance Ladder Crisis?. arXiv:2408.11031"
+    },
+    {
+      "arxiv_id": "2410.06053v3",
+      "title": "Narrowing down the Hubble tension to the first two rungs of distance ladders",
+      "authors": [
+        "Lu Huang",
+        "Rong-Gen Cai",
+        "Shao-Jiang Wang",
+        "Jian-Qi Liu",
+        "Yan-Hong Yao"
+      ],
+      "abstract": "The decade-persistent Hubble tension has become a $5\u03c3$ crisis of modern cosmology between the early-Universe extrapolation from globally fitting the standard $\u039b$CDM to Planck-CMB measurements and the late-Universe measurement from the three-rung distance ladder with SH0ES calibration. Regarding the current dilemma of theoretical resolutions, recent focus has shifted to systematics inspection. Here we find an associated $5\u03c3$ tension in the intercept of the supernova magnitude-redshift relation between the second-rung and third-rung supernovae from the PantheonPlus compilation independent of calibrations in use. As required by the consistency of the distance-ladder method, we propose a method to eliminate the intercept tension, directly constraining $H_0=73.4\\pm1.0\\;\\mathrm{km/s/Mpc}$ from the first two-rung distance ladder alone without referring to the third-rung supernovae but still consistent with both SH0ES typical three-rung and first two-rung constraints, which not only supports our method to rebuild the intercept consistency but also rules out third-rung supernova systematics including the late-time transition in supernova absolute magnitude. Further crosschecking with the Carnegie Supernova Project revealed that different calibrators alone still consistently prefer our results. Therefore, the original Hubble tension between the Planck-CMB measurements and SH0ES three-rung distance ladder can be narrowed down to a tension between the Planck-CMB and the first two-rung measurements.",
+      "published": "2024-10-08",
+      "updated": "2025-03-05T13:28:04Z",
+      "doi": "10.1007/s11433-025-2641-2",
+      "journal_ref": "Sci. China-Phys. Mech. Astron. 68(8): 280405 (2025)",
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2410.06053v3",
+      "abs_url": "http://arxiv.org/abs/2410.06053v3",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:27.522540+00:00",
+      "query": "all:\"Hubble tension\" AND all:\"distance ladder\"",
+      "short_id": "2410.06053",
+      "citation_string": "Lu Huang et al. (5 authors) (2024). Narrowing down the Hubble tension to the first two rungs of distance ladders. doi:10.1007/s11433-025-2641-2"
+    },
+    {
+      "arxiv_id": "2512.14814v1",
+      "title": "Constraining Fifth Forces using the Local Distance Ladder: Implications for the Hubble Tension",
+      "authors": [
+        "Marcus H\u00f6g\u00e5s",
+        "Edvard M\u00f6rtsell",
+        "Harry Desmond",
+        "Adam Riess"
+      ],
+      "abstract": "We revisit the local distance ladder measurement of the Hubble constant in models where gravity is modified by a fifth force, an additional long-range interaction. In many such theories the force is screened; suppressed in dense environments but potentially active in galaxies used for distance calibration. We model this environmental dependence using three quantities that characterize each galaxy's large-scale gravitational environment: the external gravitational potential $\u03a6$, acceleration $a$, and curvature $K$. Our baseline analysis recalibrates the SH0ES-team's Cepheid-supernova distance ladder, incorporating the fifth force via its impact on the Cepheid period-luminosity relation. Across models, a fifth force is strongly constrained, with posteriors concentrated around a null result. The inferred Hubble constant is $H_0 = 73.1 \\pm 1.0 \\, \\mathrm{km/s/Mpc}$, retaining the Hubble tension at $>5 \\, \u03c3$. As an additional test, we incorporate four independent Tip of the Red Giant Branch (TRGB) distance datasets into a joint Cepheid-TRGB-supernova calibration. These combined analyses further constrain the magnitude of fifth-force effects. Taken together, our results show that, across the class of screened fifth-force models we analyze, the calibration of the local distance ladder remains essentially unchanged, leaving the Hubble tension intact.",
+      "published": "2025-12-16",
+      "updated": "2025-12-16T19:00:00Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO",
+        "astro-ph.GA",
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2512.14814v1",
+      "abs_url": "http://arxiv.org/abs/2512.14814v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:27.522574+00:00",
+      "query": "all:\"Hubble tension\" AND all:\"distance ladder\"",
+      "short_id": "2512.14814",
+      "citation_string": "Marcus H\u00f6g\u00e5s et al. (4 authors) (2025). Constraining Fifth Forces using the Local Distance Ladder: Implications for the Hubble Tension. arXiv:2512.14814"
+    },
+    {
+      "arxiv_id": "2601.22215v1",
+      "title": "Physically-motivated priors in the local distance ladder significantly reduce the Hubble tension",
+      "authors": [
+        "Marcus H\u00f6g\u00e5s",
+        "Edvard M\u00f6rtsell"
+      ],
+      "abstract": "Determinations of the Hubble constant based on the local distance ladder remain in significant tension with early-Universe inferences from the cosmic microwave background. While this tension is often discussed in terms of new physics or unmodeled systematics, the role of the assumed priors on the model parameters has received comparatively little attention. Recently, Desmond et al. (2025) pointed out that the commonly adopted flat prior on distance moduli upweights smaller distances and systematically favors high inferred values of the Hubble constant. Motivated by this observation, we perform a comprehensive Bayesian recalibration of the distance ladder, applying physically motivated priors uniformly to all distances, including the Milky Way Cepheids, which are incorporated directly into the joint fit. Together with a conservative treatment of the Gaia EDR3 residual parallax offset, the Hubble constant shifts from $H_0 = 73.0 \\pm 1.0 \\, \\mathrm{km/s/Mpc}$ to $H_0 = 70.6 \\pm 1.0 \\, \\mathrm{km/s/Mpc}$, reducing the Hubble tension from $5 \\, \u03c3$ to $2 \\, \u03c3$. Our results show that the assumed priors -- often treated as innocuous defaults -- may play a central role in the Hubble tension. Because all local distance ladders rely on the calibration of distances, similar prior-driven effects are expected to arise across distance-ladder methods.",
+      "published": "2026-01-29",
+      "updated": "2026-01-29T19:00:00Z",
+      "doi": "10.1093/mnras/stag724",
+      "journal_ref": "Mon Not R Astron Soc (2026)",
+      "categories": [
+        "astro-ph.CO",
+        "astro-ph.GA",
+        "physics.data-an"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2601.22215v1",
+      "abs_url": "http://arxiv.org/abs/2601.22215v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:27.522606+00:00",
+      "query": "all:\"Hubble tension\" AND all:\"distance ladder\"",
+      "short_id": "2601.22215",
+      "citation_string": "Marcus H\u00f6g\u00e5s et al. (2 authors) (2026). Physically-motivated priors in the local distance ladder significantly reduce the Hubble tension. doi:10.1093/mnras/stag724"
+    },
+    {
+      "arxiv_id": "2601.00650v2",
+      "title": "Dissecting the Hubble tension: Insights from a diverse set of Sound Horizon-free H0 measurements",
+      "authors": [
+        "Ioannis Pantos",
+        "Leandros Perivolaropoulos"
+      ],
+      "abstract": "The Hubble tension is commonly framed as a discrepancy between local, late-time measurements favoring $H_0 \\approx 73$ km s$^{-1}$ Mpc$^{-1}$ and early-time, Sound-Horizon-based measurements favoring $H_0 \\approx 67$ km s$^{-1}$ Mpc$^{-1}$. We challenge this viewpoint by analyzing 88 Sound Horizon Free $H_0$ measurements, categorized into four classes: Distance Ladder measurements using local calibrators; Local $\u039b$CDM measurements assuming the standard expansion history; Pure Local measurements independent of $H(z)$ shape; and CMB Sound--Horizon--Free measurements using CMB data without the Sound Horizon scale. Our analysis reveals that the 30 Distance Ladder measurements yield $H_0 = 72.73 \\pm 0.39$ km s$^{-1}$ Mpc$^{-1}$ ($\u03c7^2_\u03bd= 0.72$), while the 58 Distance Ladder-Independent/Sound Horizon Free measurements collectively yield $H_0 = 69.37 \\pm 0.34$ km s$^{-1}$ Mpc$^{-1}$ ($\u03c7^2_\u03bd= 0.95$), a $6.5\u03c3$ tension exceeding the Planck--SH0ES discrepancy. This tension remains significant at a minimum value of $3.9\u03c3$ after accounting for correlations. Among categories, Local $\u039b$CDM measurements favor the lowest value ($H_0 = 67.61\\pm 0.96$ km s$^{-1}$ Mpc$^{-1}$), Pure Local yield an intermediate value ($H_0 = 71.03 \\pm 0.69$ km s$^{-1}$ Mpc$^{-1}$), and CMB Sound Horizon Free measurements give $H_0 = 69.07 \\pm 0.44$ km s$^{-1}$ Mpc$^{-1}$. We conclude that the Hubble tension is better characterized as a discrepancy between the Distance Ladder and all other methodologies, rather than an early-vs-late-time split. We also identify a $2.9\u03c3$ internal tension among Distance Ladder Independent/Sound Horizon Free measurements: analyses assuming $\u039b$CDM systematically recover lower $H_0$ values compared to cosmological-model-independent methods. This suggests either unrecognized systematics in the Distance Ladder or deviations from $\u039b$CDM or both.",
+      "published": "2026-01-02",
+      "updated": "2026-01-25T17:04:25Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2601.00650v2",
+      "abs_url": "http://arxiv.org/abs/2601.00650v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:27.522642+00:00",
+      "query": "all:\"Hubble tension\" AND all:\"distance ladder\"",
+      "short_id": "2601.00650",
+      "citation_string": "Ioannis Pantos et al. (2 authors) (2026). Dissecting the Hubble tension: Insights from a diverse set of Sound Horizon-free H0 measurements. arXiv:2601.00650"
+    },
+    {
+      "arxiv_id": "2506.23448v3",
+      "title": "Running scalar spectral index in warm natural inflation",
+      "authors": [
+        "Teruyuki Kitabayashi",
+        "Aya Shimizu"
+      ],
+      "abstract": "The validity of inflation models is mainly evaluated according to the consistency of the predicted scalar spectral index $n_{\\mathrm{s}}$, the tensor scalar ratio $r$, and the running scalar spectral index $\u03b1_{\\mathrm{s}}$ with cosmic microwave background observations. In warm inflation (WI) scenarios, one can find exact analytical solutions for $\u03b1_{\\mathrm{s}}$ in principle, but long expressions may be obtained. Previous studies for WI scenarios have only shown approximate analytical solutions or numerical results for $\u03b1_{\\mathrm{s}}$. In this study, we present a general analytical expression of $\u03b1_{\\mathrm{s}}$ without approximation in WI. By providing an analytical expression, even if it is mathematically redundant, we believe that $\u03b1_{\\mathrm{s}}$ will be studied across a broader range of WI models in the future. The obtained analytical expression of $\u03b1_{\\mathrm{s}}$ is used in the study of warm natural inflation (WNI). Although $n_{\\mathrm{s}}$ and $r$ have been previously investigated, $\u03b1_{\\mathrm{s}}$ is omitted in previous studies on WNI. Our study of $\u03b1_{\\mathrm{s}}$ completes previous phenomenological studies on WNI. In particular, the lower limit of the symmetry-breaking scale in WNI becomes more concrete in this study.",
+      "published": "2025-06-30",
+      "updated": "2025-10-16T05:35:58Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "hep-ph",
+        "astro-ph.CO",
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2506.23448v3",
+      "abs_url": "http://arxiv.org/abs/2506.23448v3",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:32.134166+00:00",
+      "query": "all:inflation AND all:\"scalar spectral index\"",
+      "short_id": "2506.23448",
+      "citation_string": "Teruyuki Kitabayashi et al. (2 authors) (2025). Running scalar spectral index in warm natural inflation. arXiv:2506.23448"
+    },
+    {
+      "arxiv_id": "1409.8151v2",
+      "title": "Running of scalar spectral index in multi-field inflation",
+      "authors": [
+        "Jinn-Ouk Gong"
+      ],
+      "abstract": "We compute the running of the scalar spectral index in general multi-field slow-roll inflation. By incorporating explicit momentum dependence at the moment of horizon crossing, we can find the running straightforwardly. At the same time, we can distinguish the contributions from the quasi de Sitter background and the super-horizon evolution of the field fluctuations.",
+      "published": "2014-09-29",
+      "updated": "2015-05-20T15:03:22Z",
+      "doi": "10.1088/1475-7516/2015/05/041",
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-ph",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1409.8151v2",
+      "abs_url": "http://arxiv.org/abs/1409.8151v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:32.134191+00:00",
+      "query": "all:inflation AND all:\"scalar spectral index\"",
+      "short_id": "1409.8151",
+      "citation_string": "Jinn-Ouk Gong (Jinn-Ouk Gong) (2014). Running of scalar spectral index in multi-field inflation. doi:10.1088/1475-7516/2015/05/041"
+    },
+    {
+      "arxiv_id": "0404128v2",
+      "title": "Electroweak-scale inflation, inflaton-Higgs mixing and the scalar spectral index",
+      "authors": [
+        "Bartjan van Tent",
+        "Jan Smit",
+        "Anders Tranberg"
+      ],
+      "abstract": "We construct a phenomenological model of electroweak-scale inflation that is in accordance with recent cosmic microwave background observations by WMAP, while setting the stage for a zero-temperature electroweak transition as assumed in recent models of baryogenesis. We find that the scalar spectral index especially poses tight constraints for low-scale inflation models. The inflaton-Higgs coupling leads to substantial mixing of the scalar degrees of freedom. Two types of scalar particles emerge with decay widths similar to that of the Standard Model Higgs particle.",
+      "published": "2004-04-15",
+      "updated": "2004-07-13T18:52:20Z",
+      "doi": "10.1088/1475-7516/2004/07/003",
+      "journal_ref": "JCAP 0407 (2004) 003",
+      "categories": [
+        "hep-ph",
+        "astro-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/hep-ph/0404128v2",
+      "abs_url": "http://arxiv.org/abs/hep-ph/0404128v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:32.134211+00:00",
+      "query": "all:inflation AND all:\"scalar spectral index\"",
+      "short_id": "0404128",
+      "citation_string": "Bartjan van Tent et al. (3 authors) (2004). Electroweak-scale inflation, inflaton-Higgs mixing and the scalar spectral index. doi:10.1088/1475-7516/2004/07/003"
+    },
+    {
+      "arxiv_id": "1406.3342v2",
+      "title": "Large tensor-to-scalar ratio and running of the scalar spectral index with Instep Inflation",
+      "authors": [
+        "Guillermo Ballesteros",
+        "J. Alberto Casas"
+      ],
+      "abstract": "If a sizeable tensor-to-scalar ratio ~0.1 turns out to be detected and a negative running of the scalar spectral index ~0.01 is significantly required by the data, the vast majority of single field models of inflation will be ruled out. We show that a flat tree-level effective potential, lifted by radiative corrections and by the imprints of a high energy scale (in the form of non-renormalizable operators) can explain those features and produce enough inflation in the slow-roll regime.",
+      "published": "2014-06-12",
+      "updated": "2015-01-08T22:15:24Z",
+      "doi": "10.1103/PhysRevD.91.043502",
+      "journal_ref": "Phys. Rev. D 91, 043502 (2015)",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-ph",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1406.3342v2",
+      "abs_url": "http://arxiv.org/abs/1406.3342v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:32.134228+00:00",
+      "query": "all:inflation AND all:\"scalar spectral index\"",
+      "short_id": "1406.3342",
+      "citation_string": "Guillermo Ballesteros et al. (2 authors) (2014). Large tensor-to-scalar ratio and running of the scalar spectral index with Instep Inflation. doi:10.1103/PhysRevD.91.043502"
+    },
+    {
+      "arxiv_id": "1205.0786v3",
+      "title": "Refining inflation using non-canonical scalars",
+      "authors": [
+        "Sanil Unnikrishnan",
+        "Varun Sahni",
+        "Aleksey Toporensky"
+      ],
+      "abstract": "This paper revisits the Inflationary scenario within the framework of scalar field models possessing a non-canonical kinetic term. We obtain closed form solutions for all essential quantities associated with chaotic inflation including slow roll parameters, scalar and tensor power spectra, spectral indices, the tensor-to-scalar ratio, etc. We also examine the Hamilton-Jacobi equation and demonstrate the existence of an inflationary attractor. Our results highlight the fact that non-canonical scalars can significantly improve the viability of inflationary models. They accomplish this by decreasing the tensor-to-scalar ratio while simultaneously increasing the value of the scalar spectral index, thereby redeeming models which are incompatible with the cosmic microwave background (CMB) in their canonical version. For instance, the non-canonical version of the chaotic inflationary potential, $V(\u03c6) \\sim \u03bb\u03c6^4$, is found to agree with observations for values of $\u03bb$ as large as unity ! The exponential potential can also provide a reasonable fit to CMB observations. A central result of this paper is that {\\em steep potentials} (such as $V \\propto \u03c6^{-n}$) usually associated with dark energy, can drive inflation in the non-canonical setting. Interestingly, non-canonical scalars violate the consistency relation $r = -8n_T$, which emerges as a {\\em smoking gun} test for this class of models.",
+      "published": "2012-05-03",
+      "updated": "2012-07-18T18:31:49Z",
+      "doi": "10.1088/1475-7516/2012/08/018",
+      "journal_ref": "JCAP 1208 (2012) 018",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-ph",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1205.0786v3",
+      "abs_url": "http://arxiv.org/abs/1205.0786v3",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:32.134260+00:00",
+      "query": "all:inflation AND all:\"scalar spectral index\"",
+      "short_id": "1205.0786",
+      "citation_string": "Sanil Unnikrishnan et al. (3 authors) (2012). Refining inflation using non-canonical scalars. doi:10.1088/1475-7516/2012/08/018"
+    },
+    {
+      "arxiv_id": "2401.10312v2",
+      "title": "Speed of sound and scalar spectral index: Reconstructing inflation and reheating in a non-canonical theory",
+      "authors": [
+        "Ramon Herrera",
+        "Carlos Rios"
+      ],
+      "abstract": "In this article we analyze the reconstruction of inflation in the framework of a non-canonical theory. In this sense, we study the viability of reconstructing the background variables assuming a non-lineal kinetic term given by $K(X,\u03c6)=X+g(\u03c6)X^2$, with $X$ the standard kinetic term associated to the scalar field $\u03c6$ and $g(\u03c6)$ an arbitrary coupling function. In order to achieve this reconstruction in the context of inflation, we assume the slow-roll approximation together with the parametrization of the scalar spectral index $n_s$ and the speed of sound $c_s$ as a function of the number of $e-$folds $N$. By assuming the simplest parametrizations for $n_s-1=-2/N$ and $c_s\\propto N^{-\u03b2}$ with $\u03b2$ a constant, we find the reconstruction of the effective potential $V(\u03c6)$ and the coupling function $g(\u03c6)$ in terms of the scalar field. Besides, we study the reheating epoch by considering a constant equation of state parameter, where we determine the temperature and number of $e-$folds during the reheating epoch in terms of the reconstructed variables and the observational parameters. In this way, the parameter-space related to the reconstructed inflationary model are constrained during the epochs of inflation and reheating by assuming the current astronomical data from Planck and BICEP/Keck results.",
+      "published": "2024-01-18",
+      "updated": "2024-04-12T14:44:15Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2401.10312v2",
+      "abs_url": "http://arxiv.org/abs/2401.10312v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:32.134290+00:00",
+      "query": "all:inflation AND all:\"scalar spectral index\"",
+      "short_id": "2401.10312",
+      "citation_string": "Ramon Herrera et al. (2 authors) (2024). Speed of sound and scalar spectral index: Reconstructing inflation and reheating in a non-canonical theory. arXiv:2401.10312"
+    },
+    {
+      "arxiv_id": "2510.12134v2",
+      "title": "Eternal inflation bubble collision signature on CMB remote dipole and quadrupole fields",
+      "authors": [
+        "Hongbo Cai",
+        "Pengjie Zhang",
+        "Yilun Guan"
+      ],
+      "abstract": "The remote dipole and quadrupole fields (RDF/RQF) encode information about the observable universe as seen from remote places within our past light cone. Sensitive to the superhorizon inhomogeneites, they provide a unique way to probe physics at the largest scales, bypassing the limitations of cosmic variance inherent in the primary cosmic microwave background (CMB). In this work, we focus on the bubble collision predicted by the eternal inflation theory, which can leave distinct azimuthally symmetric patterns on the superhorizon scales, potentially detectable through the RDF and RQF. We present the first analytic expression of the RQF signal induced by bubble collision and validate it against numerical calculations performed with $\\texttt{RemoteField}$, a new public software tool we developed, finding excellent agreement between the two. Combining our new RQF calculation with the corresponding RDF signal calculated by prior work, we forecast the constraining power on bubble collision parameters using RDF/RQF reconstruction. We find that, for an CMB-S4-like and an LSST-like experiment, the RDF reconstruction can provide comparable constraining power as that from the primary CMB alone; and the RQF reconstruction can improve the constraining power by about an order of magnitude. We argue that these constraints can be improved further by including more RDF/RQF multipoles included and by using tomographic techniques to mitigate the standard $\u039b$CDM signal. We anticipate the framework we developed in this work to be broadly applicable to probe other superhorizon-scale physics, such as cosmic topology and domain walls.",
+      "published": "2025-10-14",
+      "updated": "2026-03-20T05:48:28Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2510.12134v2",
+      "abs_url": "http://arxiv.org/abs/2510.12134v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:36.309047+00:00",
+      "query": "all:\"bubble collision\" AND all:CMB",
+      "short_id": "2510.12134",
+      "citation_string": "Hongbo Cai et al. (3 authors) (2025). Eternal inflation bubble collision signature on CMB remote dipole and quadrupole fields. arXiv:2510.12134"
+    },
+    {
+      "arxiv_id": "1006.0832v2",
+      "title": "Polarizing Bubble Collisions",
+      "authors": [
+        "Bartlomiej Czech",
+        "Matthew Kleban",
+        "Klaus Larjo",
+        "Thomas S. Levi",
+        "Kris Sigurdson"
+      ],
+      "abstract": "We predict the polarization of cosmic microwave background (CMB) photons that results from a cosmic bubble collision. The polarization is purely E-mode, symmetric around the axis pointing towards the collision bubble, and has several salient features in its radial dependence that can help distinguish it from a more conventional explanation for unusually cold or hot features in the CMB sky. The anomalous \"cold spot\" detected by the Wilkinson Microwave Anisotropy Probe (WMAP) satellite is a candidate for a feature produced by such a collision, and the Planck satellite and other proposed surveys will measure the polarization on it in the near future. The detection of such a collision would provide compelling evidence for the string theory landscape.",
+      "published": "2010-06-04",
+      "updated": "2011-03-24T00:47:14Z",
+      "doi": "10.1088/1475-7516/2010/12/023",
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1006.0832v2",
+      "abs_url": "http://arxiv.org/abs/1006.0832v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:36.309078+00:00",
+      "query": "all:\"bubble collision\" AND all:CMB",
+      "short_id": "1006.0832",
+      "citation_string": "Bartlomiej Czech et al. (5 authors) (2010). Polarizing Bubble Collisions. doi:10.1088/1475-7516/2010/12/023"
+    },
+    {
+      "arxiv_id": "1202.2861v2",
+      "title": "Optimal filters for detecting cosmic bubble collisions",
+      "authors": [
+        "J. D. McEwen",
+        "S. M. Feeney",
+        "M. C. Johnson",
+        "H. V. Peiris"
+      ],
+      "abstract": "A number of well-motivated extensions of the LCDM concordance cosmological model postulate the existence of a population of sources embedded in the cosmic microwave background (CMB). One such example is the signature of cosmic bubble collisions which arise in models of eternal inflation. The most unambiguous way to test these scenarios is to evaluate the full posterior probability distribution of the global parameters defining the theory; however, a direct evaluation is computationally impractical on large datasets, such as those obtained by the Wilkinson Microwave Anisotropy Probe (WMAP) and Planck. A method to approximate the full posterior has been developed recently, which requires as an input a set of candidate sources which are most likely to give the largest contribution to the likelihood. In this article, we present an improved algorithm for detecting candidate sources using optimal filters, and apply it to detect candidate bubble collision signatures in WMAP 7-year observations. We show both theoretically and through simulations that this algorithm provides an enhancement in sensitivity over previous methods by a factor of approximately two. Moreover, no other filter-based approach can provide a superior enhancement of these signatures. Applying our algorithm to WMAP 7-year observations, we detect eight new candidate bubble collision signatures for follow-up analysis.",
+      "published": "2012-02-13",
+      "updated": "2012-04-05T09:52:23Z",
+      "doi": "10.1103/PhysRevD.85.103502",
+      "journal_ref": "Phys.Rev.D85:103502,2012",
+      "categories": [
+        "astro-ph.CO",
+        "astro-ph.IM",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1202.2861v2",
+      "abs_url": "http://arxiv.org/abs/1202.2861v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:36.309107+00:00",
+      "query": "all:\"bubble collision\" AND all:CMB",
+      "short_id": "1202.2861",
+      "citation_string": "J. D. McEwen et al. (4 authors) (2012). Optimal filters for detecting cosmic bubble collisions. doi:10.1103/PhysRevD.85.103502"
+    },
+    {
+      "arxiv_id": "0810.5128v2",
+      "title": "Watching Worlds Collide: Effects on the CMB from Cosmological Bubble Collisions",
+      "authors": [
+        "Spencer Chang",
+        "Matthew Kleban",
+        "Thomas S. Levi"
+      ],
+      "abstract": "We extend our previous work on the cosmology of Coleman-de Luccia bubble collisions. Within a set of approximations we calculate the effects on the cosmic microwave background (CMB) as seen from inside a bubble which has undergone such a collision. We find that the effects are always qualitatively similar--an anisotropy that depends only on the angle to the collision direction--but can produce a cold or hot spot of varying size, as well as power asymmetries along the axis determined by the collision. With other parameters held fixed the effects weaken as the amount of inflation which took place inside our bubble grows, but generically survive order 10 efolds past what is required to solve the horizon and flatness problems. In some regions of parameter space the effects can survive arbitrarily long inflation.",
+      "published": "2008-10-29",
+      "updated": "2009-05-15T23:56:49Z",
+      "doi": "10.1088/1475-7516/2009/04/025",
+      "journal_ref": "JCAP 0904:025,2009",
+      "categories": [
+        "hep-th",
+        "astro-ph",
+        "hep-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/0810.5128v2",
+      "abs_url": "http://arxiv.org/abs/0810.5128v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:36.309128+00:00",
+      "query": "all:\"bubble collision\" AND all:CMB",
+      "short_id": "0810.5128",
+      "citation_string": "Spencer Chang et al. (3 authors) (2008). Watching Worlds Collide: Effects on the CMB from Cosmological Bubble Collisions. doi:10.1088/1475-7516/2009/04/025"
+    },
+    {
+      "arxiv_id": "2410.23348v3",
+      "title": "Observable CMB B-modes from Cosmological Phase Transitions",
+      "authors": [
+        "Kylar Greene",
+        "Aurora Ireland",
+        "Gordan Krnjaic",
+        "Yuhsin Tsai"
+      ],
+      "abstract": "A B-mode polarization signal in the cosmic microwave background (CMB) is widely regarded as smoking gun evidence for gravitational waves produced during inflation. Here, we demonstrate that tensor perturbations sourced during non-inflationary epochs can yield non-negligible B-mode signals, which can in principle complicate the interpretation of future observational data. As a case study, we consider tensor perturbations sourced in the bubble collision stage of a first-order cosmological phase transition occurring in a secluded dark sector. Although phase transitions arise from causal sub-horizon physics, they nevertheless exhibit a white noise power spectrum on super-horizon scales. Power is suppressed on the large scales relevant for CMB B-mode polarization, but it is not necessarily negligible. We show that for appropriately chosen phase transition parameters, the maximal B-mode amplitude can compete with inflationary predictions that can be tested with current and future experiments. These scenarios can be differentiated by performing measurements on multiple angular scales, since the phase transition signal predicts peak power on smaller scales.",
+      "published": "2024-10-30",
+      "updated": "2026-04-20T21:03:32Z",
+      "doi": "10.1103/gv1d-znp4",
+      "journal_ref": "Phys. Rev. D 113, 083527 (2026)",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-ex",
+        "hep-ph",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2410.23348v3",
+      "abs_url": "http://arxiv.org/abs/2410.23348v3",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:36.309153+00:00",
+      "query": "all:\"bubble collision\" AND all:CMB",
+      "short_id": "2410.23348",
+      "citation_string": "Kylar Greene et al. (4 authors) (2024). Observable CMB B-modes from Cosmological Phase Transitions. doi:10.1103/gv1d-znp4"
+    },
+    {
+      "arxiv_id": "1305.1970v1",
+      "title": "Optimal analysis of azimuthal features in the CMB",
+      "authors": [
+        "Stephen Osborne",
+        "Leonardo Senatore",
+        "Kendrick Smith"
+      ],
+      "abstract": "We present algorithms for searching for azimuthally symmetric features in CMB data. Our algorithms are fully optimal for masked all-sky data with inhomogeneous noise, computationally fast, simple to implement, and make no approximations. We show how to implement the optimal analysis in both Bayesian and frequentist cases. In the Bayesian case, our algorithm for evaluating the posterior likelihood is so fast that we can do a brute-force search over parameter space, rather than using a Monte Carlo Markov chain. Our motivating example is searching for bubble collisions, a pre-inflationary signal which can be generated if multiple tunneling events occur in an eternally inflating spacetime, but our algorithms are general and should be useful in other contexts.",
+      "published": "2013-05-08",
+      "updated": "2013-05-08T22:13:35Z",
+      "doi": "10.1088/1475-7516/2013/10/001",
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1305.1970v1",
+      "abs_url": "http://arxiv.org/abs/1305.1970v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:36.309173+00:00",
+      "query": "all:\"bubble collision\" AND all:CMB",
+      "short_id": "1305.1970",
+      "citation_string": "Stephen Osborne et al. (3 authors) (2013). Optimal analysis of azimuthal features in the CMB. doi:10.1088/1475-7516/2013/10/001"
+    },
+    {
+      "arxiv_id": "2512.03231v2",
+      "title": "The DESI DR1 peculiar velocity survey: growth rate measurements from the galaxy power spectrum",
+      "authors": [
+        "F. Qin",
+        "C. Blake",
+        "C. Howlett",
+        "R. J. Turner",
+        "K. Lodha",
+        "J. Bautista",
+        "Y. Lai",
+        "A. J. Amsellem",
+        "J. Aguilar",
+        "S. Ahlen",
+        "D. Bianchi",
+        "D. Brooks",
+        "S. BenZvi",
+        "A. Carr",
+        "E. Chaussidon",
+        "T. Claybaugh",
+        "A. Cuceu",
+        "A. de la Macorra",
+        "K. Douglass",
+        "P. Doel",
+        "S. Ferraro",
+        "A. Font-Ribera",
+        "J. E. Forero-Romero",
+        "E. Gazta\u00f1aga",
+        "S. Gontcho A Gontcho",
+        "G. Gutierrez",
+        "J. Guy",
+        "H. K. Herrera-Alcantar",
+        "K. Honscheid",
+        "D. Huterer",
+        "M. Ishak",
+        "R. Joyce",
+        "A. G. Kim",
+        "D. Kirkby",
+        "T. Kisner",
+        "A. Kremin",
+        "O. Lahav",
+        "C. Lamman",
+        "M. Landriau",
+        "L. Le Guillou",
+        "M. E. Levi",
+        "M. Manera",
+        "A. Meisner",
+        "R. Miquel",
+        "J. Moustakas",
+        "A. Mu\u00f1oz-Guti\u00e9rrez",
+        "S. Nadathur",
+        "N. Palanque-Delabrouille",
+        "W. J. Percival",
+        "C. Poppett",
+        "F. Prada",
+        "I. Perez-Rafols",
+        "C. Ross",
+        "G. Rossi",
+        "E. Sanchez",
+        "D. Schlegel",
+        "K. Said",
+        "M. Schubnell",
+        "H. Seo",
+        "J. Silber",
+        "D. Sprayberry",
+        "G. Tarle",
+        "B. A. Weaver",
+        "P. Zarrouk",
+        "R. Zhou",
+        "H. Zou"
+      ],
+      "abstract": "The large-scale structure of the Universe and its evolution encapsulate a wealth of cosmological information. A powerful means of unlocking this knowledge lies in measuring the auto-power spectrum and/or the cross-power spectrum of the galaxy density and momentum fields, followed by the estimation of cosmological parameters based on these spectrum measurements. In this study, we generalize the cross-power spectrum model to accommodate scenarios where the density and momentum fields are derived from distinct galaxy surveys. The growth rate of the large-scale structures of the Universe, commonly represented as $f\u03c3_8$, is extracted by jointly fitting the monopole and quadrupole moments of the auto-density power spectrum, the monopole of the auto-momentum power spectrum, and the dipole of the cross-power spectrum. Our estimators, theoretical models and parameter-fitting framework have been tested using mocks, confirming their robustness and accuracy in retrieving the fiducial growth rate from simulation. These techniques are then applied to analyze the power spectrum of the DESI Bright Galaxy Survey and Peculiar Velocity Survey, and the fit result of the growth rate is $f\u03c3_8=0.440^{+0.080}_{-0.096}$ at effective redshift $z_{\\rm eff}=0.07$. By synthesizing the fitting outcomes from correlation functions, maximum likelihood estimation and power spectrum, yields a consensus value of $f\u03c3_8(z_{\\rm eff}=0.07) = 0.450 ^{+0.055}_{-0.055}$, and correspondingly we obtain $\u03b3=0.580^{+0.110}_{-0.110}$, $\u03a9_\\mathrm{m}=0.301^{+0.011}_{-0.011}$ and $\u03c3_8=0.834^{+0.032}_{-0.032}$. The measured $f\u03c3_8$ and $\u03b3$ are consistent with the prediction of the $\u039b$ Cold Dark Matter Model and General Relativity.",
+      "published": "2025-12-02",
+      "updated": "2026-02-15T08:56:51Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2512.03231v2",
+      "abs_url": "http://arxiv.org/abs/2512.03231v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:43.123995+00:00",
+      "query": "all:\"large scale structure\" AND all:\"power spectrum\" AND all:survey",
+      "short_id": "2512.03231",
+      "citation_string": "F. Qin et al. (66 authors) (2025). The DESI DR1 peculiar velocity survey: growth rate measurements from the galaxy power spectrum. arXiv:2512.03231"
+    },
+    {
+      "arxiv_id": "9811429v1",
+      "title": "The Power Spectrum of Matter",
+      "authors": [
+        "J. Einasto"
+      ],
+      "abstract": "We calculate the mean power spectrum of galaxies using published power spectra of galaxies and clusters of galaxies. The mean power spectrum has a relatively sharp maximum on scale 120 Mpc (for Hubble constant h=1), followed by an almost exact power-law spectrum of index n = -1.9 toward smaller scales. The power spectrum found from APM 2-D galaxy distribution and from LCRS and IRAS 1.2 Jy surveys is flatter around the maximum. Power spectra of galaxies and matter are similar in shape, we find the bias parameter of galaxies relative to matter 1.3 + - 0.1. We compare the empirical power spectrum of matter with analytical power spectra and show that the primordial power spectrum has a break in amplitude and a spike.",
+      "published": "1998-11-27",
+      "updated": "1998-11-27T07:18:08Z",
+      "doi": null,
+      "journal_ref": "Evolution of Large Scale Structure from Recombination to Garching, ed. A. J. Banday, R. K. Sheth, L. N. da Costa, PrintPartners Ipskamp, Enschede, (1999) 173 - 177",
+      "categories": [
+        "astro-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/9811429v1",
+      "abs_url": "http://arxiv.org/abs/astro-ph/9811429v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:43.124024+00:00",
+      "query": "all:\"large scale structure\" AND all:\"power spectrum\" AND all:survey",
+      "short_id": "9811429",
+      "citation_string": "J. Einasto (J. Einasto) (1998). The Power Spectrum of Matter. arXiv:9811429"
+    },
+    {
+      "arxiv_id": "2112.10602v1",
+      "title": "Relativistic effects in the power spectrum of the large scale structure",
+      "authors": [
+        "Rebeca Martinez-Carrillo"
+      ],
+      "abstract": "The forthcoming Stage-IV experiments aim to map the large scale structure of the Universe at high precision. The scales explored require a relativistic description, in addition to statistical tools for their analysis. In this thesis, we study the effects of adding relativistic and primordial non-Gaussianity contributions to the power spectrum. We begin by reviewing the standard cosmology, then we present the cosmological and Newtonian perturbation theory, which are necessary mathematical tools in the computation of our main results. Afterwards we present the main contributions to this thesis. First, we present solutions to the Einstein equations in the long-wavelength approximation, this allow us to obtain expressions for the relativistic density power spectrum at second and third order, these expressions also include contributions from primordial non-Gaussianity, in terms of the parameters $f_{\\mathrm{NL}}$ and $g_{\\mathrm{NL}}$. These results are complemented with the well known Newtonian solutions for the density contrast and are used in the computation of the total (relativistic + Newtonian) one-loop power spectrum. For completeness we also calculate the bispectrum at tree-level. We discuss the possibility of these relativistic effects being detectable with the future surveys considering different limiting values for $f_{\\mathrm{NL}}$ and $g_{\\mathrm{NL}}$. Subsequently, we compute the real space galaxy power spectrum, including relativistic and primordial non-Gaussianity effects. These effects come from the relativistic one-loop power spectrum terms and from factors of the non-linear bias parameter $b_{\\mathrm{NL}}$. We use our modelling to assess the ability of Stage-IV surveys to constrain primordial non-Gaussianity. Finally, we show how this non-linear bias parameter can effectively renormalize diverging relativistic contributions at large scales.",
+      "published": "2021-12-20",
+      "updated": "2021-12-20T15:15:06Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2112.10602v1",
+      "abs_url": "http://arxiv.org/abs/2112.10602v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:43.124053+00:00",
+      "query": "all:\"large scale structure\" AND all:\"power spectrum\" AND all:survey",
+      "short_id": "2112.10602",
+      "citation_string": "Rebeca Martinez-Carrillo (Rebeca Martinez-Carrillo) (2021). Relativistic effects in the power spectrum of the large scale structure. arXiv:2112.10602"
+    },
+    {
+      "arxiv_id": "0812.0521v2",
+      "title": "Signatures of the Baryon Acoustic Oscillations on the Convergence Power Spectrum of Weak lensing by Large Scale Structure",
+      "authors": [
+        "Tong-Jie Zhang",
+        "Qiang Yuan",
+        "Tian Lan"
+      ],
+      "abstract": "We employ an analytical approach to investigate the signatures of Baryon Acoustic Oscillations (BAOs) on the convergence power spectrum of weak lensing by large scale structure. It is shown that the BAOs wiggles can be found in both of the linear and nonlinear convergence power spectra of weak lensing at about $40\\le l\\le600$, but they are weaker than that of matter power spectrum. Although the statistical error for LSST are greatly smaller than that of CFHT and SNAP survey especially at about $30<l<300$, they are still larger than the their maximum variations of BAOs wiggles. Thus, the detection of BAOs with the ongoing and upcoming surveys such as LSST, CFHT and SNAP survey confront a technical challenge.",
+      "published": "2008-12-02",
+      "updated": "2009-01-18T09:55:56Z",
+      "doi": "10.1016/j.newast.2009.01.007",
+      "journal_ref": "New Astronomy 14 (2009) 507-512",
+      "categories": [
+        "astro-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/0812.0521v2",
+      "abs_url": "http://arxiv.org/abs/0812.0521v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:43.124075+00:00",
+      "query": "all:\"large scale structure\" AND all:\"power spectrum\" AND all:survey",
+      "short_id": "0812.0521",
+      "citation_string": "Tong-Jie Zhang et al. (3 authors) (2008). Signatures of the Baryon Acoustic Oscillations on the Convergence Power Spectrum of Weak lensing by Large Scale Structure. doi:10.1016/j.newast.2009.01.007"
+    },
+    {
+      "arxiv_id": "1003.0673v2",
+      "title": "Non-detection of a statistically anisotropic power spectrum in large-scale structure",
+      "authors": [
+        "Anthony R. Pullen",
+        "Christopher M. Hirata"
+      ],
+      "abstract": "We search a sample of photometric luminous red galaxies (LRGs) measured by the Sloan Digital Sky Survey (SDSS) for a quadrupolar anisotropy in the primordial power spectrum, in which P(\\vec{k}) is an isotropic power spectrum P(k) multiplied by a quadrupolar modulation pattern. We first place limits on the 5 coefficients of a general quadrupole anisotropy. We also consider axisymmetric quadrupoles of the form P(\\vec{k}) = P(k){1 + g_*[(\\hat{k}\\cdot\\hat{n})^2-1/3]} where \\hat{n} is the axis of the anisotropy. When we force the symmetry axis \\hat{n} to be in the direction (l,b)=(94 degrees,26 degrees) identified in the recent Groeneboom et al. analysis of the cosmic microwave background, we find g_*=0.006+/-0.036 (1 sigma). With uniform priors on \\hat{n} and g_* we find that -0.41<g_*<+0.38 with 95% probability, with the wide range due mainly to the large uncertainty of asymmetries aligned with the Galactic Plane. In none of these three analyses do we detect evidence for quadrupolar power anisotropy in large scale structure.",
+      "published": "2010-03-02",
+      "updated": "2010-05-21T23:19:31Z",
+      "doi": "10.1088/1475-7516/2010/05/027",
+      "journal_ref": "JCAP05:27,2010",
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1003.0673v2",
+      "abs_url": "http://arxiv.org/abs/1003.0673v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:43.124097+00:00",
+      "query": "all:\"large scale structure\" AND all:\"power spectrum\" AND all:survey",
+      "short_id": "1003.0673",
+      "citation_string": "Anthony R. Pullen et al. (2 authors) (2010). Non-detection of a statistically anisotropic power spectrum in large-scale structure. doi:10.1088/1475-7516/2010/05/027"
+    },
+    {
+      "arxiv_id": "2306.16866v2",
+      "title": "Bayesian inference methodology for Primordial Power Spectrum reconstructions from Large Scale Structure",
+      "authors": [
+        "G. Mart\u00ednez-Somonte",
+        "A. Marcos-Caballero",
+        "E. Mart\u00ednez-Gonz\u00e1lez",
+        "G. Ca\u00f1as-Herrera"
+      ],
+      "abstract": "We use Bayesian inference and nested sampling to develop a non-parametric method to reconstruct the primordial power spectrum $P_{\\mathcal{R}}(k)$ from Large Scale Structure (LSS) data. The performance of the method is studied by applying it to simulations of the clustering of two different object catalogues, low-$z$ (ELGs) and high-$z$ (QSOs), and considering two different photometric errors. These object clusterings are derived from different templates of the primordial power spectrum motivated by models of inflation: the Standard Model power law characterized by the two parameters $A_s$ and $n_s$; a local feature template; and a global oscillatory template. Our reconstruction method involves sampling $N$ knots in the log $\\{k,P_{\\mathcal{R}}(k)\\}$ plane. We use two statistical tests to examine the reconstructions for signs of primordial features: a global test comparing the evidences and a novel local test quantifying the power of the hypothesis test between the power law model and the marginalized probability over $N$ model. The method shows good performance in all scenarios considered. In particular, the tests show no feature detection for the SM. The method is able to detect power spectrum deviations at a level of $\\approx 2\\%$ for all considered features, combining either the low-$z$ or the high-$z$ redshift bins. Other scenarios with different redshift bins, photometric errors, feature amplitudes and detection levels are also discussed. In addition, we include a first application to real data from the Sloan Digital Sky Survey Luminous Red Galaxy Data Release 4 (SDSS LRG 04), finding no preference for deviations from the primordial power law. The method is flexible, model independent, and suitable for its application to existing and future LSS catalogues.",
+      "published": "2023-06-29",
+      "updated": "2024-07-10T10:20:22Z",
+      "doi": "10.1088/1475-7516/2024/06/072",
+      "journal_ref": "JCAP06(2024)072",
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2306.16866v2",
+      "abs_url": "http://arxiv.org/abs/2306.16866v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:43.124126+00:00",
+      "query": "all:\"large scale structure\" AND all:\"power spectrum\" AND all:survey",
+      "short_id": "2306.16866",
+      "citation_string": "G. Mart\u00ednez-Somonte et al. (4 authors) (2023). Bayesian inference methodology for Primordial Power Spectrum reconstructions from Large Scale Structure. doi:10.1088/1475-7516/2024/06/072"
+    },
+    {
+      "arxiv_id": "2201.05418v1",
+      "title": "Testing General Relativity with Gravitational Waves: An Overview",
+      "authors": [
+        "N. V. Krishnendu",
+        "Frank Ohme"
+      ],
+      "abstract": "The detections of gravitational-wave (GW) signals from compact binary coalescence by ground-based detectors have opened up the era of GW astronomy. These observations provide opportunities to test Einstein's general theory of relativity at the strong-field regime. Here we give a brief overview of the various GW-based tests of General Relativity (GR) performed by the LIGO-Virgo collaboration on the detected GW events to date. After providing details for the tests performed in four categories, we discuss the prospects for each test in the context of future GW detectors. The four categories of tests include the consistency tests, parametrized tests for GW generation and propagation, tests for the merger remnant properties, and GW polarization tests.",
+      "published": "2022-01-14",
+      "updated": "2022-01-14T12:24:56Z",
+      "doi": "10.3390/universe7120497",
+      "journal_ref": "Universe 2021, 7(12), 497",
+      "categories": [
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2201.05418v1",
+      "abs_url": "http://arxiv.org/abs/2201.05418v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:45.305840+00:00",
+      "query": "all:\"general relativity\" AND all:\"gravitational waves\" AND all:test",
+      "short_id": "2201.05418",
+      "citation_string": "N. V. Krishnendu et al. (2 authors) (2022). Testing General Relativity with Gravitational Waves: An Overview. doi:10.3390/universe7120497"
+    },
+    {
+      "arxiv_id": "1004.1293v1",
+      "title": "Gravitational waves astronomy: the ultimate test for Einstein's General Relativity",
+      "authors": [
+        "Christian Corda"
+      ],
+      "abstract": "It is well known that Einstein's General Relativity (GR) achieved a great success and overcame lots of experimental tests. On the other hand, GR also showed some shortcomings and flaws which today advise theorists to ask if it is the definitive theory of gravity. In this review we show that, if advanced projects on the detection of Gravitational Waves (GWs) will improve their sensitivity, allowing to perform a GWs astronomy, understanding if Einstein's GR is the correct and definitive theory of gravity will be possible. For this goal, accurate angular and frequency dependent response functions of interferometers for GWs arising from various Theories of Gravity, i.e. GR and Extended Theories of Gravity will have to be used. This review is founded on the Essay which won an Honorable Mention at the the 2009 Gravity Research Foundation Awards.",
+      "published": "2010-04-08",
+      "updated": "2010-04-08T09:39:55Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1004.1293v1",
+      "abs_url": "http://arxiv.org/abs/1004.1293v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:45.305870+00:00",
+      "query": "all:\"general relativity\" AND all:\"gravitational waves\" AND all:test",
+      "short_id": "1004.1293",
+      "citation_string": "Christian Corda (Christian Corda) (2010). Gravitational waves astronomy: the ultimate test for Einstein's General Relativity. arXiv:1004.1293"
+    },
+    {
+      "arxiv_id": "1905.13155v5",
+      "title": "Multi-band gravitational wave tests of general relativity",
+      "authors": [
+        "Zack Carson",
+        "Kent Yagi"
+      ],
+      "abstract": "The violent collisions of black holes provide for excellent test-beds of Einstein's general relativity in the strong/dynamical gravity regime. We here demonstrate the resolving power one can gain upon the use of multi-band observations of gravitational waves from both ground- and space-based detectors. We find significant improvement in both generic parameterized tests of general relativity and consistency tests of inspiral-merger-ringdown parts of the waveform over single-band detections. Such multi-band observations are crucial for unprecedented probes of e.g. parity-violation in gravity.",
+      "published": "2019-05-30",
+      "updated": "2020-08-22T20:38:12Z",
+      "doi": "10.1088/1361-6382/ab5c9a",
+      "journal_ref": null,
+      "categories": [
+        "gr-qc",
+        "astro-ph.HE",
+        "hep-ph",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1905.13155v5",
+      "abs_url": "http://arxiv.org/abs/1905.13155v5",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:45.305888+00:00",
+      "query": "all:\"general relativity\" AND all:\"gravitational waves\" AND all:test",
+      "short_id": "1905.13155",
+      "citation_string": "Zack Carson et al. (2 authors) (2019). Multi-band gravitational wave tests of general relativity. doi:10.1088/1361-6382/ab5c9a"
+    },
+    {
+      "arxiv_id": "2502.06104v1",
+      "title": "Transportable Optical Lattice Clocks and General Relativity",
+      "authors": [
+        "Hisaaki Shinkai",
+        "Masao Takamoto",
+        "Hidetoshi Katori"
+      ],
+      "abstract": "Optical lattice clocks (OLCs) enable us to measure time and frequency with a fractional uncertainty at $10^{-18}$ level, which is 2 orders of magnitude better than Cs clocks. In this article, after briefly reviewing OLCs and the history of testing the fundamental principles of general relativity, we report our experiments of measuring the gravitational redshift between RIKEN and The University of Tokyo, and at Tokyo Skytree using transportable OLCs. We also discuss a couple of future applications of OLCs, such as detecting gravitational waves in space and relativistic geodesy. The possibility of testing second-order parametrized post-Newtonian potential around the Earth is also mentioned.",
+      "published": "2025-02-10",
+      "updated": "2025-02-10T02:22:25Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2502.06104v1",
+      "abs_url": "http://arxiv.org/abs/2502.06104v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:45.305907+00:00",
+      "query": "all:\"general relativity\" AND all:\"gravitational waves\" AND all:test",
+      "short_id": "2502.06104",
+      "citation_string": "Hisaaki Shinkai et al. (3 authors) (2025). Transportable Optical Lattice Clocks and General Relativity. arXiv:2502.06104"
+    },
+    {
+      "arxiv_id": "2011.02938v3",
+      "title": "Testing General Relativity with Gravitational Waves",
+      "authors": [
+        "Zack Carson",
+        "Kent Yagi"
+      ],
+      "abstract": "Gravitational-wave sources offer us unique testbeds for probing strong-field, dynamical and nonlinear aspects of gravity. In this chapter, we give a brief overview of the current status and future prospects of testing General Relativity with gravitational waves. In particular, we focus on three theory-agnostic tests (parameterized tests, inspiral-merger-ringdown consistency tests, and gravitational-wave propagation tests) and explain how one can apply such tests to example modified theories of gravity. We conclude by giving some open questions that need to be resolved to carry out more accurate tests of gravity with gravitational waves.",
+      "published": "2020-11-05",
+      "updated": "2021-11-11T23:59:27Z",
+      "doi": "10.1007/978-981-15-4702-7_41-1",
+      "journal_ref": null,
+      "categories": [
+        "gr-qc",
+        "astro-ph.HE"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2011.02938v3",
+      "abs_url": "http://arxiv.org/abs/2011.02938v3",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:45.305924+00:00",
+      "query": "all:\"general relativity\" AND all:\"gravitational waves\" AND all:test",
+      "short_id": "2011.02938",
+      "citation_string": "Zack Carson et al. (2 authors) (2020). Testing General Relativity with Gravitational Waves. doi:10.1007/978-981-15-4702-7_41-1"
+    },
+    {
+      "arxiv_id": "1505.05213v1",
+      "title": "Gravitational Waves and Their Memory in General Relativity",
+      "authors": [
+        "Lydia Bieri",
+        "David Garfinkle",
+        "Shing-Tung Yau"
+      ],
+      "abstract": "General relativity explains gravitational radiation from binary black hole or neutron star mergers, from core-collapse supernovae and even from the inflation period in cosmology. These waves exhibit a unique effect called memory or Christodoulou effect, which in a detector like LIGO or LISA shows as a permanent displacement of test masses and in radio telescopes like NANOGrav as a change in the frequency of pulsars' pulses. It was shown that electromagnetic fields and neutrino radiation enlarge the memory. Recently it has been understood that the two types of memory addressed in the literature as `linear' and `nonlinear' are in fact two different phenomena. The former is due to fields that do not and the latter is due to fields that do reach null infinity.",
+      "published": "2015-05-20",
+      "updated": "2015-05-20T00:11:26Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1505.05213v1",
+      "abs_url": "http://arxiv.org/abs/1505.05213v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:45.305943+00:00",
+      "query": "all:\"general relativity\" AND all:\"gravitational waves\" AND all:test",
+      "short_id": "1505.05213",
+      "citation_string": "Lydia Bieri et al. (3 authors) (2015). Gravitational Waves and Their Memory in General Relativity. arXiv:1505.05213"
+    },
+    {
+      "arxiv_id": "1905.11122v2",
+      "title": "Gravitational wave standard sirens and cosmological parameter measurement",
+      "authors": [
+        "Xin Zhang"
+      ],
+      "abstract": "Gravitational wave standard sirens can be used to arbitrate the $H_0$ tension within the following several years. In the future, the observation of gravitational wave standard sirens would be developed into a powerful new cosmological probe because they can play an important role in breaking parameter degeneracies formed by other observations. Therefore, gravitational wave standard sirens are of great importance for the future accurate measurement of cosmological parameters.",
+      "published": "2019-05-27",
+      "updated": "2019-07-01T15:24:25Z",
+      "doi": "10.1007/s11433-019-9445-7",
+      "journal_ref": "Sci. China-Phys. Mech. Astron. 62, 110431 (2019)",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-ph"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1905.11122v2",
+      "abs_url": "http://arxiv.org/abs/1905.11122v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:48.417585+00:00",
+      "query": "all:\"gravitational waves\" AND all:\"standard sirens\"",
+      "short_id": "1905.11122",
+      "citation_string": "Xin Zhang (Xin Zhang) (2019). Gravitational wave standard sirens and cosmological parameter measurement. doi:10.1007/s11433-019-9445-7"
+    },
+    {
+      "arxiv_id": "0504616v1",
+      "title": "Using gravitational-wave standard sirens",
+      "authors": [
+        "Daniel E. Holz",
+        "Scott A. Hughes"
+      ],
+      "abstract": "Gravitational waves (GWs) from supermassive binary black hole (BBH) inspirals are potentially powerful standard sirens (the GW analog to standard candles) (Schutz 1986, 2002). Because these systems are well-modeled, the space-based GW observatory LISA will be able to measure the luminosity distance (but not the redshift) to some distant massive BBH systems with 1-10% accuracy. This accuracy is largely limited by pointing error: GW sources generally are poorly localized on the sky. Localizing the binary independently (e.g., through association with an electromagnetic counterpart) greatly reduces this positional error. An electromagnetic counterpart may also allow determination of the event's redshift. In this case, BBH coalescence would constitute an extremely precise (better than 1%) standard candle visible to high redshift. In practice, gravitational lensing degrades this precision, though the candle remains precise enough to provide useful information about the distance-redshift relation. Even if very rare, these GW standard sirens would complement, and increase confidence in, other standard candles.",
+      "published": "2005-04-27",
+      "updated": "2005-04-27T20:22:30Z",
+      "doi": "10.1086/431341",
+      "journal_ref": "Astrophys.J.629:15-22,2005",
+      "categories": [
+        "astro-ph",
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/astro-ph/0504616v1",
+      "abs_url": "http://arxiv.org/abs/astro-ph/0504616v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:48.417619+00:00",
+      "query": "all:\"gravitational waves\" AND all:\"standard sirens\"",
+      "short_id": "0504616",
+      "citation_string": "Daniel E. Holz et al. (2 authors) (2005). Using gravitational-wave standard sirens. doi:10.1086/431341"
+    },
+    {
+      "arxiv_id": "2201.04073v3",
+      "title": "Forecasts analysis on varying-$\u03b1$ theories from gravitational wave standard sirens",
+      "authors": [
+        "L. R. Cola\u00e7o",
+        "R. F. L. Holanda",
+        "Rafael C. Nunes",
+        "J. E. Gonzalez"
+      ],
+      "abstract": "Motivated by future gravitational waves observations, we perform forecasts analysis to constrain a possible time variation of the fine structure constant ($\u03b1$) within the context of the so-called runaway dilaton model. For this purpose, some gravitational-wave standard sirens mock data within the perspective of Einstein Telescope and LISA mission were considered jointly with current strong gravitational lensing systems observations. We find that future standard sirens observations can also play an important role in the search for possible variations of $\u03b1$ within the methodology presented in this work.",
+      "published": "2022-01-11",
+      "updated": "2023-10-18T23:06:34Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2201.04073v3",
+      "abs_url": "http://arxiv.org/abs/2201.04073v3",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:48.417644+00:00",
+      "query": "all:\"gravitational waves\" AND all:\"standard sirens\"",
+      "short_id": "2201.04073",
+      "citation_string": "L. R. Cola\u00e7o et al. (4 authors) (2022). Forecasts analysis on varying-$\u03b1$ theories from gravitational wave standard sirens. arXiv:2201.04073"
+    },
+    {
+      "arxiv_id": "2605.08595v2",
+      "title": "Gravitational-wave standard sirens and application in cosmology",
+      "authors": [
+        "Wen Zhao",
+        "Liang-Gui Zhu",
+        "Youjun Lu"
+      ],
+      "abstract": "The discovery of the gravitational-wave event GW170817 from a binary neutron star merger, together with its multi-wavelength electromagnetic counterparts, marks the beginning of the era of multi-messenger gravitational-wave astronomy. Observations of gravitational-wave signals from compact binary mergers enable an independent measurement of the luminosity distance to the source. This implies that gravitational-wave sources can serve as \"standard sirens\" to probe the expansion history of the Universe, providing a new approach to constrain cosmological parameters. In this paper, we review the basic principles of using gravitational-wave standard sirens to constrain cosmology. We discuss various methods for determining the source distance and redshift, as well as the capabilities of second- and third-generation ground-based detectors and space-based detectors in constraining cosmological parameters, especially the Hubble constant and dark energy parameters. By examining three types of standard sirens: binary neutron star mergers with electromagnetic counterparts as bright sirens, stellar-mass binary black hole mergers as dark sirens, and the dark lensed sirens, we illustrate the methodology, challenges, and future prospects of the standard siren approach.",
+      "published": "2026-05-09",
+      "updated": "2026-06-16T15:07:38Z",
+      "doi": "10.1088/1674-4527/ae8425",
+      "journal_ref": "Research in Astronomy and Astrophysics 26, 084012 (2026)",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2605.08595v2",
+      "abs_url": "http://arxiv.org/abs/2605.08595v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:48.417668+00:00",
+      "query": "all:\"gravitational waves\" AND all:\"standard sirens\"",
+      "short_id": "2605.08595",
+      "citation_string": "Wen Zhao et al. (3 authors) (2026). Gravitational-wave standard sirens and application in cosmology. doi:10.1088/1674-4527/ae8425"
+    },
+    {
+      "arxiv_id": "1807.00016v2",
+      "title": "Exploring the distance-redshift relation with gravitational wave standard sirens and tomographic weak lensing",
+      "authors": [
+        "Ken Osato"
+      ],
+      "abstract": "Gravitational waves from inspiraling compact objects provide us with information of the distance scale since we can infer the absolute luminosity of the source from analysis of the wave form, which is known as standard sirens. The first detection of the gravitational wave signal of the binary black hole merger event by Advanced LIGO has opened up the possibility of utilizing standard sirens as cosmological probe. In order to extract information of the distance-redshift relation, we cross-correlate weak lensing, which is an unbiased tracer of matter distribution in the Universe, with the projected number density of gravitational wave sources. For weak lensing, we employ tomography technique to efficiently obtain information of large-scale structures at wide ranges of redshifts. Making use of the cross-correlations along with the auto-correlations, we present forecast of constraints on four cosmological parameters, i.e., Hubble parameter, matter density, the equation of state parameter of dark energy, and the amplitude of matter fluctuation. To fully explore the ability of cross-correlations, which require large overlapping sky coverage, we consider the specific case with the upcoming surveys by \\textit{Euclid} for weak lensing and Einstein Telescope for standard sirens. We show that cosmological parameters can be tightly constrained solely by these auto- and cross-correlations of standard sirens and weak lensing. For example, the $1\\text{-}\u03c3$ error of Hubble parameter is expected to be $\u03c3(H_0) = 0.33 \\, \\mathrm{km} \\, \\mathrm{s}^{-1} \\, \\mathrm{Mpc}^{-1}$. Thus, the proposed statistics will be a promising probe into the distance scale.",
+      "published": "2018-06-29",
+      "updated": "2018-10-11T12:49:53Z",
+      "doi": "10.1103/PhysRevD.98.083524",
+      "journal_ref": "Phys. Rev. D 98, 083524 (2018)",
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1807.00016v2",
+      "abs_url": "http://arxiv.org/abs/1807.00016v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:48.417704+00:00",
+      "query": "all:\"gravitational waves\" AND all:\"standard sirens\"",
+      "short_id": "1807.00016",
+      "citation_string": "Ken Osato (Ken Osato) (2018). Exploring the distance-redshift relation with gravitational wave standard sirens and tomographic weak lensing. doi:10.1103/PhysRevD.98.083524"
+    },
+    {
+      "arxiv_id": "2012.15316v2",
+      "title": "Testing the general theory of relativity using gravitational wave propagation from dark standard sirens",
+      "authors": [
+        "Suvodip Mukherjee",
+        "Benjamin D. Wandelt",
+        "Joseph Silk"
+      ],
+      "abstract": "Alternative theories of gravity predict modifications in the propagation of gravitational waves (GW) through space-time. One of the smoking-gun predictions of such theories is the change in the GW luminosity distance to GW sources as a function of redshift relative to the electromagnetic (EM) luminosity distance expected from EM probes. We propose a multi-messenger test of the theory of general relativity from the propagation of gravitational waves by combining EM and GW observations to resolve these issues from GW sources without EM counterparts (which are also referred to as dark standard sirens). By using the relation between the geometric distances accessible from baryon acoustic oscillation measurements, and luminosity distance measurements from the GW sources, we can measure any deviation from the general theory of relativity via the GW sources of unknown redshift that will be detectable by networks of GW detectors such as LIGO, Virgo, and KAGRA. Using this technique, the fiducial value of the frictional term can be measured to a precision $\u039e_0=0.98^{+0.04}_{-0.23}$ after marginalizing over redshift dependence, cosmological parameters, and GW bias parameters with $\\sim 3500$ dark standard sirens of masses $30\\,\\rm M_\\odot$ each distributed up to redshift $z=0.5$. For a fixed redshift dependence, a value of $\u039e_0=0.99^{+0.02}_{-0.02}$ can be measured with a similar number of dark sirens. Application of our methodology to the far more numerous dark standard sirens detectable with next generation GW detectors, such as LISA, Einstein Telescope and Cosmic Explorer, will allow achievement of higher accuracy than possible from use of bright standard sirens.",
+      "published": "2020-12-30",
+      "updated": "2021-01-04T23:06:11Z",
+      "doi": "10.1093/mnras/stab001",
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO",
+        "astro-ph.HE",
+        "gr-qc"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2012.15316v2",
+      "abs_url": "http://arxiv.org/abs/2012.15316v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:17:48.417740+00:00",
+      "query": "all:\"gravitational waves\" AND all:\"standard sirens\"",
+      "short_id": "2012.15316",
+      "citation_string": "Suvodip Mukherjee et al. (3 authors) (2020). Testing the general theory of relativity using gravitational wave propagation from dark standard sirens. doi:10.1093/mnras/stab001"
+    },
+    {
+      "arxiv_id": "2106.02481v1",
+      "title": "Cosmic tangle: Loop quantum cosmology and CMB anomalies",
+      "authors": [
+        "Martin Bojowald"
+      ],
+      "abstract": "Loop quantum cosmology is a conflicted field in which exuberant claims of observability coexist with serious objections against the conceptual and physical viability of its current formulations. This contribution presents a non-technical case study of the recent claim that loop quantum cosmology might alleviate anomalies in observations of the cosmic microwave background.",
+      "published": "2021-06-04",
+      "updated": "2021-06-04T13:40:31Z",
+      "doi": "10.3390/universe7060186",
+      "journal_ref": "Universe 7 (2021) 186",
+      "categories": [
+        "gr-qc",
+        "astro-ph.CO",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2106.02481v1",
+      "abs_url": "http://arxiv.org/abs/2106.02481v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:18:02.933091+00:00",
+      "query": "all:\"CMB anomalies\" AND all:cosmology",
+      "short_id": "2106.02481",
+      "citation_string": "Martin Bojowald (Martin Bojowald) (2021). Cosmic tangle: Loop quantum cosmology and CMB anomalies. doi:10.3390/universe7060186"
+    },
+    {
+      "arxiv_id": "2503.06941v2",
+      "title": "Do JWST reionization (optical depth) puzzle, cosmological tensions, and CMB anomalies imply Harrison-Zel'dovich spectrum?",
+      "authors": [
+        "Hao-Hao Li",
+        "Xin-zhe Zhang",
+        "Taotao Qiu",
+        "Jun-Qing Xia"
+      ],
+      "abstract": "The James Webb Space Telescope (JWST) has observed massive galaxies at high redshifts, which implies an earlier epoch of reionization (EoR) compared with the cosmic microwave background (CMB) results. In this paper, based on \\texttt{Planck 2020} (NPIPE release), \\texttt{ACT DR4} and \\texttt{SPT-3G} data, if assumed a Harrison-Zel'dovich (HZ) primordial power spectrum in the standard cosmological model, we show that the redshift or optical depth of reionization is larger than the case of a power-law (PL) primordial power spectrum. In HZ-$ \u039b$CDM model, the redshift of reionization is $ z_\\text{reio} = 9.11 \\pm 0.61 $, which is consistent with the JWST result that $ z_\\text{reio} \\approx 8.9 $. Moreover, the cosmological tensions, i.e. Hubble ($H_0$) tension and $ S_8 $ tension are alleviated in HZ-$ \u039b$CDM case. The Hubble constant is $ H_0 = 70.38 \\pm 0.35 \\, \\text{km}/\\text{s}/\\text{Mpc}$ and the structure growth parameter is $ S_8 = 0.7645\\pm 0.0094 $ in HZ-$ \u039b$CDM model. We also consider two extensions of $ \u039b$CDM, including $ \u039b$CDM$ + A_\\text{L} $ and $ \u039b$CDM$ + \u03a9_\\text{k} $ models. But the extensions of $ \u039b$CDM with a HZ spectrum meet more serious CMB anomalies, i.e. lensing anomaly and spatial curvature anomaly as compared with the extensions of $ \u039b$CDM with a PL spectrum. We discuss that these two CMB anomalies may come from the degeneracy of cosmological parameters.",
+      "published": "2025-03-10",
+      "updated": "2025-07-19T11:41:12Z",
+      "doi": "10.1088/1475-7516/2025/07/056",
+      "journal_ref": "JCAP 07 (2025) 056",
+      "categories": [
+        "astro-ph.CO",
+        "astro-ph.GA"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2503.06941v2",
+      "abs_url": "http://arxiv.org/abs/2503.06941v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:18:02.933148+00:00",
+      "query": "all:\"CMB anomalies\" AND all:cosmology",
+      "short_id": "2503.06941",
+      "citation_string": "Hao-Hao Li et al. (4 authors) (2025). Do JWST reionization (optical depth) puzzle, cosmological tensions, and CMB anomalies imply Harrison-Zel'dovich spectrum?. doi:10.1088/1475-7516/2025/07/056"
+    },
+    {
+      "arxiv_id": "2105.12993v1",
+      "title": "Anomalies in the Cosmic Microwave Background and their Non-Gaussian Origin in Loop Quantum Cosmology",
+      "authors": [
+        "Ivan Agullo",
+        "Dimitrios Kranas",
+        "V. Sreenath"
+      ],
+      "abstract": "Anomalies in the cosmic microwave background (CMB) refer to features that have been observed, mostly at large angular scales, and which show some tension with the statistical predictions of the standard $\u039b$CDM model. In this work, we focus our attention on power suppression, dipolar modulation, a preference for odd parity, and the tension in the lensing parameter $A_L$. Though the statistical significance of each individual anomaly is inconclusive, collectively they are significant, and could indicate new physics beyond the $\u039b$CDM model. In this article, we present a brief, but pedagogical introduction to CMB anomalies and propose a common origin in the context of loop quantum cosmology.",
+      "published": "2021-05-27",
+      "updated": "2021-05-27T08:26:10Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "gr-qc",
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2105.12993v1",
+      "abs_url": "http://arxiv.org/abs/2105.12993v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:18:02.933176+00:00",
+      "query": "all:\"CMB anomalies\" AND all:cosmology",
+      "short_id": "2105.12993",
+      "citation_string": "Ivan Agullo et al. (3 authors) (2021). Anomalies in the Cosmic Microwave Background and their Non-Gaussian Origin in Loop Quantum Cosmology. arXiv:2105.12993"
+    },
+    {
+      "arxiv_id": "2602.16659v1",
+      "title": "Updated Constraints on Infrared Cutoff Models and Implications for Large-Scale CMB Anomalies",
+      "authors": [
+        "Ujjwal Upadhyay",
+        "Yashi Tiwari",
+        "Tarun Souradeep"
+      ],
+      "abstract": "The nearly scale-invariant primordial power spectrum provides the standard initial conditions for cosmological perturbations. However, the largest scales remain only weakly constrained by CMB observations, leaving room for deviations such as an infrared (IR) cut-off. This possibility is further motivated by the persistence of large-scale CMB anomalies, most notably the low quadrupole power. In this work, we revisit several broad classes of phenomenologically motivated IR cut-off scenarios using parametrised functional forms of the primordial power spectrum. We confront these models with the latest CMB, BAO, and supernova data and derive updated constraints on the cut-off scale and associated features. Our results remain consistent with earlier studies, showing that although such models suppress power at low multipoles, the improvement in fit is marginal and does not overcome the associated parameter penalties. We therefore find no statistically significant evidence favouring IR cut-off models over the standard power-law spectrum with current data. We further explore the interplay between IR cut-off features and a possible increase in the reionisation optical depth, motivated by the recent CMB-BAO tension highlighted by DESI DR2 within the $\u039b$CDM framework. We show that the additional freedom introduced by large-scale suppression is generally insufficient to support a substantial increase in optical depth, owing to the weak statistical preference for suppressed large-scale temperature power. Finally, we examine the implications of IR cut-off models for large-scale CMB anomalies by analysing the corresponding anomaly statistics within a Bayesian framework.",
+      "published": "2026-02-18",
+      "updated": "2026-02-18T18:01:22Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "astro-ph.CO"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2602.16659v1",
+      "abs_url": "http://arxiv.org/abs/2602.16659v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:18:02.933211+00:00",
+      "query": "all:\"CMB anomalies\" AND all:cosmology",
+      "short_id": "2602.16659",
+      "citation_string": "Ujjwal Upadhyay et al. (3 authors) (2026). Updated Constraints on Infrared Cutoff Models and Implications for Large-Scale CMB Anomalies. arXiv:2602.16659"
+    },
+    {
+      "arxiv_id": "1311.1599v2",
+      "title": "CMB anomalies from an inflationary model in string theory",
+      "authors": [
+        "Zhi-Guo Liu",
+        "Zong-Kuan Guo",
+        "Yun-Song Piao"
+      ],
+      "abstract": "Recent Planck measurements show some CMB anomalies on large angular scales, which confirms the early observations by WMAP. We show that an inflationary model, in which before the slow-roll inflation the Universe is in a superinflationary phase, can generate a large-scale cutoff in the primordial power spectrum, which may account for not only the power suppression on large angular scales, but also a large dipole power asymmetry in the CMB. We discuss an implementation of our model in string theory.",
+      "published": "2013-11-07",
+      "updated": "2013-11-26T06:18:13Z",
+      "doi": "10.1140/epjc/s10052-014-3006-0",
+      "journal_ref": "Eur. Phys. J. C (2014) 74:3006",
+      "categories": [
+        "astro-ph.CO",
+        "gr-qc",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1311.1599v2",
+      "abs_url": "http://arxiv.org/abs/1311.1599v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:18:02.933230+00:00",
+      "query": "all:\"CMB anomalies\" AND all:cosmology",
+      "short_id": "1311.1599",
+      "citation_string": "Zhi-Guo Liu et al. (3 authors) (2013). CMB anomalies from an inflationary model in string theory. doi:10.1140/epjc/s10052-014-3006-0"
+    },
+    {
+      "arxiv_id": "1904.10981v2",
+      "title": "Towards testing CMB anomalies using the kinetic and polarized Sunyaev Zel'dovich effects",
+      "authors": [
+        "Juan I. Cayuso",
+        "Matthew C. Johnson"
+      ],
+      "abstract": "Measurements of the Cosmic Microwave Background (CMB) temperature anisotropies on large angular scales have uncovered a number of anomalous features of marginal statistical significance, such as a hemispherical power asymmetry, lack of power on large angular scales, and features in the power spectrum. Because the primary CMB temperature has been measured at the cosmic variance limit, determining if these anomalies are hints of new physics as opposed to foregrounds, systematics, or simply statistical flukes, requires new observables. In this paper, we highlight the potential contribution that future measurements of the kinetic Sunyaev-Zel'dovich effect (kSZ) and the polarized Sunyaev Zel'dovich effect (pSZ) could make in determining the physical nature of several CMB anomalies. The kSZ and pSZ effects, temperature and polarization anisotropies induced by scattering from free electrons in the reionized Universe, are the dominant blackbody contribution to the CMB on small angular scales. Using the technique of SZ tomography, measurements of kSZ and pSZ effects can be combined with galaxy surveys to reconstruct the remote CMB dipole and quadrupole fields, providing a 3-dimensional probe of large scale modes inside our Hubble volume. Building on previous work, we forecast the additional constraining power that these observables might offer for a representative set of anomaly models. We find that the remote CMB dipole and quadrupole contain a similar amount of information on anomaly models as the primary CMB polarization. The information from CMB temperature, polarization, and the remote dipole and quadrupole fields is complementary, and the full set of observables can improve constraints on anomaly models by a factor of $\\sim 2-4$ using next-generation CMB experiments and galaxy surveys. This could be sufficient to definitively establish the physical origin of several CMB anomalies.",
+      "published": "2019-04-24",
+      "updated": "2019-07-11T20:25:26Z",
+      "doi": "10.1103/PhysRevD.101.123508",
+      "journal_ref": "Phys. Rev. D 101, 123508 (2020)",
+      "categories": [
+        "astro-ph.CO",
+        "hep-ph",
+        "hep-th"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1904.10981v2",
+      "abs_url": "http://arxiv.org/abs/1904.10981v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:18:02.933261+00:00",
+      "query": "all:\"CMB anomalies\" AND all:cosmology",
+      "short_id": "1904.10981",
+      "citation_string": "Juan I. Cayuso et al. (2 authors) (2019). Towards testing CMB anomalies using the kinetic and polarized Sunyaev Zel'dovich effects. doi:10.1103/PhysRevD.101.123508"
+    },
+    {
+      "arxiv_id": "1607.04206v1",
+      "title": "Reliable MIMO Optical Wireless Communications Through Super-Rectangular Cover",
+      "authors": [
+        "Yan-Yu Zhang",
+        "Hong-Yi Yu",
+        "Jian-Kang Zhang",
+        "Jin-Long Wang"
+      ],
+      "abstract": "In this paper, we consider an intensity modulated direct detection MIMO optical wireless communication (OWC) system. For such a system, a novel super-rectangular cover theory is developed to characterize both the unique identifiability and full reliability. This theory states that a transmitted matrix signal can be uniquely identified if and only if the cover order is equal to the transmitter aperture number, i.e., full cover. In addition, we prove that full reliability is guaranteed for space-time block coded MIMO-OWC over commonly used log-normal fading channels with an ML detector if and only if the STBC enables full cover. In addition, the diversity gain can be geometrically interpreted as the cover order of the super-rectangle, which should be maximized, and the volume of this super-rectangle, as the diversity loss, should be minimized. Using this established error performance criterion, the optimal linear STBC for block fading channels is proved to be spatial repetition code with an optimal power allocation. The design of the optimal non-linear STBC is shown to be equivalent to constructing the optimal multi-dimensional constellation. Specifically, a multi-dimensional constellation from Diophantine equations is proposed and then, shown to be more energy-efficient than the commonly used nonnegative pulse amplitude modulation constellation.",
+      "published": "2016-07-14",
+      "updated": "2016-07-14T16:53:51Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "cs.IT"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1607.04206v1",
+      "abs_url": "http://arxiv.org/abs/1607.04206v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:18:05.899965+00:00",
+      "query": "all:\"spatial repetition\"",
+      "short_id": "1607.04206",
+      "citation_string": "Yan-Yu Zhang et al. (4 authors) (2016). Reliable MIMO Optical Wireless Communications Through Super-Rectangular Cover. arXiv:1607.04206"
+    },
+    {
+      "arxiv_id": "1306.2808v2",
+      "title": "Can retinal ganglion cell dipoles seed iso-orientation domains in the visual cortex?",
+      "authors": [
+        "Manuel Schottdorf",
+        "Stephen J. Eglen",
+        "Fred Wolf",
+        "Wolfgang Keil"
+      ],
+      "abstract": "It has been argued that the emergence of roughly periodic orientation preference maps (OPMs) in the primary visual cortex (V1) of carnivores and primates can be explained by a so-called statistical connectivity model. This model assumes that input to V1 neurons is dominated by feed-forward projections originating from a small set of retinal ganglion cells (RGCs). The typical spacing between adjacent cortical orientation columns preferring the same orientation then arises via Moir\u00e9-Interference between hexagonal ON/OFF RGC mosaics. While this Moir\u00e9-Interference critically depends on long-range hexagonal order within the RGC mosaics, a recent statistical analysis of RGC receptive field positions found no evidence for such long-range positional order. Hexagonal order may be only one of several ways to obtain spatially repetitive OPMs in the statistical connectivity model. Here, we investigate a more general requirement on the spatial structure of RGC mosaics that can seed the emergence of spatially repetitive cortical OPMs, namely that angular correlations between so-called RGC dipoles exhibit a spatial structure similar to that of OPM autocorrelation functions. Both in cat beta cell mosaics as well as primate parasol receptive field mosaics we find that RGC dipole angles are spatially uncorrelated. To help assess the level of these correlations, we introduce a novel point process that generates mosaics with realistic nearest neighbor statistics and a tunable degree of spatial correlations of dipole angles. Using this process, we show that given the size of available data sets, the presence of even weak angular correlations in the data is very unlikely. We conclude that the layout of ON/OFF ganglion cell mosaics lacks the spatial structure necessary to seed iso-orientation domains in the primary visual cortex.",
+      "published": "2013-06-12",
+      "updated": "2013-11-19T14:58:37Z",
+      "doi": "10.1371/journal.pone.0086139",
+      "journal_ref": "PLoS ONE 9(1): e86139 (2014)",
+      "categories": [
+        "q-bio.NC"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/1306.2808v2",
+      "abs_url": "http://arxiv.org/abs/1306.2808v2",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:18:05.900018+00:00",
+      "query": "all:\"spatial repetition\"",
+      "short_id": "1306.2808",
+      "citation_string": "Manuel Schottdorf et al. (4 authors) (2013). Can retinal ganglion cell dipoles seed iso-orientation domains in the visual cortex?. doi:10.1371/journal.pone.0086139"
+    },
+    {
+      "arxiv_id": "2603.02096v1",
+      "title": "FluxMem: Adaptive Hierarchical Memory for Streaming Video Understanding",
+      "authors": [
+        "Yiweng Xie",
+        "Bo He",
+        "Junke Wang",
+        "Xiangyu Zheng",
+        "Ziyi Ye",
+        "Zuxuan Wu"
+      ],
+      "abstract": "This paper presents FluxMem, a training-free framework for efficient streaming video understanding. FluxMem adaptively compresses redundant visual memory through a hierarchical, two-stage design: (1) a Temporal Adjacency Selection (TAS) module removes redundant visual tokens across adjacent frames, and (2) a Spatial Domain Consolidation (SDC) module further merges spatially repetitive regions within each frame into compact representations. To adapt effectively to dynamic scenes, we introduce a self-adaptive token compression mechanism in both TAS and SDC, which automatically determines the compression rate based on intrinsic scene statistics rather than manual tuning. Extensive experiments demonstrate that FluxMem achieves new state-of-the-art results on existing online video benchmarks, reaching 76.4 on StreamingBench and 67.2 on OVO-Bench under real-time settings, while reducing latency by 69.9% and peak GPU memory by 34.5% on OVO-Bench. Furthermore, it maintains strong offline performance, achieving 73.1 on MLVU while using 65% fewer visual tokens.",
+      "published": "2026-03-02",
+      "updated": "2026-03-02T17:16:47Z",
+      "doi": null,
+      "journal_ref": null,
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "pdf_url": "https://arxiv.org/pdf/2603.02096v1",
+      "abs_url": "http://arxiv.org/abs/2603.02096v1",
+      "source": "arXiv API",
+      "retrieved_at": "2026-10-07T03:18:05.900044+00:00",
+      "query": "all:\"spatial repetition\"",
+      "short_id": "2603.02096",
+      "citation_string": "Yiweng Xie et al. (6 authors) (2026). FluxMem: Adaptive Hierarchical Memory for Streaming Video Understanding. arXiv:2603.02096"
+    }
+  ]
+}

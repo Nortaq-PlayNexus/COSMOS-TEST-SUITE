@@ -16,8 +16,8 @@
   ],
   "analysis_plan": {
     "experiment_id": "EXP-001",
-    "timestamp": "2026-10-07T03:10:13.182994",
-    "commit": "30d3c42",
+    "timestamp": "2026-10-07T03:28:00.150129",
+    "commit": "a9c597b",
     "dataset_version": "sample_cmb_map@v1, sample_galaxy_catalog@v1, sample_rotation_curves@v1",
     "parameters": {
       "seed": 42,
@@ -150,7 +150,7 @@
       },
       {
         "question": "Was this analysis specified before the data were examined?",
-        "finding": "Analysis plan registered at 2026-10-07T03:10:13.182994 with seed 42.",
+        "finding": "Analysis plan registered at 2026-10-07T03:28:00.150129 with seed 42.",
         "verdict": "pre-registered"
       },
       {
@@ -167,85 +167,85 @@
       "node_type": "setup",
       "node_id": "experiments\\EXP-001",
       "description": "Experiment directory created",
-      "timestamp": "2026-10-07T03:10:12.981948"
+      "timestamp": "2026-10-07T03:27:59.947341"
     },
     {
       "node_type": "setup",
       "node_id": "experiments\\EXP-001",
       "description": "Experiment directory created",
-      "timestamp": "2026-10-07T03:10:12.982536"
+      "timestamp": "2026-10-07T03:27:59.947956"
     },
     {
       "node_type": "database",
       "node_id": "experiment_record",
       "description": "Experiment record created/updated in database",
-      "timestamp": "2026-10-07T03:10:12.982543"
+      "timestamp": "2026-10-07T03:27:59.947964"
     },
     {
       "node_type": "plan",
       "node_id": "analysis_plan",
       "description": "Analysis plan registered",
-      "timestamp": "2026-10-07T03:10:13.158660"
+      "timestamp": "2026-10-07T03:28:00.125350"
     },
     {
       "node_type": "data",
       "node_id": "galaxy_catalog",
       "description": "Galaxy catalog: COSMOS clustered Lambda CDM mock (no real survey data available); 3200000 galaxies",
-      "timestamp": "2026-10-07T03:10:14.100566"
+      "timestamp": "2026-10-07T03:28:01.057353"
     },
     {
       "node_type": "preprocessing",
       "node_id": "bias",
       "description": "Effective galaxy bias measured from the fields: b = 0.194 (input bias 0.30)",
-      "timestamp": "2026-10-07T03:10:14.604868"
+      "timestamp": "2026-10-07T03:28:01.556205"
     },
     {
       "node_type": "preprocessing",
       "node_id": "power_spectrum",
       "description": "Measured P(k) on 20 log bins over 0.022-0.351 h/Mpc; nbar=0.05 (Mpc/h)^-3",
-      "timestamp": "2026-10-07T03:10:14.604888"
+      "timestamp": "2026-10-07T03:28:01.556223"
     },
     {
       "node_type": "data",
       "node_id": "prepared_data",
       "description": "Data ingested and preprocessed",
-      "timestamp": "2026-10-07T03:10:14.714052"
+      "timestamp": "2026-10-07T03:28:01.670555"
     },
     {
       "node_type": "model",
       "node_id": "lcdm_predict",
       "description": "Lambda CDM BBKS prediction, sigma8-normalised to 0.810, compared in galaxy space with b=0.19407517313509198",
-      "timestamp": "2026-10-07T03:10:14.715042"
+      "timestamp": "2026-10-07T03:28:01.671504"
     },
     {
       "node_type": "model",
       "node_id": "lcdm_prediction",
       "description": "Lambda CDM prediction generated",
-      "timestamp": "2026-10-07T03:10:14.715051"
+      "timestamp": "2026-10-07T03:28:01.671513"
     },
     {
       "node_type": "simulation",
       "node_id": "null_simulation",
       "description": "Null distribution simulated",
-      "timestamp": "2026-10-07T03:10:17.168603"
+      "timestamp": "2026-10-07T03:28:04.149772"
     },
     {
       "node_type": "analysis",
       "node_id": "statistical_analysis",
       "description": "Statistical analysis completed",
-      "timestamp": "2026-10-07T03:10:17.174505"
+      "timestamp": "2026-10-07T03:28:04.155699"
     },
     {
       "node_type": "systematics",
       "node_id": "systematic_assessment",
       "description": "Systematics assessed",
-      "timestamp": "2026-10-07T03:10:17.174591"
+      "timestamp": "2026-10-07T03:28:04.155768"
     },
     {
       "node_type": "adversarial",
       "node_id": "adversarial_tests",
       "description": "Adversarial tests completed",
-      "timestamp": "2026-10-07T03:10:17.174692"
+      "timestamp": "2026-10-07T03:28:04.155849"
     }
   ],
   "report_path": "experiments\\EXP-001\\report\\report_EXP-001.md"

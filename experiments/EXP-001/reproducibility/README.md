@@ -11,7 +11,7 @@ cosmos reproduce EXP-001
 - Random seed: 42
 - Analysis version: v1
 - Cosmos version: 0.1.0.dev0
-- Commit: 30d3c42
+- Commit: a9c597b
 - Classification: consistent_with_standard_model
 
 ## Files
@@ -24,8 +24,8 @@ cosmos reproduce EXP-001
 
 {
   "experiment_id": "EXP-001",
-  "timestamp": "2026-10-07T03:10:13.182994",
-  "commit": "30d3c42",
+  "timestamp": "2026-10-07T03:28:00.150129",
+  "commit": "a9c597b",
   "dataset_version": "sample_cmb_map@v1, sample_galaxy_catalog@v1, sample_rotation_curves@v1",
   "parameters": {
     "seed": 42,

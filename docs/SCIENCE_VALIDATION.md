@@ -13,7 +13,7 @@ same bug can be consistent end to end. (2) is what catches that.
 
 ## Internal validation (what the test suite covers)
 
-188 tests. The physics-relevant ones:
+221 tests. The physics-relevant ones:
 
 ### Known analytical values
 

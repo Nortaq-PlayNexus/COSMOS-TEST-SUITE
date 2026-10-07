@@ -26,10 +26,11 @@ cosmos -d sqlite:///scratch.db experiment list
 analyze cmb                          analyze galaxy-catalog       analyze rotation-curve
 compare-models                      data download                data list
 experiment delete                   experiment list              experiment run
-experiment status                   papers search                replicate
-report generate                     reproduce run                research search
-simulate bubble-collision           simulate lcdm                simulate mock-galaxy
-simulate topology                   verify                       version
+experiment status                   papers ingest                papers search
+papers stats                        replicate                    report generate
+reproduce run                       research search              simulate bubble-collision
+simulate lcdm                       simulate mock-galaxy         simulate topology
+verify                               version
 ```
 
 ## version
@@ -118,15 +119,22 @@ cosmos reproduce run EXP-001
 cosmos verify EXP-001
 ```
 
-## research / papers search
+## research / papers
 
 ```bash
-cosmos research search "cosmic topology matched circles Planck"
+cosmos research search "cosmic topology"
 cosmos papers search "Hubble tension distance ladder"
+cosmos papers search "dark energy" --doi        # only records with a DOI
+cosmos papers search "cosmic topology" --full    # include abstracts
+cosmos papers stats                             # corpus composition
+cosmos papers ingest                            # grow the corpus from arXiv
 ```
 
-These currently print guidance rather than querying a corpus — the paper
-ingestion engine is not implemented yet.
+These query the local corpus of 86 records ingested from the live arXiv API.
+All search terms must match (AND semantics).
+
+A zero-result search says the **local index** has no match. It does not say no
+such paper exists, and the CLI says so explicitly.
 
 ## compare-models / replicate
 
@@ -137,6 +145,28 @@ cosmos replicate PAPER-ID
 
 Also placeholders. `replicate` is the intended entry point for independently
 reproducing a published analysis from its methodology.
+
+## Literature ingestion
+
+`cosmos papers ingest` queries the arXiv API, one request per research
+question in the registry, honouring the API's three-second rate limit.
+Responses are cached under `papers/cache/`, so re-running is cheap and
+offline mode works from cache.
+
+```bash
+cosmos papers ingest                    # fill gaps in the corpus
+cosmos papers ingest --offline          # cached responses only
+cosmos papers ingest --max-results 10
+```
+
+Ingestion never invents a citation. Every record carries the arXiv ID the API
+returned, the query that found it, and a retrieval timestamp. A retrieval
+failure is reported as a failure — never as "no such paper exists".
+
+Numbers are deliberately **not** extracted from abstracts into results tables.
+Scraping "67.4 ± 0.5" out of prose has no error detection, so abstracts are
+stored verbatim for later verified extraction. That keeps §2's separation of
+observation from inference intact.
 
 ## Scripts and pipelines
 
