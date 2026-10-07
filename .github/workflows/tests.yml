@@ -68,6 +68,56 @@ jobs:
         run: |
           python -m pytest tests/test_experiments.py::TestFullRun -q --no-header
 
+      - name: Check every third-party import is a declared dependency
+        # A dependency that is used but not declared breaks `pip install` on a
+        # clean machine. CI caught this once already (pydantic-settings), so it
+        # is now asserted rather than discovered by the next contributor.
+        if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.12'
+        run: |
+          python -c "
+          import ast, pathlib, re, sys
+          root = pathlib.Path('.')
+          text = (root / 'pyproject.toml').read_text(encoding='utf-8')
+          block = text.split('dependencies = [', 1)[1].split(']', 1)[0]
+          declared = set()
+          for line in block.splitlines():
+              line = line.split('#', 1)[0].strip().strip('\",')
+              if line:
+                  declared.add(line.split('>=')[0].split('==')[0].strip())
+          # Import names whose pip distribution name differs.
+          alias = {'pydantic_settings': 'pydantic-settings',
+                   'sklearn': 'scikit-learn', 'yaml': 'pyyaml',
+                   'PIL': 'pillow', 'cv2': 'opencv-python',
+                   'skimage': 'scikit-image', 'dateutil': 'python-dateutil'}
+          local = {p.name for p in (root / 'cosmos').iterdir() if p.is_dir()} | {'cosmos'}
+          missing = {}
+          for path in sorted(root.rglob('*.py')):
+              if any(part in {'.venv', 'build', 'dist', '.git'} for part in path.parts):
+                  continue
+              try:
+                  tree = ast.parse(path.read_text(encoding='utf-8'))
+              except SyntaxError:
+                  continue
+              for node in ast.walk(tree):
+                  mods = []
+                  if isinstance(node, ast.Import):
+                      mods = [a.name.split('.')[0] for a in node.names]
+                  elif isinstance(node, ast.ImportFrom) and not node.level and node.module:
+                      mods = [node.module.split('.')[0]]
+                  for m in mods:
+                      if m in sys.stdlib_module_names or m in local:
+                          continue
+                      dist = alias.get(m, m)
+                      if dist not in declared:
+                          missing.setdefault(dist, []).append(str(path))
+          if missing:
+              print('Imported but not declared in pyproject.toml:')
+              for dist, paths in sorted(missing.items()):
+                  print(f'  {dist}  <-  {sorted(set(paths))[:3]}')
+              sys.exit(1)
+          print('All third-party imports are declared dependencies')
+          "
+
       - name: Check the license is the full GPL-3.0 text
         # Guards against a truncated or placeholder LICENSE being committed,
         # which is legally meaningless while looking like a real license.
