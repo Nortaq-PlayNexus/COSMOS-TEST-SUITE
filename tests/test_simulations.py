@@ -216,30 +216,102 @@ class TestAnisotropicField:
         near_iso = sim.anisotropic_field(cfg, amplitude=0.0)["density"]
         assert np.allclose(iso, near_iso)
 
+    @staticmethod
+    def _y2_pattern(shape, axis):
+        """The l=2 angular pattern (3 cos^2 - 1)/2 about a preferred axis."""
+        axis = np.asarray(axis, float)
+        axis = axis / np.linalg.norm(axis)
+        g = [np.arange(n) - (n - 1) / 2.0 for n in shape]
+        gx, gy, gz = np.meshgrid(*g, indexing="ij")
+        coords = np.stack([gx.ravel(), gy.ravel(), gz.ravel()], axis=1)
+        r = np.sqrt((coords**2).sum(axis=1))
+        r_safe = np.where(r > 0, r, 1.0)
+        cos_t = np.clip((coords @ axis) / r_safe, -1.0, 1.0)
+        y2 = 0.5 * (3 * cos_t**2 - 1)
+        y2[r == 0] = 0.0
+        return y2.reshape(shape)
+
+    @classmethod
+    def _quadrupole_correlation(cls, field, axis):
+        y2 = cls._y2_pattern(field.shape, axis)
+        a = field.ravel() - field.mean()
+        b = y2.ravel() - y2.mean()
+        denom = np.sqrt((a**2).sum() * (b**2).sum())
+        return float(np.sum(a * b) / denom) if denom > 0 else 0.0
+
     def test_anisotropy_creates_quadrupole_asymmetry(self):
         """
-        A quadrupole modulation along x must make the field differ between
-        opposite outer regions more than an isotropic field does.
+        A quadrupole modulation along x must be detectable in the x quadrupole.
 
-        The l = 2 pattern is symmetric about x = 0, so the comparison is between
-        the two outermost slabs along the preferred axis rather than between
-        hemispheres.
+        The obvious detector here — comparing the means of the two outermost
+        slabs along the axis — does not work, and this test previously asserted
+        it did. The l = 2 pattern Y2 = (3 cos^2 - 1)/2 is even about x = 0, so it
+        adds an identical offset to both slabs and leaves their difference
+        unchanged. The two slab means came out bit-identical, so the assertion
+        `asymmetry(aniso) > asymmetry(iso)` could only ever pass by accident of
+        floating-point noise. CI caught this on Linux; it passed on Windows.
+
+        The correct detector is a correlation against the angular pattern, which
+        is what the anisotropy actually is.
         """
         cfg = sim.GRFConfig(nside=24, box=400.0, seed=11)
+        axis = np.array([1.0, 0.0, 0.0])
+
         iso = sim.generate_grf(cfg)["density"]
-        aniso = sim.anisotropic_field(
-            cfg, axis=np.array([1.0, 0.0, 0.0]), amplitude=0.8
-        )["density"]
+        aniso = sim.anisotropic_field(cfg, axis=axis, amplitude=0.8)["density"]
 
-        mid = iso.shape[0] // 2
-        slab = 4
+        c_iso = self._quadrupole_correlation(iso, axis)
+        c_aniso = self._quadrupole_correlation(aniso, axis)
 
-        def asymmetry(field):
-            return abs(field[mid + slab:, :, :].mean() - field[: mid - slab, :, :].mean())
+        # Measured across 15 seeds: the isotropic correlation stays below 0.015
+        # while an amplitude-0.8 modulation reaches about 0.30. The thresholds
+        # leave margin on both sides rather than sitting on the observed values.
+        assert abs(c_iso) < 0.05, f"isotropic field shows a quadrupole: {c_iso}"
+        assert c_aniso > 0.2, f"no x quadrupole detected: {c_aniso}"
 
-        # The anisotropy must increase the asymmetry relative to the same
-        # underlying realisation without it.
-        assert asymmetry(aniso) > asymmetry(iso)
+    def test_quadrupole_is_even_so_slab_means_cannot_detect_it(self):
+        """
+        Records the reason the test above cannot use slab means.
+
+        Y2 is even about the box centre along its own axis, so the quadrupole
+        shifts both opposite slabs by the same amount. If this ever stops
+        holding, the slab-mean detector becomes valid again and the reasoning in
+        the test above needs revisiting.
+        """
+        cfg = sim.GRFConfig(nside=24, box=400.0, seed=11)
+        axis = np.array([1.0, 0.0, 0.0])
+
+        iso = sim.generate_grf(cfg)["density"]
+        aniso = sim.anisotropic_field(cfg, axis=axis, amplitude=0.8)["density"]
+
+        mid, slab = iso.shape[0] // 2, 4
+        added = aniso - iso
+        added -= added.mean()
+
+        # The added component has equal means in the two opposite slabs.
+        hi = added[mid + slab:, :, :].mean()
+        lo = added[: mid - slab, :, :].mean()
+        assert hi == pytest.approx(lo, rel=1e-9)
+
+    def test_quadrupole_strength_scales_with_amplitude(self):
+        """
+        A larger requested amplitude must produce a stronger quadrupole.
+
+        The correlation is used rather than a raw amplitude because correlation
+        is bounded and so is comparable across parameter choices.
+        """
+        cfg = sim.GRFConfig(nside=24, box=400.0, seed=11)
+        axis = np.array([1.0, 0.0, 0.0])
+
+        previous = 0.0
+        for amplitude in (0.25, 0.5, 1.0):
+            field = sim.anisotropic_field(cfg, axis=axis, amplitude=amplitude)["density"]
+            correlation = self._quadrupole_correlation(field, axis)
+            assert correlation > previous, (
+                f"quadrupole did not strengthen from amplitude {previous:g} "
+                f"to {amplitude:g}: {correlation:.4f} <= {previous:.4f}"
+            )
+            previous = correlation
 
     def test_anisotropy_direction_is_respected(self):
         """

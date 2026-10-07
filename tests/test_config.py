@@ -30,8 +30,17 @@ class TestSettings:
         assert resolved.name == "raw"
 
     def test_resolve_absolute_path_unchanged(self):
+        """
+        An already-absolute path must pass through untouched.
+
+        The path is built from the platform's own anchor rather than hard-coded,
+        because "C:/tmp/foo" is absolute on Windows but a *relative* path on
+        Linux, where resolve() correctly prepends the root. The old hard-coded
+        version passed on Windows and failed in CI.
+        """
         s = Settings()
-        p = Path("C:/tmp/foo")
+        p = Path.cwd() / "tmp" / "foo"
+        assert p.is_absolute()
         assert s.resolve(p) == p
 
     def test_directories_created(self):
