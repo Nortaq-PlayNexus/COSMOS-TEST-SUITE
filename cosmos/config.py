@@ -146,7 +146,7 @@ class Settings(BaseSettings):
 
     # -- Core identity --
     project_name: str = Field(default="COSMOS TEST SUITE", description="Project name")
-    version: str = Field(default="0.1.0.dev0", description="Software version")
+    version: str = Field(default="0.1.0", description="Software version")
 
     # -- Paths (auto-resolved relative to project root) --
     root: Path = Field(default=None, description="Project root (auto-detected)")

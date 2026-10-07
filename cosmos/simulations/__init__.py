@@ -1380,7 +1380,7 @@ class SimulationJob:
                 "model": self.model,
                 "parameters": self.parameters,
                 "seed": self.seed,
-                "cosmos_version": "0.1.0.dev0",
+                "cosmos_version": "0.1.0",
             },
             sort_keys=True,
         )

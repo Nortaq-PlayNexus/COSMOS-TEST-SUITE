@@ -362,7 +362,7 @@ class Experiment(Base):
     end_date: Mapped[Optional[datetime.datetime]] = Column(DateTime, nullable=True)
     last_run: Mapped[Optional[datetime.datetime]] = Column(DateTime, nullable=True)
     commit: Mapped[Optional[str]] = Column(String(40), nullable=True)
-    software_version: Mapped[str] = Column(String(50), default="0.1.0.dev0")
+    software_version: Mapped[str] = Column(String(50), default="0.1.0")
     analysis_version: Mapped[str] = Column(String(50), default="v1")
 
     # Analysis plan (registered before results examined, Section 26)

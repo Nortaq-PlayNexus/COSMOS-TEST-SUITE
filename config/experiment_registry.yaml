@@ -67,7 +67,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
       analysis_version: v1
     status: data_awaiting
 - exp_id: EXP-002
@@ -106,7 +106,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-003
   name: Homogeneity scale measurement
@@ -143,7 +143,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-004
   name: Cosmic web reconstruction
@@ -180,7 +180,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-005
   name: 'Dark matter: particle vs modified gravity'
@@ -217,7 +217,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-006
   name: Modified gravity model comparison
@@ -254,7 +254,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-007
   name: 'Dark energy: w, w0-wa, evolving models'
@@ -291,7 +291,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-008
   name: Hubble tension analysis
@@ -328,7 +328,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-009
   name: Inflation signatures
@@ -365,7 +365,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-010
   name: CMB anomalies with look-elsewhere correction
@@ -402,7 +402,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-011
   name: Multiverse / bubble collision signatures
@@ -439,7 +439,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-012
   name: Cosmic topology (matched circles)
@@ -476,7 +476,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-013
   name: Spatial repetition under various assumptions
@@ -513,7 +513,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-014
   name: Large cosmic structures (superclusters, walls)
@@ -550,7 +550,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-015
   name: General Relativity tests at cosmological scales
@@ -587,7 +587,7 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started
 - exp_id: EXP-016
   name: Gravitational-wave observations
@@ -624,5 +624,5 @@ experiments:
     confidence: null
     reproducibility:
       random_seed: 42
-      software_version: 0.1.0.dev0
+      software_version: 0.1.0
     status: not_started

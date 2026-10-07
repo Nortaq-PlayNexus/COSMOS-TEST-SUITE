@@ -14,7 +14,7 @@ from . import config, database, statistics, simulations
 from .config import settings
 from .database import SessionLocal, get_db
 
-__version__ = "0.1.0.dev0"
+__version__ = "0.1.0"
 __author__ = "COSMOS"
 __license__ = "GPL-3.0-only"
 

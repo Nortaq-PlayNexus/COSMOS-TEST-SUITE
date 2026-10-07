@@ -148,7 +148,7 @@ class ExperimentRunner(ABC):
         return ", ".join(versions) if versions else "none"
 
     def _default_parameters(self) -> Dict[str, Any]:
-        return {"seed": self.seed, "cosmos_version": "0.1.0.dev0"}
+        return {"seed": self.seed, "cosmos_version": "0.1.0"}
 
     @abstractmethod
     def _analysis_steps(self) -> List[str]:
@@ -381,7 +381,7 @@ class ExperimentRunner(ABC):
             "commit": self.plan.commit if self.plan else "unknown",
             "analysis_version": "v1",
             "random_seed": self.seed,
-            "cosmos_version": "0.1.0.dev0",
+            "cosmos_version": "0.1.0",
             "classification": classification["classification"],
             "timestamp": datetime.datetime.utcnow().isoformat(),
             "command": f"cosmos experiment run {self.exp_id}",
@@ -409,7 +409,7 @@ cosmos reproduce {self.exp_id}
 
 - Random seed: {self.seed}
 - Analysis version: v1
-- Cosmos version: 0.1.0.dev0
+- Cosmos version: 0.1.0
 - Commit: {self.plan.commit if self.plan else 'unknown'}
 - Classification: {classification['classification']}
 

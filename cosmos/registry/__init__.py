@@ -391,7 +391,7 @@ def build_experiment_definition(exp_id: str) -> Dict[str, Any]:
             "confidence": None,
             "reproducibility": {
                 "random_seed": 42,
-                "software_version": "0.1.0.dev0",
+                "software_version": "0.1.0",
                 "analysis_version": "v1",
             },
             "status": "data_awaiting",
@@ -418,7 +418,7 @@ def _generic_definition(exp_id: str) -> Dict[str, Any]:
         "systematic_errors": [],
         "result": None,
         "confidence": None,
-        "reproducibility": {"random_seed": 42, "software_version": "0.1.0.dev0"},
+        "reproducibility": {"random_seed": 42, "software_version": "0.1.0"},
         "status": "not_started",
     }
 

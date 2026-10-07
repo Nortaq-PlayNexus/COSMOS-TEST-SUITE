@@ -58,7 +58,7 @@ once left over from a different seed, and it surfaced immediately.
   "commit": "abc1234",
   "analysis_version": "v1",
   "random_seed": 42,
-  "cosmos_version": "0.1.0.dev0",
+  "cosmos_version": "0.1.0",
   "classification": "consistent_with_standard_model",
   "command": "cosmos experiment run EXP-001"
 }

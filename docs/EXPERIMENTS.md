@@ -67,7 +67,7 @@ Every experiment carries a definition with these keys:
   "falsification_condition": "...",
   "uncertainty": [],
   "systematic_errors": [],
-  "reproducibility": {"random_seed": 42, "software_version": "0.1.0.dev0"},
+  "reproducibility": {"random_seed": 42, "software_version": "0.1.0"},
   "status": "data_awaiting"
 }
 ```

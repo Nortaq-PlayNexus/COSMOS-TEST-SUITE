@@ -194,7 +194,7 @@ def download_file(
 
     stats = DownloadStats()
     headers = headers or {}
-    headers.setdefault("User-Agent", "COSMOS-Test-Suite/0.1.0.dev0 (+https://github.com)")
+    headers.setdefault("User-Agent", "COSMOS-Test-Suite/0.1.0 (+https://github.com)")
 
     for attempt in range(1, retries + 1):
         stats.n_attempts += 1

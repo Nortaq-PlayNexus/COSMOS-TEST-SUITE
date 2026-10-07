@@ -79,7 +79,7 @@ def build_experiment_report(exp_id: str, level: int = 2) -> Dict[str, str]:
     )
     sections["reproducibility"] = (
         f"Seed: {exp.get('definition', {}).get('reproducibility', {}).get('random_seed', 42)}\n"
-        f"Software: COSMOS {exp.get('definition', {}).get('reproducibility', {}).get('software_version', '0.1.0.dev0')}\n"
+        f"Software: COSMOS {exp.get('definition', {}).get('reproducibility', {}).get('software_version', '0.1.0')}\n"
         "Data version: see cosmos data list"
     )
     return sections
@@ -375,7 +375,7 @@ def level_text(level: int) -> str:
 
 
 def get_report_footer() -> str:
-    return "0.1.0.dev0"
+    return "0.1.0"
 
 
 def record_result_to_db(

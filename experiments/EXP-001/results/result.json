@@ -16,12 +16,12 @@
   ],
   "analysis_plan": {
     "experiment_id": "EXP-001",
-    "timestamp": "2026-10-07T03:28:00.150129",
-    "commit": "a9c597b",
+    "timestamp": "2026-10-07T03:50:55.079977",
+    "commit": "5aaa275",
     "dataset_version": "sample_cmb_map@v1, sample_galaxy_catalog@v1, sample_rotation_curves@v1",
     "parameters": {
       "seed": 42,
-      "cosmos_version": "0.1.0.dev0"
+      "cosmos_version": "0.1.0"
     },
     "random_seed": 42,
     "analysis_steps": [
@@ -78,7 +78,7 @@
       "consistent": true
     },
     "n_k_bins": 19,
-    "null_sim_hash": "b3d39de4881d7b7a",
+    "null_sim_hash": "cf53dd355b90af5b",
     "data_origin": "COSMOS clustered Lambda CDM mock (no real survey data available)"
   },
   "systematics": {
@@ -150,7 +150,7 @@
       },
       {
         "question": "Was this analysis specified before the data were examined?",
-        "finding": "Analysis plan registered at 2026-10-07T03:28:00.150129 with seed 42.",
+        "finding": "Analysis plan registered at 2026-10-07T03:50:55.079977 with seed 42.",
         "verdict": "pre-registered"
       },
       {
@@ -167,85 +167,85 @@
       "node_type": "setup",
       "node_id": "experiments\\EXP-001",
       "description": "Experiment directory created",
-      "timestamp": "2026-10-07T03:27:59.947341"
+      "timestamp": "2026-10-07T03:50:54.875686"
     },
     {
       "node_type": "setup",
       "node_id": "experiments\\EXP-001",
       "description": "Experiment directory created",
-      "timestamp": "2026-10-07T03:27:59.947956"
+      "timestamp": "2026-10-07T03:50:54.876285"
     },
     {
       "node_type": "database",
       "node_id": "experiment_record",
       "description": "Experiment record created/updated in database",
-      "timestamp": "2026-10-07T03:27:59.947964"
+      "timestamp": "2026-10-07T03:50:54.876293"
     },
     {
       "node_type": "plan",
       "node_id": "analysis_plan",
       "description": "Analysis plan registered",
-      "timestamp": "2026-10-07T03:28:00.125350"
+      "timestamp": "2026-10-07T03:50:55.055630"
     },
     {
       "node_type": "data",
       "node_id": "galaxy_catalog",
       "description": "Galaxy catalog: COSMOS clustered Lambda CDM mock (no real survey data available); 3200000 galaxies",
-      "timestamp": "2026-10-07T03:28:01.057353"
+      "timestamp": "2026-10-07T03:50:56.003140"
     },
     {
       "node_type": "preprocessing",
       "node_id": "bias",
       "description": "Effective galaxy bias measured from the fields: b = 0.194 (input bias 0.30)",
-      "timestamp": "2026-10-07T03:28:01.556205"
+      "timestamp": "2026-10-07T03:50:56.504807"
     },
     {
       "node_type": "preprocessing",
       "node_id": "power_spectrum",
       "description": "Measured P(k) on 20 log bins over 0.022-0.351 h/Mpc; nbar=0.05 (Mpc/h)^-3",
-      "timestamp": "2026-10-07T03:28:01.556223"
+      "timestamp": "2026-10-07T03:50:56.504825"
     },
     {
       "node_type": "data",
       "node_id": "prepared_data",
       "description": "Data ingested and preprocessed",
-      "timestamp": "2026-10-07T03:28:01.670555"
+      "timestamp": "2026-10-07T03:50:56.611278"
     },
     {
       "node_type": "model",
       "node_id": "lcdm_predict",
       "description": "Lambda CDM BBKS prediction, sigma8-normalised to 0.810, compared in galaxy space with b=0.19407517313509198",
-      "timestamp": "2026-10-07T03:28:01.671504"
+      "timestamp": "2026-10-07T03:50:56.612300"
     },
     {
       "node_type": "model",
       "node_id": "lcdm_prediction",
       "description": "Lambda CDM prediction generated",
-      "timestamp": "2026-10-07T03:28:01.671513"
+      "timestamp": "2026-10-07T03:50:56.612308"
     },
     {
       "node_type": "simulation",
       "node_id": "null_simulation",
       "description": "Null distribution simulated",
-      "timestamp": "2026-10-07T03:28:04.149772"
+      "timestamp": "2026-10-07T03:50:59.228034"
     },
     {
       "node_type": "analysis",
       "node_id": "statistical_analysis",
       "description": "Statistical analysis completed",
-      "timestamp": "2026-10-07T03:28:04.155699"
+      "timestamp": "2026-10-07T03:50:59.234139"
     },
     {
       "node_type": "systematics",
       "node_id": "systematic_assessment",
       "description": "Systematics assessed",
-      "timestamp": "2026-10-07T03:28:04.155768"
+      "timestamp": "2026-10-07T03:50:59.234210"
     },
     {
       "node_type": "adversarial",
       "node_id": "adversarial_tests",
       "description": "Adversarial tests completed",
-      "timestamp": "2026-10-07T03:28:04.155849"
+      "timestamp": "2026-10-07T03:50:59.234290"
     }
   ],
   "report_path": "experiments\\EXP-001\\report\\report_EXP-001.md"

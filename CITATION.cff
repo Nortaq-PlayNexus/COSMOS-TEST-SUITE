@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as a platform, not as a result."
+title: "COSMOS Test Suite: A Platform for Trying to Disprove Cosmological Hypotheses"
+abstract: >-
+  A research platform for testing cosmological and fundamental-physics
+  hypotheses by attempting to falsify them. Provides pre-registered analysis
+  plans, adversarial review stages, look-elsewhere correction, full provenance
+  chains, and reproducibility packages. No scientific findings are claimed: at
+  the time of this release, none of the 35 registered research questions has
+  been answered, and the single implemented experiment has only ever consumed
+  synthetic data.
+type: software
+version: 0.1.0
+date-released: "2026-10-07"
+license: GPL-3.0-only
+repository-code: "https://github.com/Nortaq-PlayNexus/COSMOS-TEST-SUITE"
+url: "https://github.com/Nortaq-PlayNexus/COSMOS-TEST-SUITE"
+keywords:
+  - cosmology
+  - falsification
+  - large-scale structure
+  - baryon acoustic oscillations
+  - reproducibility
+  - scientific methodology
+authors:
+  - family-names: PlayNexus
+    alias: Nortaq-PlayNexus
+references:
+  - type: standard
+    title: "Planck 2018 results. VI. Cosmological parameters"
+    doi: "10.1051/0004-6361/201833910"
+    notes: >-
+      Source of the sound horizon constant used by cosmos/cosmology.py. The
+      value is taken from the published result rather than recomputed; see
+      that module's docstring for why.
+  - type: article
+    title: "DESI 2025. II. Measurements of Baryon Acoustic Oscillations"
+    doi: "10.48550/arXiv.2503.14738"
+    notes: >-
+      The DESI DR2 BAO vectors used for the one external validation performed.
+      An unresolved labelling discrepancy in a third-party mirror is recorded
+      in docs/DATA_SOURCES.md.
