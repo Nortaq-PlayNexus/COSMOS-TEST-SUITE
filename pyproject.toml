@@ -54,6 +54,7 @@ dependencies = [
     "corner>=2.2",
     "arviz>=0.21",
     "pycosat>=0.6",
+    "psutil>=5.9",
 ]
 
 [project.optional-dependencies]
@@ -74,6 +75,26 @@ include = ["cosmos*"]
 [tool.ruff]
 line-length = 100
 target-version = "py312"
+
+[tool.ruff.lint]
+# E/F = pycodestyle errors and pyflakes (undefined names, unused imports).
+# B/SIM/RUF catch likely-bugs and logic errors. These are the rules that catch
+# real defects; purely stylistic sets (UP, DTZ, ISC) are opt-in via `extend-select`.
+select = ["E", "F", "W", "B", "SIM", "RUF"]
+ignore = [
+    "E501",    # long lines: left to the formatter
+    "B008",    # function-call-in-default-argument: used intentionally for
+               # dataclass field defaults throughout this codebase
+    "RUF012",  # mutable-class-default: expected in Pydantic/SQLAlchemy models
+    "RUF001",  # ambiguous-unicode: Lambda and lambda are correct here, not Greek
+    "RUF002",  # ambiguous-unicode in docstrings: same reason
+    "E402",    # module-import-not-at-top: deferred imports are deliberate
+               # here (numpy/scipy are slow, and CLI subcommands import lazily)
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Click command names intentionally shadow builtins (`list`, `type`, `run`).
+"cosmos/cli/__init__.py" = ["F811", "A001", "A002"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

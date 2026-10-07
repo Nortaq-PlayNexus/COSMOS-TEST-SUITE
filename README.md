@@ -2,274 +2,223 @@
 
 ## An Independent Computational Observatory for Testing the Biggest Questions in Cosmology and Fundamental Physics
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
-![Python](https://img.shields.io/badge/Python-3.12%2B-blue)
+> **Do not try to prove a theory. Try to find out whether the data can disprove it.**
 
 ---
 
-### Mission
+## Status: early-stage framework — read this first
 
-COSMOS is a **serious, research-grade scientific software platform**. It is NOT a fictional
-visualization project, NOT merely a dashboard, and NOT a collection of random astronomy facts.
-COSMOS is an actual computational research environment capable of:
+This is an **honest statement of what exists**, not marketing.
 
-- downloading/ingesting public scientific data and papers
-- running simulations and statistical analyses
-- comparing competing cosmological models
-- recording hypotheses and predictions
-- generating figures, tables, and reports
-- preserving full metadata so every result can be reproduced
+| | |
+|---|---|
+| Experiments defined | 16 |
+| Experiments implemented | **1** (EXP-001) |
+| Real astronomical data ingested | **none** |
+| Research questions answered | **0 of 35** |
+| Tests | 188, passing from a clean clone |
 
-### Core Principle
+**No conclusion has been drawn about the physical universe.** EXP-001 has only
+ever consumed synthetic data. It answers a question about itself — *does this
+pipeline correctly recover a ΛCDM signal it was given?* — and the answer is
+yes, which is what makes it useful as validation before the instrument is
+pointed at real data.
 
-> **DO NOT TRY TO PROVE A THEORY. TRY TO FIND OUT WHETHER THE DATA CAN DISPROVE IT.**
+Every one of the 35 research questions in the specification remains open.
 
----
-
-## Research Questions
-
-COSMOS investigates some of humanity's biggest questions about the universe, including:
-
-1. Is the universe spatially infinite? Could it have a finite topology?
-2. Is the universe homogeneous on sufficiently large scales? Is it isotropic?
-3. Is there a preferred cosmic direction?
-4. Does dark matter behave like a particle component, or can modified gravity explain observations?
-5. Is dark energy actually constant, or is it evolving?
-6. What is the Hubble constant, and why do early- and late-universe measurements disagree?
-7. Did cosmic inflation occur? What observable signatures did it leave?
-8. What happened during the earliest observable phases of the universe? Could a Big Bounce be observationally distinguishable?
-9. Could bubble universes (or their collisions) leave observable signatures?
-10. Are there structures larger or more unusual than ΛCDM predicts? Are there genuine CMB anomalies?
-11. Does General Relativity continue to describe gravity at cosmological scales? Do gravitational waves behave as predicted?
-12. Can independent datasets consistently describe the same cosmological model? Where does ΛCDM succeed? Where does it fail?
+What *is* finished: the statistical framework, the simulation engine, the
+experiment discipline, the provenance and reproducibility machinery, and one
+experiment that exercises all of it end to end.
 
 ---
 
-## Scientific Philosophy
+## What makes this different
 
-COSMOS strictly separates **observation** (what was measured), **inference** (what models suggest),
-**hypothesis** (a proposed explanation), and **speculation** (a theoretical possibility without
-currently testable evidence). Every result is labeled: *observed / reproduced / statistically
-significant / theoretically predicted / speculative / unresolved / contradicted / unsupported /
-consistent with existing models*.
+Most analysis code will happily report the most interesting number it finds.
+This platform is built to refuse to.
 
-Words like "proves" are avoided unless a mathematical proof is literally being discussed.
+**Pre-registration.** The analysis plan is written before the data are touched.
+Enforced by call order, not by convention — a test asserts the ordering.
+
+**Injection and recovery.** Before interpreting any signal, the pipeline plants
+a known one and confirms it would have been found. Without this, a null result
+is indistinguishable from an instrument that does not work. The false-positive
+rate is measured on noise-only realisations.
+
+**Adversarial review.** Every result is attacked before it is reported, with
+actual computations rather than a checklist. In the committed EXP-001 run the
+verdict is `survived: False`, because the highest-`k` bin carries 69% of the
+chi-square. That is reported, not buried.
+
+**Monte Carlo over analytic p-values.** Per-bin Poisson errors ignore the
+sampling variance of a single realisation, which for one 400 Mpc/h box dwarfs
+the Poisson term. In the committed run the naive chi-square gives p = 0.0 while
+the Monte Carlo gives p = 0.295. The naive one is wrong, and the framework is
+built to surface exactly that.
+
+**"UNKNOWN" is a valid result.** `NOT_TESTABLE`, `INSUFFICIENT_DATA`, and
+`INCONCLUSIVE` are outcomes, not errors. A pipeline that cannot answer says so
+and says why.
+
+**Unquantified systematics are declared.** Tabulated with a quantified flag; the
+report states the significance is an upper bound on the evidence.
+
+**"Proves" is a banned word.** Asserted by test against the generated report.
+
+---
+
+## Quick start
+
+```bash
+git clone https://github.com/<your-org>/COSMOS-TEST-SUITE.git
+cd COSMOS-TEST-SUITE
+
+python -m venv .venv
+.venv\Scripts\activate          # Windows; `source .venv/bin/activate` elsewhere
+
+pip install -e ".[dev]"
+
+python -m pytest tests/ -q      # 188 passed
+python -m cosmos experiment run EXP-001
+```
+
+No network access needed. See [docs/INSTALLATION.md](docs/INSTALLATION.md).
+
+---
+
+## The first experiment
+
+**EXP-001 — Is the large-scale universe consistent with ΛCDM?**
+
+```bash
+python -m cosmos experiment run EXP-001 --seed 42
+python -m cosmos experiment run EXP-001 --dry-run   # print the plan first
+```
+
+Pipeline: ingest catalogue → measure P(k) via FFT → generate σ8-normalised BBKS
+prediction → measure the bias from the data → χ² goodness-of-fit → Monte Carlo
+calibration → injection-and-recovery → adversarial review → classify.
+
+Committed result, from synthetic data:
+
+```
+classification : consistent_with_standard_model
+p-value        : 0.295   (0.54 sigma)
+injection      : detected, false-positive rate 0.016
+adversarial    : survived = False  (single-bin dominance at high k)
+```
+
+Outputs in `experiments/EXP-001/`: `report/report_EXP-001.md`,
+`results/result.json`, `results/analysis.json`, `reproducibility/`.
+
+---
+
+## CLI
+
+```bash
+cosmos experiment list                    # all 16, with priority scores
+cosmos experiment run EXP-001 --seed 42   # execute
+cosmos data list                          # datasets
+cosmos simulate lcdm --nside 32           # simulations
+cosmos report generate EXP-001
+cosmos reproduce run EXP-001              # verify reproducibility
+```
+
+Full reference: [docs/CLI.md](docs/CLI.md).
+
+---
+
+## Research questions
+
+Defined in the registry, none yet answered:
+
+| | |
+|---|---|
+| Is the universe spatially infinite? | Could it have finite topology? |
+| Is it homogeneous on large scales? | Is it isotropic? |
+| Is there a preferred direction? | Does dark matter behave like a particle? |
+| Could modified gravity explain it instead? | Is dark energy constant? |
+| Is dark energy evolving? | What is H0? |
+| Why do early and late H0 disagree? | Did inflation occur? |
+| What signatures did inflation leave? | What happened earliest? |
+| Could a Big Bounce be distinguishable? | Do bubble collisions leave CMB traces? |
+| Could space contain repetitions? | Are structures larger than ΛCDM predicts? |
+| Are there genuine CMB anomalies? | Are fundamental symmetries violated? |
+| Does GR hold at cosmological scales? | Do gravitational waves behave as predicted? |
+| Can independent datasets agree? | Where does ΛCDM succeed, and where does it fail? |
 
 ---
 
 ## Architecture
 
 ```
-COSMOS-TEST-SUITE/
-├── cosmos/                  # Core Python package
-│   ├── cli/                 # Command-line interface
-│   ├── database/            # Research database (SQLite) + provenance graph
-│   ├── registry/            # Experiment registry
-│   ├── ingestion/           # Paper/dataset ingestion
-│   ├── data/                # Dataset registry & management
-│   ├── simulations/         # Simulation engine
-│   ├── statistics/          # Statistical framework
-│   ├── cosmology/           # Cosmological models & calculations
-│   ├── anomaly_detection/   # Anomaly engine
-│   ├── visualization/       # Scientific figures
-│   └── report.py            # Report generation
-├── config/                  # YAML configuration
-├── data/                    # Downloaded datasets (raw/processed/metadata/manifests)
-├── papers/                  # Downloaded papers & metadata
-├── experiments/             # EXP001 ... EXP015 -- each a self-contained experiment
-├── simulations/             # Simulation outputs
-├── reports/                 # Generated reports
-├── tests/                   # Automated tests
-├── docs/                    # Documentation
-└── pyproject.toml           # Project config
+cosmos/
+  config.py         settings, path resolution, classification vocabulary
+  database/         hypothesis graph + provenance chain (ORM)
+  statistics/       model comparison, tests, Monte Carlo, look-elsewhere
+  simulations/      cosmology calculator, GRFs, mock catalogues, P(k)
+  registry/         16 experiments, priority scoring, definitions
+  experiments/      ExperimentRunner framework + EXP-001
+  data/             dataset registry, downloads, offline mode
+  reports.py        report rendering from a result payload
+  cli/              command-line interface
+experiments/EXP-001/  results, report, reproducibility package
+docs/                 documentation
+tests/                188 tests
 ```
 
----
-
-## Installation
-
-```bash
-git clone https://github.com/your-org/COSMOS-TEST-SUITE.git
-cd COSMOS-TEST-SUITE
-python -m venv .venv
-# Windows:
-.venv\Scripts\activate
-# Linux/macOS:
-source .venv/bin/activate
-pip install -e .[dev]
-```
-
-Dependencies: `numpy`, `scipy`, `pandas`, `astropy`, `matplotlib`, `plotly`,
-`scikit-learn`, `statsmodels`, `xarray`, `h5py`, `pyarrow`, `SQLAlchemy`,
-`pydantic`, `PyYAML`, `requests`, `httpx`, `networkx`, `sympy`, `numba`,
-`pooch`, `click`, `tqdm`, `rich`, `emcee`, `corner`, `arviz`, `pycosat`, `pytest`.
-
-For CMB analysis, install `healpy` and `NaMaster` separately:
-
-```bash
-pip install healpy namaster pymaster
-```
-
----
-
-## CLI Usage
-
-```bash
-# Research search
-cosmos research search "cosmic topology matched circles Planck"
-cosmos papers search "dark energy DESI"
-cosmos papers search "Hubble tension distance ladder"
-
-# Data management
-cosmos data list
-cosmos data download desi
-cosmos data download cmb-planck
-
-# Experiments
-cosmos experiment list
-cosmos experiment status EXP-001
-cosmos experiment run EXP-001
-cosmos experiment run EXP-008   # Hubble tension
-
-# Simulations
-cosmos simulate lcdm
-cosmos simulate modified-gravity
-
-# Analysis
-cosmos analyze cmb
-cosmos analyze galaxy-catalog
-cosmos analyze lensing
-cosmos analyze gravitational-waves
-
-# Model comparison & reporting
-cosmos compare-models
-cosmos report EXP-001
-cosmos reproduce EXP-001
-cosmos verify EXP-001
-
-# Replication
-cosmos replicate PAPER-ID
-```
-
----
-
-## Experiment Registry
+Experiment runs are a fixed pipeline. Two stages a normal analysis skips are
+made impossible to skip here:
 
 ```
-EXP-001  Cosmic web & large-scale structure vs ΛCDM   (FIRST IMPLEMENTATION)
-EXP-002  Large-scale isotropy / preferred direction
-EXP-003  Homogeneity scale
-EXP-004  Cosmic web reconstruction
-EXP-005  Dark matter: particle vs modified gravity
-EXP-006  Modified gravity (MOND, scalar-tensor)
-EXP-007  Dark energy: w, w0-wa, evolving models
-EXP-008  Hubble tension
-EXP-009  Inflation signatures
-EXP-010  CMB anomalies (with look-elsewhere correction)
-EXP-011  Multiverse / bubble collision signatures
-EXP-012  Cosmic topology (matched circles)
-EXP-013  Spatial repetition under various assumptions
-EXP-014  Large cosmic structures (superclusters, walls)
-EXP-015  General Relativity tests at cosmological scales
-EXP-016  Gravitational-wave observations
+setup → register_analysis_plan → prepare_data → predict → simulate_null
+      → analyse → assess_systematics → adversarial → classify
+      → record → reproduce_package → report
+       └── before any data ──┘              └── attacks the result ──┘
 ```
 
-Each experiment is self-contained in `experiments/EXP###/` with:
-
-- `experiment.json` — machine-readable experiment definition (hypothesis, null model,
-  competing models, datasets, predictions, tests, falsification conditions, systematics)
-- `data/` — processed data (with provenance chain back to raw data)
-- `results/` — outputs, figures, posterior distributions
-- `report/` — auto-generated Markdown report
-- `environment.lock` — exact environment for reproduction
-- `reproducibility.md` — exact command needed to reproduce the result
-
----
-
-## The Anomaly Engine
-
-Every anomaly must pass six validation stages before classification:
-
-1. Statistical test
-2. Systematic-error test
-3. Simulation test
-4. Alternative-analysis test
-5. Independent-data test
-6. Replication test
-
-And it must survive an automated **"try to kill it"** adversarial stage:
-
-- Is this caused by galactic dust?
-- Is survey coverage asymmetric?
-- Is the telescope calibration responsible?
-- Is there a coordinate-system artifact?
-- Does the anomaly disappear with another estimator?
-- Does it exist in another dataset?
-- Does it occur in simulated ΛCDM universes?
-- Was the analysis selected after looking at the data?
-
-Only after surviving all stages is something marked **HIGH PRIORITY ANOMALY**.
-
----
-
-## Reproducibility
-
-Every experiment is reproducible from a clean environment:
-
-- `environment.lock` — environment lockfile
-- `dataset.manifest` — dataset manifest with hashes
-- `experiment.json` — experiment configuration
-- random seeds, code commit, command used, output hashes
-
-```bash
-cosmos reproduce EXP-001   # recreates the published result from scratch
-```
-
----
-
-## Current Status
-
-**This is an early implementation.** The repository contains:
-
-- [x] Project initialization (pyproject.toml, LICENSE, README)
-- [x] Directory architecture
-- [x] Database schema & provenance graph model
-- [x] Experiment registry
-- [x] Core statistical framework (sampling, model comparison, Bayesian inference)
-- [x] Simulation engine (ΛCDM toy models, CMB realizations)
-- [ ] Dataset ingestion (offline mode with curated sample data)
-- [ ] CLI (fully wired)
-- [ ] Web dashboard
-- [ ] EXP-001 ... EXP-016 implementation
-- [ ] Automated test suite
-
-The **FIRST REAL EXPERIMENT (EXP-001)** uses only small, curated sample datasets that ship
-with the repository so the full pipeline runs without network access. Real data downloads
-(`cosmos data download ...`) require internet access.
+Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ---
 
 ## Documentation
 
-- `docs/INSTALLATION.md` — detailed installation instructions
-- `docs/ARCHITECTURE.md` — system architecture
-- `docs/SCIENTIFIC_METHOD.md` — scientific methodology
-- `docs/DATA_SOURCES.md` — data sources and availability
-- `docs/EXPERIMENTS.md` — experiment specifications
-- `docs/STATISTICS.md` — statistical methods
-- `docs/SIMULATIONS.md` — simulation engine
-- `docs/REPRODUCIBILITY.md` — reproducibility protocol
-- `docs/CLI.md` — CLI reference
-- `docs/CONTRIBUTING.md` — how to contribute
-- `docs/GLOSSARY.md` — plain-English glossary
+| | |
+|---|---|
+| [INSTALLATION](docs/INSTALLATION.md) | Setup, requirements, troubleshooting |
+| [ARCHITECTURE](docs/ARCHITECTURE.md) | Modules, schema, data layout |
+| [SCIENTIFIC_METHOD](docs/SCIENTIFIC_METHOD.md) | Pre-registration, injection-recovery, adversarial review |
+| [DATA_SOURCES](docs/DATA_SOURCES.md) | Datasets, provenance, intended primary sources |
+| [EXPERIMENTS](docs/EXPERIMENTS.md) | The 16 experiments, how to implement one |
+| [STATISTICS](docs/STATISTICS.md) | Methods, look-elsewhere, significance thresholds |
+| [SIMULATIONS](docs/SIMULATIONS.md) | Cosmology, GRFs, mock catalogues, P(k) conventions |
+| [REPRODUCIBILITY](docs/REPRODUCIBILITY.md) | Determinism, artifacts, provenance chain |
+| [SCIENCE_VALIDATION](docs/SCIENCE_VALIDATION.md) | Internal vs external validation |
+| [CLI](docs/CLI.md) | Full command reference |
+| [CONTRIBUTING](docs/CONTRIBUTING.md) | Style, testing philosophy, non-negotiable rules |
+| [GLOSSARY](docs/GLOSSARY.md) | Plain-language definitions of every term |
+
+---
+
+## Requirements
+
+Python ≥ 3.12. `numpy`, `scipy`, `pandas`, `astropy`, `matplotlib`, `plotly`,
+`scikit-learn`, `statsmodels`, `xarray`, `h5py`, `SQLAlchemy`, `pydantic`,
+`pyyaml`, `requests`, `networkx`, `sympy`, `numba`, `emcee`, `corner`, `arviz`,
+`pytest`. No GPU. No network required.
 
 ---
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See LICENSE.
+GPL-3.0-only. See [LICENSE](LICENSE).
 
-## Citation
+---
 
-COSMOS Test Suite (2025). An Independent Computational Observatory for Testing the Biggest
-Questions in Cosmology and Fundamental Physics. Available at: https://github.com/your-org/COSMOS-TEST-SUITE
+## Before you publish this
+
+Repository-wide placeholders to replace:
+
+- `pyproject.toml` → `authors = [{ name = "...", email = "..." }]`
+- `README.md` → the three `<your-org>` URLs in clone and citation
+- Git commit author (`git config user.name` / `user.email`)

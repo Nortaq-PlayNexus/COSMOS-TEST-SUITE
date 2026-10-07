@@ -19,7 +19,7 @@ from contextlib import contextmanager
 from typing import Any, Dict, Generator, List, Optional, Type
 
 from sqlalchemy import inspect, select
-from sqlalchemy.orm import Session, joinedload, selectinload
+from sqlalchemy.orm import Session
 
 from . import models
 
@@ -78,7 +78,6 @@ def get_session(database_url: Optional[str] = None) -> Generator[Session, None, 
 
 def _tables_exist(engine: Any) -> bool:
     """Check whether the Cosmos tables exist in the database."""
-    from sqlalchemy import inspect
     inspector = inspect(engine)
     tables = inspector.get_table_names()
     return "experiments" in tables and "questions" in tables
@@ -347,7 +346,7 @@ class ExperimentRegistryRepository(Repository):
     def get_next_recommended(self) -> Optional[models.ExperimentRegistry]:
         stmt = (
             select(models.ExperimentRegistry)
-            .filter(models.ExperimentRegistry.recommended == True)
+            .filter(models.ExperimentRegistry.recommended)
             .order_by(models.ExperimentRegistry.total_priority(), models.ExperimentRegistry.order)
             .limit(1)
         )
@@ -390,12 +389,23 @@ def init_schema(
     """Initialize the database schema and optionally populate default data."""
     engine = init_db(database_url)
     if populate_default_data:
-        _populate_default_data(engine)
+        _populate_default_data(database_url, engine)
     return engine
 
 
-def _populate_default_data(engine: Any) -> None:
-    """Populate the database with default questions, models, and experiments."""
+def _populate_default_data(
+    database_url: Optional[str] = None, engine: Any = None
+) -> None:
+    """
+    Populate the database with default questions, models, and registry entries.
+
+    `database_url` must be threaded through so that the session opened here
+    targets the same database as the engine that was just created. An earlier
+    version referenced an undefined name and raised NameError whenever this
+    function ran.
+    """
+    if database_url is None and engine is not None:
+        database_url = str(engine.url)
     questions = [
         ("is_the_universe_infinite",
          "Is the universe spatially infinite?",
@@ -530,7 +540,7 @@ def _populate_default_data(engine: Any) -> None:
             ("EXP-016", "Gravitational-wave observations", 16),
         ]
         registry = ExperimentRegistryRepository(session, models.ExperimentRegistry)
-        for i, (exp_id, name, order) in enumerate(registry_items, start=1):
+        for exp_id, name, order in registry_items:
             registry.add_experiment(exp_id, name, order=order)
         print("  experiment registry populated")
 

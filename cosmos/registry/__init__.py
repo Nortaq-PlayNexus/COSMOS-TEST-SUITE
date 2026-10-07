@@ -20,7 +20,6 @@ a human-readable YAML file (config/experiment_registry.yaml).
 from __future__ import annotations
 
 import datetime
-import json
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
@@ -28,7 +27,7 @@ from typing import Any, Dict, List, Optional, Tuple
 import yaml
 
 from ..database import get_session
-from ..database.models import EXPERIMENT_STATUS, Experiment, ExperimentRegistry
+from ..database.models import Experiment, ExperimentRegistry
 
 
 # ---------------------------------------------------------------------------
@@ -450,11 +449,6 @@ class Registry:
             for item in DEFAULT_REGISTRY:
                 self.add_experiment(item["exp_id"], **{k: v for k, v in item.items() if k != "exp_id"})
 
-    def __post_init__(self):
-        if not self.experiments:
-            for item in DEFAULT_REGISTRY:
-                self.add_experiment(item["exp_id"], **{k: v for k, v in item.items() if k != "exp_id"})
-
     # NOTE: experiments loaded from YAML have no definition attached unless the
     # YAML itself carries one. build_experiment_definition() provides a
     # machine-readable definition for every known ID on demand.
@@ -602,10 +596,9 @@ class Registry:
         analysis plan); only refreshes status/result fields for display.
         """
         try:
-            from ..database import ExperimentRepository, get_session
+            from ..database import get_session
             from ..database.models import Experiment
             with get_session(database_url) as session:
-                repo = ExperimentRepository(session, Experiment)
                 for exp_db in session.query(Experiment).all():
                     entry = self.experiments.get(exp_db.exp_id)
                     if entry is None:

@@ -21,7 +21,7 @@ import os
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Callable, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import requests
 from tqdm import tqdm
@@ -203,19 +203,18 @@ def download_file(
                 resp.raise_for_status()
                 total = int(resp.headers.get("content-length", 0)) or None
                 downloaded = 0
-                with open(dest, "wb") as f:
-                    with tqdm(
-                        total=total,
-                        unit="B",
-                        unit_scale=True,
-                        desc=dest.name,
-                        disable=not progress,
-                    ) as bar:
-                        for chunk in resp.iter_content(chunk_size=1024 * 1024):
-                            if chunk:
-                                f.write(chunk)
-                                downloaded += len(chunk)
-                                bar.update(len(chunk))
+                with open(dest, "wb") as f, tqdm(
+                    total=total,
+                    unit="B",
+                    unit_scale=True,
+                    desc=dest.name,
+                    disable=not progress,
+                ) as bar:
+                    for chunk in resp.iter_content(chunk_size=1024 * 1024):
+                        if chunk:
+                            f.write(chunk)
+                            downloaded += len(chunk)
+                            bar.update(len(chunk))
                 stats.bytes_downloaded += downloaded
             if total and downloaded != total:
                 raise DownloadError(f"Download incomplete: {downloaded}/{total} bytes")
@@ -457,7 +456,6 @@ class DataManager:
         rec = self._records.get(name)
         if rec is None:
             raise ValueError(f"Dataset {name} not registered")
-        import os
         commit = os.environ.get("COSMOS_COMMIT", "unknown")
         manifest = {
             "dataset": rec.name,

@@ -4,14 +4,14 @@
 
 **Status:** completed
 **Priority score:** 0.84
-**Report generated:** 2026-10-06T15:43:49.479057
+**Report generated:** 2026-10-07T03:10:18.081669
 **Report level:** 2 (technical)
 
 ## 1. Executive Summary
 
 **Outcome: consistent_with_standard_model**
 
-Using COSMOS clustered Lambda CDM mock (no real survey data available), the measured matter power spectrum over 19 wavenumber bins was compared against a sigma8-normalised Lambda CDM prediction. The Monte Carlo calibrated test gives p = 0.095 (1.31 sigma equivalent), classified as consistent_with_standard_model. The measured power spectrum is not distinguishable from a Lambda CDM realisation (Monte Carlo p = 0.095, 1.31 sigma equivalent). Injection-recovery of a known 20% feature: confirmed. This run used synthesised data, so it validates the pipeline rather than constraining the universe.
+Using COSMOS clustered Lambda CDM mock (no real survey data available), the measured matter power spectrum over 19 wavenumber bins was compared against a sigma8-normalised Lambda CDM prediction. The Monte Carlo calibrated test gives p = 0.295 (0.54 sigma equivalent), classified as consistent_with_standard_model. The measured power spectrum is not distinguishable from a Lambda CDM realisation (Monte Carlo p = 0.295, 0.54 sigma equivalent). Injection-recovery of a known 20% feature: confirmed. This run used synthesised data, so it validates the pipeline rather than constraining the universe.
 
 ## 2. Scientific Question
 
@@ -67,17 +67,17 @@ The following steps were registered **before** the data were examined:
 
 **Classification:** `consistent_with_standard_model`
 
-The measured power spectrum is not distinguishable from a Lambda CDM realisation (Monte Carlo p = 0.095, 1.31 sigma equivalent).
+The measured power spectrum is not distinguishable from a Lambda CDM realisation (Monte Carlo p = 0.295, 0.54 sigma equivalent).
 
-- chi-square = 666.5 on 18 degrees of freedom (reduced chi-square 37.03)
-- Monte Carlo null: 200 synthetic Lambda CDM realisations, p = 0.095
-- Equivalent significance: 1.31 sigma
+- chi-square = 459.9 on 18 degrees of freedom (reduced chi-square 25.55)
+- Monte Carlo null: 200 synthetic Lambda CDM realisations, p = 0.295
+- Equivalent significance: 0.54 sigma
 - Wavenumber bins compared: 19
 
 ## 7. Statistical Significance
 
-- p-value: 0.095
-- Significance: 1.31 sigma
+- p-value: 0.295
+- Significance: 0.54 sigma
 - Discovery threshold: 5 sigma (not reached)
 
 The p-value is calibrated by Monte Carlo over synthetic Lambda CDM realisations, so it accounts for the correlated, non-Gaussian structure of a P(k) estimate rather than assuming independent Gaussian bins.
@@ -99,24 +99,24 @@ Unquantified systematics are not propagated into the reported p-value, so the si
 
 | Question | Finding | Verdict |
 |---|---|---|
-| Is the result driven by a single wavenumber bin (a look-elsewhere problem in disguise)? | The worst bin at k = 0.351 h/Mpc carries 65.7% of the total chi-square. | dominated by one bin; interpret with caution |
-| Would pure noise produce a chi-square this large? | Observed chi2 = 666.5; 95th percentile of the noise null = 829.0252859837318. | consistent with noise |
-| Would this pipeline have found a real 20% feature? | The pipeline detects an injected 45.8% feature at 5.0 sigma. Features at least this large would have been found, so the absence of such a feature is informative. | sensitive |
-| How often does the detector fire on noise alone? | False-positive rate = 0.028 over 500 trials. | acceptable |
-| Was this analysis specified before the data were examined? | Analysis plan registered at 2026-10-06T15:43:38.822018 with seed 777. | pre-registered |
-| Does the uncorrected chi-square agree with the Monte Carlo test? | chi-square p = 0.0, Monte Carlo p = 0.095. The naive chi-square uses per-bin Poisson errors only and ignores the cosmic sampling variance of a single realisation, so it understates the uncertainty; the Monte Carlo p-value is the calibrated one and is what the classification uses. | DISAGREE (naive chi-square expected to be overconfident) |
+| Is the result driven by a single wavenumber bin (a look-elsewhere problem in disguise)? | The worst bin at k = 0.351 h/Mpc carries 68.8% of the total chi-square. | dominated by one bin; interpret with caution |
+| Would pure noise produce a chi-square this large? | Observed chi2 = 459.9; 95th percentile of the noise null = 887.6409866021846. | consistent with noise |
+| Would this pipeline have found a real 20% feature? | The pipeline detects an injected 46.4% feature at 5.0 sigma. Features at least this large would have been found, so the absence of such a feature is informative. | sensitive |
+| How often does the detector fire on noise alone? | False-positive rate = 0.016 over 500 trials. | acceptable |
+| Was this analysis specified before the data were examined? | Analysis plan registered at 2026-10-07T03:10:13.182994 with seed 42. | pre-registered |
+| Does the uncorrected chi-square agree with the Monte Carlo test? | chi-square p = 0.0, Monte Carlo p = 0.295. The naive chi-square uses per-bin Poisson errors only and ignores the cosmic sampling variance of a single realisation, so it understates the uncertainty; the Monte Carlo p-value is the calibrated one and is what the classification uses. | DISAGREE (naive chi-square expected to be overconfident) |
 
 **Survived adversarial review:** False
 
 ## 10. Injection and Recovery
 
 - Feature: Gaussian bump at k = 0.05 h/Mpc, width 0.01 h/Mpc
-- Injected amplitude: 0.458
+- Injected amplitude: 0.464
 - Signal-to-noise: 5.00
 - Detected: **True**
-- False-positive rate: 0.028
+- False-positive rate: 0.016
 
-The pipeline detects an injected 45.8% feature at 5.0 sigma. Features at least this large would have been found, so the absence of such a feature is informative.
+The pipeline detects an injected 46.4% feature at 5.0 sigma. Features at least this large would have been found, so the absence of such a feature is informative.
 
 ## 11. Replication
 
@@ -128,7 +128,7 @@ cosmos reproduce EXP-001
 
 ## 12. Interpretation
 
-The measured power spectrum is not distinguishable from a Lambda CDM realisation (Monte Carlo p = 0.095, 1.31 sigma equivalent).
+The measured power spectrum is not distinguishable from a Lambda CDM realisation (Monte Carlo p = 0.295, 0.54 sigma equivalent).
 
 ## 13. Limitations and what cannot be concluded
 
@@ -154,10 +154,10 @@ Search the local corpus: `cosmos papers search <topic>`.
 | database | `experiment_record` | Experiment record created/updated in database |
 | plan | `analysis_plan` | Analysis plan registered |
 | data | `galaxy_catalog` | Galaxy catalog: COSMOS clustered Lambda CDM mock (no real survey data available); 3200000 galaxies |
-| preprocessing | `bias` | Effective galaxy bias measured from the fields: b = 0.196 (input bias 0.30) |
+| preprocessing | `bias` | Effective galaxy bias measured from the fields: b = 0.194 (input bias 0.30) |
 | preprocessing | `power_spectrum` | Measured P(k) on 20 log bins over 0.022-0.351 h/Mpc; nbar=0.05 (Mpc/h)^-3 |
 | data | `prepared_data` | Data ingested and preprocessed |
-| model | `lcdm_predict` | Lambda CDM BBKS prediction, sigma8-normalised to 0.810, compared in galaxy space with b=0.19576840914586782 |
+| model | `lcdm_predict` | Lambda CDM BBKS prediction, sigma8-normalised to 0.810, compared in galaxy space with b=0.19407517313509198 |
 | model | `lcdm_prediction` | Lambda CDM prediction generated |
 | simulation | `null_simulation` | Null distribution simulated |
 | analysis | `statistical_analysis` | Statistical analysis completed |
@@ -166,10 +166,10 @@ Search the local corpus: `cosmos papers search <topic>`.
 
 ## 16. Reproducibility
 
-- Random seed: 777
-- Software version: commit 022fb28
+- Random seed: 42
+- Software version: commit 30d3c42
 - Analysis version: v1
-- Analysis plan registered: 2026-10-06T15:43:38.822018
+- Analysis plan registered: 2026-10-07T03:10:13.182994
 - Datasets: see `cosmos data list`
 - Reproducibility package: `experiments/EXP-001/reproducibility/`
 

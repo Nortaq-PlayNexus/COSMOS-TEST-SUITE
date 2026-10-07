@@ -21,8 +21,7 @@ import numpy as np
 import pytest
 
 from cosmos.config import ResultClassification
-from cosmos.experiments import AnalysisPlan, ExperimentRunner, EXP001Experiment
-from cosmos.registry import get_registry
+from cosmos.experiments import AnalysisPlan, EXP001Experiment
 
 VALID_CLASSIFICATIONS = {e.value for e in ResultClassification}
 

@@ -15,29 +15,21 @@ Base class for experiments (Section 7 of spec) with:
 from __future__ import annotations
 
 import datetime
-import hashlib
 import json
 import math
-import os
-import shutil
 import subprocess
-import uuid
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 
 import numpy as np
 
-import click
-
 from .. import statistics as statistics_module
 from ..config import ResultClassification
-from ..database import ExperimentRepository, ResultRepository, get_session
-from ..database.models import Experiment, Result
+from ..database import ExperimentRepository, get_session
+from ..database.models import Experiment
 from ..reports import generate_experiment_report, record_result_to_db
-from ..registry import get_registry
-from ..statistics import classify_significance
 
 
 @dataclass
@@ -203,8 +195,6 @@ class ExperimentRunner(ABC):
         self.add_provenance("database", "experiment_record", "Experiment record created/updated in database")
 
         # 1b. Ensure the Experiment record exists in the database
-        from ..database import ExperimentRepository, get_session
-        from ..database.models import Experiment
         with get_session() as session:
             exp_repo = ExperimentRepository(session, Experiment)
             exp_db = exp_repo.find_by_exp_id(self.exp_id)
@@ -298,7 +288,6 @@ class ExperimentRunner(ABC):
         Build a plain-language summary that states what was measured, what was
         concluded, and what cannot be concluded (Sections 2 and 60).
         """
-        mc = analysis.get("monte_carlo", {})
         injection = analysis.get("injection_recovery", {})
         p = classification.get("p_value")
         sigma = classification.get("significance_sigma")
@@ -752,7 +741,7 @@ class EXP001Experiment(ExperimentRunner):
             "sigma8_test": statistics_module.sigma8_consistency(
                 float(data.get("sigma8_measured", 0.81)), 0.81, 0.05
             ),
-            "n_k_bins": int(len(k_pred)),
+            "n_k_bins": len(k_pred),
             "null_sim_hash": null_dist["hash"],
             "data_origin": data.get("origin", "unknown"),
         }

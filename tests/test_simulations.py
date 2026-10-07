@@ -312,7 +312,7 @@ class TestTopology:
         out = sim.matched_circles_signature(cfg, L=500.0)
         assert "circles" in out
         assert out["n_pairs"] == len(out["circles"])
-        for theta, theta2, phi, phi2, radius, rot in out["circles"]:
+        for theta, theta2, _phi, _phi2, radius, _rot in out["circles"]:
             assert 0 <= theta <= np.pi
             assert 0 <= theta2 <= np.pi
             assert radius > 0

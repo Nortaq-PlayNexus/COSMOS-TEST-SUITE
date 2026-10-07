@@ -1,0 +1,113 @@
+name: tests
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Python ${{ matrix.python-version }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: ["3.12", "3.13", "3.14"]
+        exclude:
+          # Keep the matrix affordable: full sweep on Linux, single version
+          # elsewhere. Extend if you want the full cross-product.
+          - os: macos-latest
+            python-version: "3.13"
+          - os: macos-latest
+            python-version: "3.14"
+          - os: windows-latest
+            python-version: "3.13"
+          - os: windows-latest
+            python-version: "3.14"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install package and dev dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Lint
+        if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.12'
+        run: ruff check cosmos/ tests/
+
+      - name: Run test suite
+        run: python -m pytest tests/ -v --no-header -p no:warnings
+
+      - name: Verify the CLI entry point
+        run: python -m cosmos version
+
+      - name: Verify the first experiment runs end to end
+        run: python -m cosmos experiment run EXP-001 --seed 42
+
+      - name: Verify reproducibility of the committed EXP-001 artifacts
+        # The committed result must match a fresh run at the same seed.
+        # A mismatch means the artifacts are stale, which silently breaks the
+        # project's central reproducibility claim.
+        run: |
+          python -m pytest tests/test_experiments.py::TestFullRun -q --no-header
+
+      - name: Check the license is the full GPL-3.0 text
+        # Guards against a truncated or placeholder LICENSE being committed,
+        # which is legally meaningless while looking like a real license.
+        run: |
+          python -c "
+          import pathlib
+          t = pathlib.Path('LICENSE').read_text(encoding='utf-8')
+          required = ['GNU GENERAL PUBLIC LICENSE',
+                      'Version 3, 29 June 2007',
+                      'TERMS AND CONDITIONS',
+                      'END OF TERMS AND CONDITIONS']
+          missing = [c for c in required if c not in t]
+          assert not missing, f'LICENSE missing clauses: {missing}'
+          assert len(t) > 30000, f'LICENSE too short: {len(t)} chars'
+          print('LICENSE ok:', len(t), 'chars')
+          "
+
+  docs-links:
+    name: Documentation links resolve
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check that every linked doc exists
+        # The README links documentation files. A dead link in a published
+        # README is the most visible sign of an unfinished project.
+        run: |
+          python -c "
+          import pathlib, re, sys
+          readme = pathlib.Path('README.md').read_text(encoding='utf-8')
+          missing = []
+          for ref in sorted(set(re.findall(r'\((docs/[A-Za-z0-9_./-]+\.md)\)', readme))):
+              if not pathlib.Path(ref).exists():
+                  missing.append(ref)
+          if missing:
+              print('Dead doc links:', missing)
+              sys.exit(1)
+          print('All doc links resolve')
+          "

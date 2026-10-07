@@ -8,10 +8,10 @@ cosmos reproduce EXP-001
 
 ## Configuration
 
-- Random seed: 777
+- Random seed: 42
 - Analysis version: v1
 - Cosmos version: 0.1.0.dev0
-- Commit: 022fb28
+- Commit: 30d3c42
 - Classification: consistent_with_standard_model
 
 ## Files
@@ -24,14 +24,14 @@ cosmos reproduce EXP-001
 
 {
   "experiment_id": "EXP-001",
-  "timestamp": "2026-10-06T15:43:38.822018",
-  "commit": "022fb28",
+  "timestamp": "2026-10-07T03:10:13.182994",
+  "commit": "30d3c42",
   "dataset_version": "sample_cmb_map@v1, sample_galaxy_catalog@v1, sample_rotation_curves@v1",
   "parameters": {
-    "seed": 777,
+    "seed": 42,
     "cosmos_version": "0.1.0.dev0"
   },
-  "random_seed": 777,
+  "random_seed": 42,
   "analysis_steps": [
     "Ingest the galaxy catalog (real survey data if available, otherwise a documented synthetic catalog so the pipeline runs offline).",
     "Preprocess: convert redshifts to comoving distances and 3D coordinates.",

@@ -31,14 +31,11 @@ Reports are written to reports/EXP###/report.md and logged to the database.
 from __future__ import annotations
 
 import datetime
-import json
-import os
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, Optional
 
 import click
 
-from .config import ResultClassification
 from .database import ExperimentRepository, ResultRepository, get_session
 from .database.models import Experiment, Result
 from .registry import get_registry
@@ -104,7 +101,6 @@ def generate_experiment_report(
     adversarial findings. Without it the report is rendered as a pre-registered
     analysis plan, which is still useful but must not be mistaken for a result.
     """
-    exp = exp_id.upper().replace("-", "_")
     out_dir = Path(output_dir) if output_dir else Path("reports") / exp_id
     out_dir.mkdir(parents=True, exist_ok=True)
     report_path = out_dir / f"report_{exp_id}.md"
@@ -165,7 +161,7 @@ def generate_experiment_report(
         ]
 
     lines += [
-        f"## 2. Scientific Question",
+        "## 2. Scientific Question",
         "",
         f"{definition.get('hypothesis') or '[hypothesis not yet defined]'}",
         "",
@@ -255,7 +251,6 @@ def generate_experiment_report(
     if sys_entries:
         lines += ["| Systematic | Quantified | Impact |", "|---|---|---|"]
         for name, entry in sys_entries.items():
-            desc = entry.get("description", "") if isinstance(entry, dict) else str(entry)
             quant = (
                 "yes" if isinstance(entry, dict) and entry.get("quantified") else "**no**"
             )
@@ -356,10 +351,10 @@ def generate_experiment_report(
         "## 16. Reproducibility",
         "",
         f"- Random seed: {plan.get('random_seed', definition.get('reproducibility', {}).get('random_seed', 42))}",
-        f"- Software version: {plan.get('commit', 'unknown') and 'commit ' + str(plan.get('commit')) or 'commit unknown'}",
-        f"- Analysis version: v1",
+        f"- Software version: {(plan.get('commit', 'unknown') and 'commit ' + str(plan.get('commit'))) or 'commit unknown'}",
+        "- Analysis version: v1",
         f"- Analysis plan registered: {plan.get('timestamp', 'not recorded')}",
-        f"- Datasets: see `cosmos data list`",
+        "- Datasets: see `cosmos data list`",
         f"- Reproducibility package: `experiments/{exp_id}/reproducibility/`",
         "",
         "---",
@@ -404,7 +399,7 @@ def record_result_to_db(
         now = datetime.datetime.utcnow()
         run_id = f"run_{now.strftime('%Y%m%d_%H%M%S')}"
 
-        result = result_repo.record_result(
+        result_repo.record_result(
             exp_id=exp_db.id,
             run_id=run_id,
             classification=classification,

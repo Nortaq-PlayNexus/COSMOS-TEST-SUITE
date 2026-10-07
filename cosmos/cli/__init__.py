@@ -24,8 +24,6 @@ Subcommands:
 from __future__ import annotations
 
 import sys
-from typing import Optional
-
 import click
 
 from .. import __version__
@@ -210,7 +208,6 @@ def experiment_group():
 def list(status):
     """List experiments: cosmos experiment list."""
     reg = get_registry()
-    experiments = [e for e in reg.experiments.values() if not status or e["status"] == status]
     click.echo(f"{'exp_id':<10} {'name':<45} {'status':<16} {'score'}")
     click.echo("-" * 80)
     for exp_id, exp in sorted(reg.experiments.items(), key=lambda x: x[1]["order"]):
@@ -351,7 +348,7 @@ def simulate_topology(L, seed):
     """Run a finite-topology (3-torus) simulation."""
     from ..simulations import create_simulation
     sim = create_simulation("EXP-012-topology-sim", "topology", {"L": L, "seed": seed})
-    out = sim.run()
+    sim.run()
     click.echo(f"Simulation {sim.name} complete")
     click.echo(f"  hash: {sim.reproducibility_hash()}")
 

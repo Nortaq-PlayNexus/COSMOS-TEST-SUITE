@@ -28,15 +28,12 @@ import json
 import math
 from dataclasses import dataclass, field, replace
 from pathlib import Path
-from typing import Any, Callable, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 
 import numpy as np
 from scipy import integrate
 from scipy import stats as scipy_stats
 from scipy.interpolate import interp1d
-from scipy.special import jn
-
-from .. import statistics as stats
 
 
 # ---------------------------------------------------------------------------
@@ -338,8 +335,6 @@ def generate_grf(config: GRFConfig) -> Dict[str, Any]:
         P_interp = interp1d(
             k_vals, P_vals, kind="linear", bounds_error=False, fill_value=0.0
         )
-    P_masked = np.maximum(P_interp(kk[shell]), 1e-30)
-
     # Assign amplitudes to one representative of each +/-k pair so that
     # imposing Hermitian symmetry cannot double-count power.
     # The rule "index >= n/2 on the first axis where it differs" selects
@@ -618,7 +613,7 @@ def matched_circles_signature(config: GRFConfig, L: float) -> Dict[str, Any]:
     """
     cosmo = config.cosmo
     d_ls = float(cosmo.comoving_distance(1100.0))
-    if L >= d_ls:
+    if d_ls <= L:
         return {
             "error": (
                 "topology size L must be smaller than the comoving distance to "
@@ -692,7 +687,7 @@ def bubble_collision_template(
             f"r0={r0} rad must be smaller than pi; a disc of radius >= pi "
             "covers the whole sky and is not a localised signature"
         )
-    if not (0.0 < r0):
+    if not (r0 > 0.0):
         raise ValueError("r0 must be positive")
     nlon = 2 * nlat
     lon = np.linspace(-math.pi, math.pi, nlon, endpoint=False)
@@ -924,7 +919,6 @@ def sigma8_from_field(delta: np.ndarray, cell_size: float, R: float = 8.0) -> fl
     """
     delta = np.asarray(delta, dtype=float)
     n = delta.shape[0]
-    box = n * cell_size
 
     # Same convention as _binned_power_spectrum: divide by the number of cells
     # and multiply by the cell volume, so the two estimators agree exactly.
@@ -1052,7 +1046,7 @@ def clustered_mock_galaxy_catalog(
     #    then place a uniform random position inside each chosen cell.
     cell = box / n_grid
     n_cells = n_grid**3
-    n_galaxies = int(round(nbar * box**3))
+    n_galaxies = round(nbar * box**3)
     if n_galaxies < 1:
         raise ValueError("mock catalogue is empty; increase nbar")
     weights = rho.ravel() / n_cells
@@ -1245,7 +1239,6 @@ def measure_power_spectrum(
     n_points = len(x)
 
     cell = box / n_grid
-    cell_volume = cell**3
     n_cells = n_grid**3
     # Two different densities are needed and confusing them is a silent error:
     #   nbar     : galaxy number density per (Mpc/h)^3, which sets the shot

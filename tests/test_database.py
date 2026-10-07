@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import os
 import tempfile
-from pathlib import Path
 
 import pytest
 from sqlalchemy import inspect
@@ -23,7 +22,6 @@ from cosmos.database import (
     init_db,
     models,
 )
-from cosmos.database.models import Base
 
 
 @pytest.fixture(scope="module")

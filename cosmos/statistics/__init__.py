@@ -16,22 +16,16 @@ uncertainty propagation, and validation (Section 58 of the spec).
 
 from __future__ import annotations
 
-import datetime
 import json
 import math
-import warnings
 from dataclasses import dataclass, field
 from functools import wraps
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional, Sequence, Tuple, Union
 
 import numpy as np
-import pandas as pd
 import statsmodels.stats.multitest as smm
-from scipy import integrate, stats
-from scipy.optimize import minimize
-from scipy.spatial.distance import cdist
-from scipy.stats import gaussian_kde
+from scipy import stats
 from tqdm import tqdm
 
 import emcee
@@ -233,7 +227,6 @@ def sample_mcmc(
     sampler.reset()
     sampler.run_mcmc(pos, tune_steps - n_tune, progress=progress)
 
-    n_tune_total = tune_steps
     chain = sampler.chain.reshape(n_chains, -1, n_params)
     samples = chain.reshape(-1, n_params)
 
@@ -290,7 +283,6 @@ def _gelman_rubin(chain: np.ndarray) -> Optional[float]:
     """
     if chain.shape[0] < 2:
         return None
-    n_samps, n_params = chain.shape[0], chain.shape[2]
     mean_chain = chain.mean(axis=1)
     W = np.var(chain, axis=1, ddof=1).mean()
     B = np.var(mean_chain, ddof=1) * chain.shape[1]
@@ -460,7 +452,6 @@ def log_model_evidence(
 
     # Draw samples for evidence with importance weighting around posterior mode
     # Shifted uniform proposals to cover posterior volume
-    shift = rng.uniform(-0.5, 0.5, size=n_params) * 0.1 * widths
     prop_lower = np.clip(center - 1.5 * widths, [bounds[n][0] for n in names], center)
     prop_upper = np.clip(center + 1.5 * widths, center, [bounds[n][1] for n in names])
 
@@ -623,7 +614,8 @@ def permutation_test(
     n1 = len(s1)
 
     if statistic_fn is None:
-        statistic_fn = lambda a, b: np.mean(a) - np.mean(b)
+        def statistic_fn(a, b):
+            return np.mean(a) - np.mean(b)
 
     stat_obs = statistic_fn(s1, s2)
     stat_null = []

@@ -9,10 +9,59 @@ settings with clear defaults.
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass, field
+import shutil
+from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Optional
+
+try:
+    import psutil
+except ImportError:  # optional: resource detection falls back to the stdlib
+    psutil = None  # type: ignore[assignment]
+
+
+def _ram_from_stdlib() -> float:
+    """
+    Total physical memory in GB, without psutil.
+
+    os.sysconf('SC_PAGE_SIZE') * os.sysconf('SC_PHYS_PAGES') works on Linux
+    and macOS; it is unavailable on Windows, where ctypes is used instead.
+    """
+    if os.name != "nt" and hasattr(os, "sysconf"):
+        try:
+            pages = os.sysconf("SC_PHYS_PAGES")
+            page_size = os.sysconf("SC_PAGE_SIZE")
+            if pages > 0 and page_size > 0:
+                return pages * page_size / (1024**3)
+        except (ValueError, OSError, AttributeError):
+            pass
+
+    if os.name == "nt":
+        try:
+            import ctypes
+
+            class _MemoryStatusEx(ctypes.Structure):
+                _fields_ = [
+                    ("dwLength", ctypes.c_ulong),
+                    ("dwMemoryLoad", ctypes.c_ulong),
+                    ("ullTotalPhys", ctypes.c_ulonglong),
+                    ("ullAvailPhys", ctypes.c_ulonglong),
+                    ("ullTotalPageFile", ctypes.c_ulonglong),
+                    ("ullAvailPageFile", ctypes.c_ulonglong),
+                    ("ullTotalVirtual", ctypes.c_ulonglong),
+                    ("ullAvailVirtual", ctypes.c_ulonglong),
+                    ("ullAvailExtendedVirtual", ctypes.c_ulonglong),
+                ]
+
+            stat = _MemoryStatusEx()
+            stat.dwLength = ctypes.sizeof(_MemoryStatusEx)
+            ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(stat))
+            return stat.ullTotalPhys / (1024**3)
+        except Exception:
+            pass
+
+    return 16.0
 
 import yaml
 from pydantic import Field, field_validator
@@ -77,9 +126,7 @@ class ResourceSpec:
             return False
         if kwargs.get("min_ram_gb") and self.ram_gb < kwargs["min_ram_gb"]:
             return False
-        if kwargs.get("requires_gpu") and not self.gpu:
-            return False
-        return True
+        return not (kwargs.get("requires_gpu") and not self.gpu)
 
 
 class Settings(BaseSettings):
@@ -195,7 +242,6 @@ class Settings(BaseSettings):
         if not self.resources_auto_detect:
             return ResourceSpec()
         try:
-            import psutil
             mem = psutil.virtual_memory()
             return ResourceSpec(
                 cpu_count=os.cpu_count(),
@@ -203,15 +249,34 @@ class Settings(BaseSettings):
                 gpu=False,
                 disk_gb=self._disk_free(),
             )
-        except Exception:
-            return ResourceSpec(cpu_count=os.cpu_count(), ram_gb=16.0, gpu=False)
+        except ImportError:
+            # psutil is an optional convenience. Fall back to the stdlib.
+            return ResourceSpec(
+                cpu_count=os.cpu_count(),
+                ram_gb=_ram_from_stdlib(),
+                gpu=False,
+                disk_gb=self._disk_free(),
+            )
+        except Exception as exc:  # pragma: no cover - platform dependent
+            raise RuntimeError(
+                f"resource detection failed unexpectedly: {exc}"
+            ) from exc
 
     def _disk_free(self) -> float:
+        """
+        Free disk space on the volume holding the project root, in GB.
+
+        Uses shutil.disk_usage from the standard library so this never depends
+        on an optional package. An earlier version called psutil here without
+        importing it, so the NameError was swallowed by a bare except and this
+        always returned a hard-coded 100 GB.
+        """
         try:
-            free = psutil.disk_usage(self.root).free
-            return free / (1024**3)
-        except Exception:
-            return 100.0
+            return shutil.disk_usage(self.root).free / (1024**3)
+        except OSError as exc:
+            raise RuntimeError(
+                f"could not determine free disk space for {self.root}: {exc}"
+            ) from exc
 
     @classmethod
     def from_file(cls, path: Path) -> Settings:

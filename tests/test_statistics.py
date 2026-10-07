@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import numpy as np
 import pytest
-from scipy import stats
 
 from cosmos import statistics as cs
 
@@ -182,7 +181,7 @@ class TestMultipleComparisons:
     def test_bonferroni_is_conservative(self):
         p = np.array([0.001, 0.02, 0.04, 0.5])
         res = cs.multiple_comparisons_correction(p, method="bonferroni")
-        assert all(c >= o for c, o in zip(res["corrected_p_values"], p))
+        assert all(c >= o for c, o in zip(res["corrected_p_values"], p, strict=True))
         assert res["n_rejected"] <= 1
 
     def test_look_elsewhere_reduces_significance(self):

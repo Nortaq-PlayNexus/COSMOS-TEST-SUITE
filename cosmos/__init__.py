@@ -19,14 +19,14 @@ __author__ = "COSMOS"
 __license__ = "GPL-3.0-only"
 
 __all__ = [
-    "__version__",
+    "SessionLocal",
     "__author__",
     "__license__",
+    "__version__",
     "config",
     "database",
-    "statistics",
-    "simulations",
-    "settings",
-    "SessionLocal",
     "get_db",
+    "settings",
+    "simulations",
+    "statistics",
 ]
