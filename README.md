@@ -73,7 +73,7 @@ report states the significance is an upper bound on the evidence.
 ## Quick start
 
 ```bash
-git clone https://github.com/<your-org>/COSMOS-TEST-SUITE.git
+git clone https://github.com/Nortaq-PlayNexus/COSMOS-TEST-SUITE.git
 cd COSMOS-TEST-SUITE
 
 python -m venv .venv
@@ -222,10 +222,31 @@ GPL-3.0-only. See [LICENSE](LICENSE).
 
 ---
 
-## Before you publish this
+## Status of the science
 
-Repository-wide placeholders to replace:
+Stated plainly so a reader does not have to infer it:
 
-- `pyproject.toml` → `authors = [{ name = "...", email = "..." }]`
-- `README.md` → the three `<your-org>` URLs in clone and citation
-- Git commit author (`git config user.name` / `user.email`)
+- **No research question has been answered.** All 35 remain open.
+- **EXP-001 has only ever run on synthetic data.** No experiment has fitted a
+  cosmological model to an observation.
+- **One external validation was performed**, of BAO distance measures against
+  real DESI DR2 vectors. It caught a bug in this codebase and a labelling
+  problem in the data mirror. See
+  [SCIENCE_VALIDATION](docs/SCIENCE_VALIDATION.md).
+- **The results in this repository demonstrate that the machinery works**, not
+  that any theory is correct.
+
+## Citing this
+
+Until an archived release exists, cite the repository:
+
+```bibtex
+@misc{cosmos_test_suite,
+  author       = {Nortaq-PlayNexus},
+  title        = {{COSMOS} {Test} {Suite}: A Platform for Trying to Disprove
+                  Cosmological Hypotheses},
+  year         = {2026},
+  howpublished = {\url{https://github.com/Nortaq-PlayNexus/COSMOS-TEST-SUITE}},
+  note         = {No scientific findings claimed; see README "Status of the science"}
+}
+```

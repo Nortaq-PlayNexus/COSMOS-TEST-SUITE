@@ -9,7 +9,7 @@ description = "An Independent Computational Observatory for Testing the Biggest 
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
-    { name = "COSMOS", email = "cosmos@example.com" }
+    { name = "Nortaq-PlayNexus", email = "311333767+Nortaq-PlayNexus@users.noreply.github.com" }
 ]
 license = { text = "GPL-3.0-only" }
 classifiers = [
