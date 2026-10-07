@@ -44,12 +44,49 @@ Reachability was probed from the development environment:
 | SDSS SkyServer | **blocked** |
 | SDSS DR12 BOSS data release | **blocked (HTTP 504)** |
 | LIGO open data | **blocked** |
+| DESI BAO vectors (CobayaSampler mirror) | reachable, **but see below** |
 
 So the galaxy power spectra, gravitational-wave strain, and CMB spectra that
 would let EXP-001 run on real observations are **unavailable**. Per §60 of the
 specification these are marked unavailable rather than substituted with
 invented numbers. `docs/SCIENCE_VALIDATION.md` records that no external
 validation has been performed for the same reason.
+
+## Open problem: the DESI BAO distance vectors
+
+Real DESI DR2 BAO data was located and retrieved:
+
+- Source: `CobayaSampler/bao_data` on GitHub, directory `desi_bao_dr2/`,
+  cited by DESI as arXiv:2503.14738 and arXiv:2503.14739
+- Contents: 13 mean values of `DV_over_rs`, `DM_over_rs` and `DH_over_rs`
+  spanning z = 0.295 to 2.33, plus a full 13x13 covariance matrix including
+  cross-tracer correlations (off-diagonal entries of -0.0326 and -0.0237)
+
+This was the intended input for a dark-energy experiment. **It was not used.**
+Building the distance calculations to consume it surfaced a provenance problem:
+
+| Column | Reproduces the model value for | Agreement at z = 2.330 |
+|---|---|---|
+| `DH_over_rs` | D_H/r_s = (c/H(z))/r_s | 1.1% |
+| `DM_over_rs` | D_M/r_s = transverse distance | **70% off** (11.768 vs 38.989) |
+| `DM_over_rs` | D_C/r_s = *comoving* distance | 1% (39.186 vs 38.989) |
+
+The labelled `DH_over_rs` column behaves exactly as its name says, which makes
+the `DM_over_rs` behaviour hard to dismiss as a units problem across the whole
+file. The values in `DM_over_rs` are numerically consistent with the comoving
+distance, not the transverse distance. Either the mirror's label is wrong or it
+uses a non-standard definition; the DESI Y3 documentation for the release does
+not state the convention for these files.
+
+No cosmological fit is performed on this dataset. Fitting a model to a column
+whose meaning is uncertain would produce a plausible-looking but meaningless
+result. The finding is recorded as an executable assertion in
+`tests/test_cosmology.py::TestDESIColumnConvention`, which means it will fail
+loudly if the mirror is corrected and can be checked by anyone who has the
+primary source to hand.
+
+**Unresolved.** Resolving it requires the DESI DR2 paper's own definition of
+these columns, which was not reachable from the development environment.
 
 ## Intended primary sources
 

@@ -13,7 +13,7 @@ same bug can be consistent end to end. (2) is what catches that.
 
 ## Internal validation (what the test suite covers)
 
-221 tests. The physics-relevant ones:
+245 tests. The physics-relevant ones:
 
 ### Known analytical values
 
@@ -60,10 +60,41 @@ same bug can be consistent end to end. (2) is what catches that.
 
 ## External validation (status)
 
-**Not yet performed.** No comparison against published results has been made,
-because no real data has been analysed.
+**One component performed, one blocked.**
 
-When it happens, the protocol (§41 of the specification) is:
+### Performed: BAO distance measures against DESI DR2
+
+`cosmos/cosmology.py` computes D_H = c/H(z), D_M (transverse) and D_V
+(volume-averaged) for a flat cosmology, and was checked against the DESI DR2
+BAO vectors retrieved from the CobayaSampler mirror (arXiv:2503.14738,
+2503.14739):
+
+| Quantity | Agreement | Verdict |
+|---|---|---|
+| `DH_over_rs` at z = 2.330 | 1.1% | reproduced |
+| `DH_over_rs` across z = 0.51 to 2.33 | 4.0% worst case, -0.2% at high z | reproduced |
+| `DM_over_rs` at z = 2.330 | 70% discrepancy | **not reproduced** |
+
+The D_H residual is not an error: the model uses Planck 2018 parameters while
+DESI fits its own cosmology, and the difference is largest at low z where the
+expansion history is most parameter-sensitive.
+
+The D_M result is a genuine open problem rather than a failed fit. The same
+labelled values reproduce the model's *comoving* distance D_C/r_s to 1%, so the
+column is not random — it appears to hold D_C where the label says D_M. The
+available documentation does not settle which it is, so no model is fitted to
+it. Details in `docs/DATA_SOURCES.md`; the finding is an executable assertion
+in `tests/test_cosmology.py::TestDESIColumnConvention`.
+
+Note what this validation did and did not do: it checked our distance
+calculation against the data, and it found a problem in the data mirror. It did
+not validate a cosmological inference, because no inference was made.
+
+### Not performed: cosmological parameter inference
+
+No experiment has yet fit a cosmological model to an observation and been
+checked against a published result. When that happens, the protocol (§41 of the
+specification) is:
 
 1. Record the published value and its uncertainty
 2. Record ours and its uncertainty
