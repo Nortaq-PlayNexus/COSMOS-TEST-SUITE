@@ -1,0 +1,42 @@
+{
+  "upload_type": "software",
+  "title": "COSMOS Test Suite v0.1.0: a platform for attempting to falsify cosmological hypotheses",
+  "version": "0.1.0",
+  "license": "GPL-3.0-only",
+  "language": "eng",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Nortaq-PlayNexus",
+      "affiliation": "independent"
+    }
+  ],
+  "keywords": [
+    "cosmology",
+    "large-scale structure",
+    "baryon acoustic oscillations",
+    "scientific methodology",
+    "falsification",
+    "reproducibility",
+    "open science",
+    "statistics"
+  ],
+  "notes": "No scientific findings are claimed. None of the 35 registered research questions has been answered, and the one implemented experiment (EXP-001) has only ever consumed synthetic data. Please cite this deposit as a platform, not as a result. One external validation was performed, of BAO distance measures against real DESI DR2 vectors (arXiv:2503.14738, arXiv:2503.14739); it found an error in this codebase and an unresolved labelling problem in a third-party data mirror.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Nortaq-PlayNexus/COSMOS-TEST-SUITE",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "arXiv:2503.14738",
+      "relation": "isDocumentedBy",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "10.1051/0004-6361/201833910",
+      "relation": "isDocumentedBy",
+      "scheme": "doi"
+    }
+  ]
+}
