@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281%2Fzenodo.23204768.svg)](https://doi.org/10.5281/zenodo.23204768)
+
 # COSMOS TEST SUITE
 
 ## An Independent Computational Observatory for Testing the Biggest Questions in Cosmology and Fundamental Physics
