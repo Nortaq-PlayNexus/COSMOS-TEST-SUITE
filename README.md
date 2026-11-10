@@ -19,7 +19,7 @@ This is an **honest statement of what exists**, not marketing.
 | Real astronomical data ingested | **none** (SDSS and LIGO unreachable) |
 | Research literature ingested | **86 papers** from the live arXiv API, 58 with DOIs |
 | Research questions answered | **0 of 35** |
-| Tests | 221, passing from a clean clone |
+| Verification | See [verification record](docs/VERIFICATION_2026-11-10.md) for the dated test run |
 
 **No conclusion has been drawn about the physical universe.** EXP-001 has only
 ever consumed synthetic data. It answers a question about itself — *does this
@@ -83,11 +83,11 @@ python -m venv .venv
 
 pip install -e ".[dev]"
 
-python -m pytest tests/ -q      # 221 passed
+python -m pytest tests/ -q      # inspect the current result
 python -m cosmos experiment run EXP-001
 ```
 
-No network access needed. See [docs/INSTALLATION.md](docs/INSTALLATION.md).
+Dependency installation needs package-index access. The default synthetic experiment runs offline after installation. See [docs/INSTALLATION.md](docs/INSTALLATION.md).
 
 ---
 

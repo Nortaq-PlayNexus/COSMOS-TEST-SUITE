@@ -3,13 +3,14 @@
 ## Requirements
 
 - **Python 3.12 or newer** (developed and tested on 3.14.7)
-- ~200 MB free disk for the environment
-- No GPU required; no network access required for the default workflow
+- Allow space for the scientific Python environment; size varies by platform and resolved packages
+- No GPU required. Package installation requires network access or a pre-populated wheel cache; the default synthetic workflow runs offline afterward.
+- A C compiler may be needed for pycosat when no compatible wheel is available. Use your platform compiler and matching Python development headers.
 
 ## Quick start
 
 ```bash
-git clone https://github.com/<your-org>/COSMOS-TEST-SUITE.git
+git clone https://github.com/Nortaq-PlayNexus/COSMOS-TEST-SUITE.git
 cd COSMOS-TEST-SUITE
 
 python -m venv .venv
@@ -47,9 +48,9 @@ python -m cosmos version
 python -m pytest tests/ -q
 ```
 
-You should see `221 passed`. If anything fails, the failure is almost always a
-missing scientific package — reinstall with `pip install -e .` and confirm the
-error is not a version conflict.
+Use the actual test output, rather than a fixed count, to assess your checkout. See the [dated verification record](VERIFICATION_2026-11-10.md). Diagnose failures from their tracebacks; do not assume every failure is a missing package.
+
+If a pycosat source build reports a missing compiler, install a compiler or select one that exists. For example, on a Linux system with GCC installed: `CC=gcc CXX=g++ python -m pip install -e ".[dev]"`. This is platform-specific, not required on every machine.
 
 ## Running the first experiment
 
